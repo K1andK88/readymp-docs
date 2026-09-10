@@ -39,12 +39,12 @@ Anything a player has no business seeing belongs in `server/`. The server never 
 
 A mod can ship JSON config files in either of its halves, and you edit them in place on the server. A file in `server/` is read by the server and never sent anywhere; a file in `client/` is downloaded by every player along with the rest of that folder.
 
-The SDK mod itself works this way. Chat is off by default as of `0.4.0`, and you turn it on for your server by editing the SDK mod's client config:
+The SDK mod itself works this way. Chat is on by default as of `0.4.1`, and you turn it off for your server by editing the SDK mod's client config:
 
 ```json title="mods/WukongMp.Sdk/client/config.json"
 {
-  // Change this to true if you want to enable the in-game chat
-  "ChatEnabled": true
+  // Change this to false if you want to disable the in-game chat
+  "ChatEnabled": false
 }
 ```
 
