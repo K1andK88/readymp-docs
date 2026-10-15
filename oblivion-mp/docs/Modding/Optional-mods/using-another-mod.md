@@ -138,6 +138,8 @@ no way to declare "use chat if it is there, and work without it otherwise".
 | Mod | Manifest id | Packages | What it gives you |
 | --- | --- | --- | --- |
 | [Chat](chat.md) | `OblivionMP.Chat` | `ReadyM.Oblivion.Chat.Client`, `ReadyM.Oblivion.Chat.Server` | Lines in the chat window, and slash commands of your own. |
+| [Quests](https://github.com/readycodeio/oblivionmp-quest-sdk) | `OblivionMP.SDK.Quests` | `ReadyM.Oblivion.Quests.Server` | Quests written on the server: stages with journal text, objectives, compass targets and dialogue topics, saved with the world. |
 
-A Quests mod, for quest progress shared between players, will become available the same way: its own repository,
-its own packages, and a manifest id to depend on. Its page will be added to this section when it is released.
+Quests runs only on the server, so it has a server package and nothing else. Your server project asks for its
+`QuestCatalog` in a constructor and defines quests when the service starts. Its
+[README](https://github.com/readycodeio/oblivionmp-quest-sdk#readme) has an example quest.
