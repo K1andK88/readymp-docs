@@ -1,9 +1,9 @@
 # ReadyM.Relay.Server.Sdk.Events
 
-### Classes
+### Interfaces
 
- [ServerEventsApi](../ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.ServerEventsApi.md)
+ [IServerEvents](../ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.IServerEvents.md)
 
-Provides an API for subscribing to server events.
+The server's events: players connecting and moving, and areas and cells coming and going.
 
 

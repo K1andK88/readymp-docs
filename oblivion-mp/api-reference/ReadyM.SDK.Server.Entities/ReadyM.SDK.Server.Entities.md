@@ -29,15 +29,20 @@ known at compile time is walked by chunk, and anything else by identity. The cho
 overload resolution, so this type has no GetEnumerator of its own and a foreach binds one of the
 extensions instead.
 
+ [ScopedQuery<T\>](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.ScopedQuery-1.md)
+
+Every entity a scope holds that carries the shape. Walked by identity: a scope's entities are
+scattered through the archetypes they belong to, so there are no chunks to hand back.
+
  [ScopedQuery<T1, T2\>](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.ScopedQuery-2.md)
 
 Every entity a scope holds that carries all 2 shapes. Walked by identity: a scope's entities
 are scattered through the archetypes they belong to, so there are no chunks to hand back.
 
- [ScopedQuery<T\>](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.ScopedQuery-1.md)
+ [ScopedQuery<T1, T2, T3\>](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.ScopedQuery-3.md)
 
-Every entity a scope holds that carries the shape. Walked by identity: a scope's entities are
-scattered through the archetypes they belong to, so there are no chunks to hand back.
+Every entity a scope holds that carries all 3 shapes. Walked by identity: a scope's entities
+are scattered through the archetypes they belong to, so there are no chunks to hand back.
 
  [ScopedQuery<T1, T2, T3, T4\>](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.ScopedQuery-4.md)
 
@@ -52,11 +57,6 @@ are scattered through the archetypes they belong to, so there are no chunks to h
  [ScopedQuery<T1, T2, T3, T4, T5, T6\>](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.ScopedQuery-6.md)
 
 Every entity a scope holds that carries all 6 shapes. Walked by identity: a scope's entities
-are scattered through the archetypes they belong to, so there are no chunks to hand back.
-
- [ScopedQuery<T1, T2, T3\>](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.ScopedQuery-3.md)
-
-Every entity a scope holds that carries all 3 shapes. Walked by identity: a scope's entities
 are scattered through the archetypes they belong to, so there are no chunks to hand back.
 
 ### Interfaces

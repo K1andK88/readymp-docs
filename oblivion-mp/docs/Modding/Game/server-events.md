@@ -7,7 +7,7 @@ sidebar_position: 12
 Services run every tick, and RPC handlers run when a client asks for something. Server events are the third way a
 server mod gets to run code: the server tells you when a player connects or leaves, when an area or cell comes into
 use, and when a player moves between them. They come from
-[`ServerEventsApi`](../../../api-reference/ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.ServerEventsApi.md),
+[`IServerEvents`](../../../api-reference/ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.IServerEvents.md),
 which you ask for in the constructor of a server service.
 
 ```csharp title="MyMod.Server/Greeter.cs"
@@ -23,7 +23,7 @@ using ReadyM.SDK.Server.Entities;
 namespace MyMod.Server;
 
 [Service]
-public sealed partial class Greeter(ServerEventsApi events, IEntities entities, ILogger logger)
+public sealed partial class Greeter(IServerEvents events, IEntities entities, ILogger logger)
 {
     private const int StartingGold = 50;
 
@@ -92,7 +92,7 @@ API turns it into a `Player`, `Area`, `Cell` or `World`. Find the shape from the
 
 ## Reference
 
-- [`ServerEventsApi`](../../../api-reference/ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.ServerEventsApi.md)
+- [`IServerEvents`](../../../api-reference/ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.IServerEvents.md)
 - [`PlayerId`](../../../api-reference/ReadyM.Api.Idents/ReadyM.Api.Idents.PlayerId.md)
 - [`AreaId`](../../../api-reference/ReadyM.Api.Idents/ReadyM.Api.Idents.AreaId.md)
 - [`CellId`](../../../api-reference/ReadyM.Api.Idents/ReadyM.Api.Idents.CellId.md)

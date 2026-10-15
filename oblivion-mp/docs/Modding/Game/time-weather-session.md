@@ -22,7 +22,7 @@ namespace MyMod.Server;
 public sealed partial class SessionSettings(
     SessionDifficulty difficulty,
     SessionScaling scaling,
-    ServerEventsApi events)
+    IServerEvents events)
 {
     private void Start()
         => events.OnWorldEntityCreated += OnWorldCreated;
@@ -170,4 +170,4 @@ Clients do not set any of these values; time and weather come from the area's ma
 * [SessionScaling](../../../api-reference/OblivionMp.Sdk.Serverside/OblivionMp.Sdk.Serverside.SessionScaling.md)
 * [Area](../../../api-reference/ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.Area.md),
   [World](../../../api-reference/ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.World.md)
-* [ServerEventsApi](../../../api-reference/ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.ServerEventsApi.md)
+* [IServerEvents](../../../api-reference/ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.IServerEvents.md)
