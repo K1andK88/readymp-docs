@@ -159,8 +159,8 @@ foreach (var player in entities.Query<Player>())
 | `bool`, `byte`, `sbyte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double`, `char`, `string` | |
 | `PlayerId`, `AreaId`, `CellId`, `FullCellId` | See [Identity](identity.md). |
 | `FormId`, `NetworkFormId` | Oblivion's form ids. See [Identity](identity.md). |
-| `System.Numerics.Vector3` | |
-| `byte[]`, `int[]` | |
+| `Vector2`, `Vector3`, `Vector4` | From `System.Numerics`. |
+| An array of `bool`, `byte`, `short`, `ushort`, `int`, `uint`, `long`, `ulong`, `float`, `double` or `string` | Not `sbyte[]` or `char[]`. |
 | An enum | Backed by `byte`, `short`, `ushort`, `int` or `long`, which is what an enum is unless it says otherwise. |
 | Your own struct | Marked `[DeriveINetSerializable]`, see below. |
 
