@@ -1,7 +1,13 @@
+---
+title: 'Struct DialogueTopic'
+description: 'A dialogue topic a mod offers a player.'
+---
 # Struct DialogueTopic
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
+
+A dialogue topic a mod offers a player.
 
 ```csharp
 public struct DialogueTopic : INetSerializable
@@ -24,15 +30,19 @@ INetSerializable
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueTopic_Name"></a> Name
 
+What the player sees in the topic list.
+
 ```csharp
 public NativeString64 Name
 ```
 
 #### Field Value
 
- [NativeString64](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/Container/NativeString64.cs)
+ NativeString64
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueTopic_QuestId"></a> QuestId
+
+The quest the topic belongs to.
 
 ```csharp
 public uint QuestId
@@ -44,6 +54,8 @@ public uint QuestId
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueTopic_SpeakerBaseId"></a> SpeakerBaseId
 
+Only NPCs of this base form offer the topic. 0 means anyone.
+
 ```csharp
 public uint SpeakerBaseId
 ```
@@ -53,6 +65,8 @@ public uint SpeakerBaseId
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueTopic_StageAtLeast"></a> StageAtLeast
+
+Offered only while the quest's stage is at least this. 0 means no limit.
 
 ```csharp
 public byte StageAtLeast
@@ -64,6 +78,8 @@ public byte StageAtLeast
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueTopic_StageBelow"></a> StageBelow
 
+Offered only while the quest's stage is below this. 0 means no limit.
+
 ```csharp
 public byte StageBelow
 ```
@@ -74,6 +90,8 @@ public byte StageBelow
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueTopic_TopicId"></a> TopicId
 
+Your mod's id for the topic.
+
 ```csharp
 public uint TopicId
 ```
@@ -81,27 +99,5 @@ public uint TopicId
 #### Field Value
 
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
-
-## Methods
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueTopic_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueTopic_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
 
 

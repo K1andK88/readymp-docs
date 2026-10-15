@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongFileApi'
+description: 'Provides methods related to manipulating files for Wukong mods, such as save files.'
+---
 # Interface IWukongFileApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

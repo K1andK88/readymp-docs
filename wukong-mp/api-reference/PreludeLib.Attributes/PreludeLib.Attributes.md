@@ -1,3 +1,7 @@
+---
+title: 'PreludeLib.Attributes'
+description: 'The types in the PreludeLib.Attributes namespace.'
+---
 # PreludeLib.Attributes
 
 ### Classes

@@ -1,7 +1,13 @@
+---
+title: 'Struct SpokenTopicEntry'
+description: 'A mod-added topic a player has spoken.'
+---
 # Struct SpokenTopicEntry
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
+
+A mod-added topic a player has spoken.
 
 ```csharp
 public struct SpokenTopicEntry : INetSerializable
@@ -24,6 +30,8 @@ INetSerializable
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_SpokenTopicEntry_SpeakerRefId"></a> SpeakerRefId
 
+The ref id of the NPC they spoke to.
+
 ```csharp
 public uint SpeakerRefId
 ```
@@ -34,6 +42,8 @@ public uint SpeakerRefId
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_SpokenTopicEntry_TopicId"></a> TopicId
 
+The topic the player spoke.
+
 ```csharp
 public uint TopicId
 ```
@@ -41,27 +51,5 @@ public uint TopicId
 #### Field Value
 
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
-
-## Methods
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_SpokenTopicEntry_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_SpokenTopicEntry_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
 
 

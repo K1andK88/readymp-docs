@@ -1,3 +1,6 @@
+---
+title: 'Class ServerRpcHandlersBase'
+---
 # Class ServerRpcHandlersBase
 
 Namespace: [ReadyM.Relay.Server.Sdk.Rpc](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Rpc.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct FormId'
+description: 'Represents a unique identifier in the Oblivion game. Used for identifying various game objects, such as items, NPCs, and locations.'
+---
 # Struct FormId
 
 Namespace: [ReadyM.Relay.Common.Oblivion](../ReadyM.Relay.Common.Oblivion/ReadyM.Relay.Common.Oblivion.md)  
@@ -28,6 +32,8 @@ INetSerializable,
 
 ### <a id="ReadyM_Relay_Common_Oblivion_FormId__ctor_System_UInt32_"></a> FormId\(uint\)
 
+Names the form with id <code class="paramref">value</code>.
+
 ```csharp
 public FormId(uint value)
 ```
@@ -40,6 +46,8 @@ public FormId(uint value)
 
 ### <a id="ReadyM_Relay_Common_Oblivion_FormId_Value"></a> Value
 
+The form id as a number.
+
 ```csharp
 public readonly uint Value { get; }
 ```
@@ -50,17 +58,9 @@ public readonly uint Value { get; }
 
 ## Methods
 
-### <a id="ReadyM_Relay_Common_Oblivion_FormId_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
 ### <a id="ReadyM_Relay_Common_Oblivion_FormId_Equals_ReadyM_Relay_Common_Oblivion_FormId_"></a> Equals\(FormId\)
+
+Whether both name the same form.
 
 ```csharp
 public bool Equals(FormId other)
@@ -76,6 +76,8 @@ public bool Equals(FormId other)
 
 ### <a id="ReadyM_Relay_Common_Oblivion_FormId_Equals_System_Object_"></a> Equals\(object?\)
 
+Whether <code class="paramref">obj</code> is a **FormId** naming the same form.
+
 ```csharp
 public override bool Equals(object? obj)
 ```
@@ -90,6 +92,8 @@ public override bool Equals(object? obj)
 
 ### <a id="ReadyM_Relay_Common_Oblivion_FormId_GetHashCode"></a> GetHashCode\(\)
 
+A hash code for the form id.
+
 ```csharp
 public override int GetHashCode()
 ```
@@ -98,19 +102,11 @@ public override int GetHashCode()
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="ReadyM_Relay_Common_Oblivion_FormId_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
-
 ## Operators
 
 ### <a id="ReadyM_Relay_Common_Oblivion_FormId_op_Equality_ReadyM_Relay_Common_Oblivion_FormId_ReadyM_Relay_Common_Oblivion_FormId_"></a> operator ==\(FormId, FormId\)
+
+Whether both name the same form.
 
 ```csharp
 public static bool operator ==(FormId left, FormId right)
@@ -128,6 +124,8 @@ public static bool operator ==(FormId left, FormId right)
 
 ### <a id="ReadyM_Relay_Common_Oblivion_FormId_op_Implicit_ReadyM_Relay_Common_Oblivion_FormId__System_UInt32"></a> implicit operator uint\(FormId\)
 
+The form id as a number.
+
 ```csharp
 public static implicit operator uint(FormId f)
 ```
@@ -141,6 +139,8 @@ public static implicit operator uint(FormId f)
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
 
 ### <a id="ReadyM_Relay_Common_Oblivion_FormId_op_Inequality_ReadyM_Relay_Common_Oblivion_FormId_ReadyM_Relay_Common_Oblivion_FormId_"></a> operator \!=\(FormId, FormId\)
+
+Whether they name different forms.
 
 ```csharp
 public static bool operator !=(FormId left, FormId right)

@@ -1,3 +1,7 @@
+---
+title: 'Enum RelayMode'
+description: 'Indicates how an RPC message should be relayed to other players in the game.'
+---
 # Enum RelayMode
 
 Namespace: [ReadyM.Api.Multiplayer.Protocol.Enums](../ReadyM.Api.Multiplayer.Protocol/ReadyM.Api.Multiplayer.Protocol.Enums.md)  

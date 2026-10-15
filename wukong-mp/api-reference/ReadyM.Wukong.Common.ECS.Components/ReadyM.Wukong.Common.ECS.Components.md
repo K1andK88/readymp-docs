@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Wukong.Common.ECS.Components'
+description: 'The types in the ReadyM.Wukong.Common.ECS.Components namespace.'
+---
 # ReadyM.Wukong.Common.ECS.Components
 
 ### Structs

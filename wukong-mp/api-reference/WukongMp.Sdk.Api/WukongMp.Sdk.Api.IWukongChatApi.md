@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongChatApi'
+description: 'API for interacting with the in-game chat.'
+---
 # Interface IWukongChatApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

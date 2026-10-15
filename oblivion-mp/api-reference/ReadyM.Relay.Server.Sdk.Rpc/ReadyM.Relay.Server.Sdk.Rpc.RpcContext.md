@@ -1,3 +1,7 @@
+---
+title: 'Struct RpcContext'
+description: 'Contextual information passed to every generated OnX server RPC stub. Wraps per-message metadata so handler signatures stay clean as the context grows.'
+---
 # Struct RpcContext
 
 Namespace: [ReadyM.Relay.Server.Sdk.Rpc](../ReadyM.Relay.Server.Sdk.Rpc/ReadyM.Relay.Server.Sdk.Rpc.md)  
@@ -32,7 +36,7 @@ public RpcContext(PlayerId sender)
 
 #### Parameters
 
-`sender` [PlayerId](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/Idents/PlayerId.cs)
+`sender` PlayerId
 
 ## Properties
 
@@ -46,6 +50,6 @@ public PlayerId Sender { get; }
 
 #### Property Value
 
- [PlayerId](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/Idents/PlayerId.cs)
+ PlayerId
 
 

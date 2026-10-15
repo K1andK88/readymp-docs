@@ -1,6 +1,7 @@
 import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import llmsTxtPlugin, { type LlmsTxtOptions } from './plugins/llms-txt';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -155,7 +156,8 @@ const config: Config = {
         {
           type: 'docsVersionDropdown',
           versions: {
-            'current': { label: '0.2.0' },
+            'current': { label: '1.0.0' },
+            '0.2.0': { label: '0.2.0' },
             '0.1.1': { label: '0.1.1' },
           },
           position: 'right',
@@ -278,14 +280,37 @@ const config: Config = {
         lastVersion: 'current',
         versions: {
           current: {
-            label: '0.2.0',
+            label: '1.0.0',
             badge: true
+          },
+          '0.2.0': {
+            label: '0.2.0',
           },
           '0.1.1': {
             label: '0.1.1',
           }
         },
       },
+    ],
+    // llms.txt, llms-full.txt and llms-api-full.txt for LLM tools, see plugins/llms-txt.ts
+    [
+      llmsTxtPlugin,
+      {
+        products: [
+          {
+            docsPluginId: 'oblivion',
+            name: 'OblivionMP',
+            dir: 'oblivion-mp',
+            description: 'OblivionMP is a community multiplayer platform for The Elder Scrolls IV: Oblivion Remastered, with a C# SDK for custom multiplayer game modes.',
+          },
+          {
+            docsPluginId: 'default',
+            name: 'WukongMP',
+            dir: 'wukong-mp',
+            description: 'WukongMP is a community multiplayer platform for Black Myth: Wukong, with a C# SDK for custom multiplayer game modes.',
+          },
+        ],
+      } satisfies LlmsTxtOptions,
     ],
   ],
 };

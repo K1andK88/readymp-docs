@@ -1,3 +1,7 @@
+---
+title: 'Class DeriveINetSerializableAttribute'
+description: 'Decorate a struct with this attribute to make it available for use as an RPC parameter.'
+---
 # Class DeriveINetSerializableAttribute
 
 Namespace: [ReadyM.Api.Multiplayer.Generators](../ReadyM.Api.Multiplayer.Generators/ReadyM.Api.Multiplayer.Generators.md)  
@@ -74,7 +78,7 @@ public DeriveINetSerializableAttribute(SerializableMode mode = SerializableMode.
 
 #### Parameters
 
-`mode` [SerializableMode](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/Serialization/SerializableMode.cs)
+`mode` SerializableMode
 
 Determines which members of the struct are serialized. See **SerializableMode** for details.
 
@@ -88,6 +92,6 @@ public readonly SerializableMode Mode
 
 #### Field Value
 
- [SerializableMode](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/Serialization/SerializableMode.cs)
+ SerializableMode
 
 

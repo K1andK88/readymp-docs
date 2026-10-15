@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Sdk.Api.Implementation'
+description: 'The types in the WukongMp.Sdk.Api.Implementation namespace.'
+---
 # WukongMp.Sdk.Api.Implementation
 
 ### Classes

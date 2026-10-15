@@ -4,7 +4,69 @@ $docsTarget = "../../oblivion-mp/api-reference"
 # purge the source folder completely
 Remove-Item -Path "$docsSource\*" -Recurse -Force -ErrorAction SilentlyContinue
 
-docfx metadata
+# The SDK writes its doc comments without <summary> tags, and docfx only reads <summary>: stage the assemblies with
+# their XML and wrap each member's untagged text in a <summary> first, then point docfx at the staged copy
+$staging = Join-Path $PSScriptRoot "_staging"
+Remove-Item -Path $staging -Recurse -Force -ErrorAction SilentlyContinue
+
+$blockTags = @('summary', 'remarks', 'param', 'typeparam', 'returns', 'exception', 'example', 'value', 'exclude',
+    'inheritdoc', 'seealso', 'include', 'permission')
+
+function Add-MissingSummaries([string] $path) {
+    $doc = New-Object System.Xml.XmlDocument
+    $doc.Load($path)
+
+    foreach ($member in $doc.SelectNodes('//member')) {
+        if ($member.SelectSingleNode('summary')) {
+            continue
+        }
+
+        $loose = @($member.ChildNodes | Where-Object {
+            ($_.NodeType -eq 'Text') -or (($_.NodeType -eq 'Element') -and ($blockTags -notcontains $_.LocalName))
+        })
+
+        $hasContent = @($loose | Where-Object { ($_.NodeType -eq 'Element') -or ($_.Value.Trim().Length -gt 0) }).Count -gt 0
+        if (-not $hasContent) {
+            continue
+        }
+
+        $summary = $doc.CreateElement('summary')
+        foreach ($node in $loose) {
+            [void]$summary.AppendChild($node)
+        }
+
+        [void]$member.PrependChild($summary)
+    }
+
+    $doc.Save($path)
+}
+
+$config = Get-Content -Path "docfx.json" -Raw | ConvertFrom-Json
+$index = 0
+foreach ($source in $config.metadata[0].src) {
+    $target = Join-Path $staging "src$index"
+    New-Item -ItemType Directory -Path $target -Force | Out-Null
+
+    foreach ($file in $source.files) {
+        $dll = Join-Path $source.src $file
+        Copy-Item -Path $dll -Destination $target
+        $xml = [System.IO.Path]::ChangeExtension($dll, ".xml")
+        if (Test-Path $xml) {
+            Copy-Item -Path $xml -Destination $target
+            Add-MissingSummaries (Join-Path $target (Split-Path $xml -Leaf))
+        }
+    }
+
+    $source.src = $target
+    $index++
+}
+
+$stagedConfig = Join-Path $staging "docfx.json"
+$config.metadata[0].output = (Resolve-Path ".").Path + "/api"
+$config.metadata[0].filter = (Resolve-Path "filter.yml").Path
+$config | ConvertTo-Json -Depth 20 | Set-Content -Path $stagedConfig -Encoding UTF8
+
+docfx metadata $stagedConfig
 
 # purge all .md files in the target directory recursively
 Get-ChildItem -Path $docsTarget -Filter *.md -Recurse -File | Remove-Item -Force
@@ -60,6 +122,42 @@ Get-ChildItem -Path $docsSource -Filter *.md -File | ForEach-Object {
     }
 
     Set-Content -Path $targetPath -Value $content -Encoding UTF8
+}
+
+# the item catalogs hold over a thousand fields each, all FormIds with no description; a table of name and form id
+# reads far better than a section per field, and the values come straight from the generated catalog sources
+$catalogSources = "../../../../oblivion-mod/readym-gameserver/src/ReadyM.Relay.Common.Oblivion/Items"
+$catalogPages = Join-Path $docsTarget "ReadyM.Relay.Common.Oblivion.Items"
+
+Get-ChildItem -Path $catalogPages -Filter "ReadyM.Relay.Common.Oblivion.Items.Items.*.md" -File -ErrorAction SilentlyContinue | ForEach-Object {
+    $catalog = $_.BaseName.Substring("ReadyM.Relay.Common.Oblivion.Items.Items.".Length)
+    $source = Join-Path $catalogSources "$($catalog)_Generated.cs"
+
+    if (-not (Test-Path $source)) {
+        Write-Warning "No catalog source for $catalog, leaving its page as generated"
+        return
+    }
+
+    $rows = Select-String -Path $source -Pattern 'public static readonly FormId (\w+) = new\((0x[0-9A-Fa-f]+)\);' |
+        ForEach-Object { "| ``$($_.Matches[0].Groups[1].Value)`` | ``$($_.Matches[0].Groups[2].Value)`` |" }
+
+    $content = Get-Content -Path $_.FullName -Raw
+    $fieldsAt = $content.IndexOf("## Fields")
+    if ($fieldsAt -lt 0) {
+        return
+    }
+
+    $table = @(
+        "## Items",
+        "",
+        "Every entry of ``Items.$catalog``, with its form id. Use your browser's find to look one up.",
+        "",
+        "| Name | Form id |",
+        "| --- | --- |"
+    ) + $rows
+
+    Set-Content -Path $_.FullName -Value ($content.Substring(0, $fieldsAt) + ($table -join "`n") + "`n") -Encoding UTF8
+    Write-Host "Catalog $catalog as a table of $($rows.Count) items"
 }
 
 # rewrite links after files have been moved into namespace folders
@@ -122,3 +220,6 @@ Get-ChildItem -Path $docsTarget -Filter *.md -Recurse -File | ForEach-Object {
 
     Set-Content -Path $filePath -Value $newerContent -Encoding UTF8
 }
+
+# a title and description in each page's front matter, for search, link previews and the llms.txt files
+& (Join-Path $PSScriptRoot "../Add-ApiFrontMatter.ps1") -Path $docsTarget

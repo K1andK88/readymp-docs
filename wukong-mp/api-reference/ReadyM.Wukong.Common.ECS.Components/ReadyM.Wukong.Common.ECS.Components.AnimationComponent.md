@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationComponent'
+description: 'Holds entity movement animation state.'
+---
 # Struct AnimationComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

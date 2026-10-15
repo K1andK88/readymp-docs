@@ -1,3 +1,7 @@
+---
+title: 'Struct ArchetypeId'
+description: 'Represents a unique identifier for an archetype in the ECS. Entities of a given archetype have a fixed set of components, never changed after creation.'
+---
 # Struct ArchetypeId
 
 Namespace: [ReadyM.Api.Idents](../ReadyM.Api.Idents/ReadyM.Api.Idents.md)  

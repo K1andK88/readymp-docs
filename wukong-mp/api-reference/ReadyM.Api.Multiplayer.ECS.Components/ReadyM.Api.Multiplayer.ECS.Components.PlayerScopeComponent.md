@@ -1,3 +1,7 @@
+---
+title: 'Struct PlayerScopeComponent'
+description: 'Holds the ID of the global player entity.'
+---
 # Struct PlayerScopeComponent
 
 Namespace: [ReadyM.Api.Multiplayer.ECS.Components](../ReadyM.Api.Multiplayer.ECS.Components/ReadyM.Api.Multiplayer.ECS.Components.md)  

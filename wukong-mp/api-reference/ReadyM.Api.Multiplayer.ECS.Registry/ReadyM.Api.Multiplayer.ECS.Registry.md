@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer.ECS.Registry'
+description: 'The types in the ReadyM.Api.Multiplayer.ECS.Registry namespace.'
+---
 # ReadyM.Api.Multiplayer.ECS.Registry
 
 ### Interfaces

@@ -1,3 +1,7 @@
+---
+title: 'Class EcsApi'
+description: 'Mod-side ECS API. Wraps the function pointers exposed by the AOT server. All component types - whether defined in the server binary or in this mod - are identified by int component IDs assigned at registration time.'
+---
 # Class EcsApi
 
 Namespace: [ReadyM.Relay.Server.Sdk.Ecs](../ReadyM.Relay.Server.Sdk.Ecs/ReadyM.Relay.Server.Sdk.Ecs.md)  

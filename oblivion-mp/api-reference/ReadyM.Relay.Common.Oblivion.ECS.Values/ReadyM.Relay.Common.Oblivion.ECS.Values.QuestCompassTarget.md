@@ -1,7 +1,13 @@
+---
+title: 'Struct QuestCompassTarget'
+description: 'A compass marker for a quest stage.'
+---
 # Struct QuestCompassTarget
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
+
+A compass marker for a quest stage.
 
 ```csharp
 public struct QuestCompassTarget : INetSerializable
@@ -24,6 +30,8 @@ INetSerializable
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestCompassTarget_GateAtLeast"></a> GateAtLeast
 
+The marker shows only while **GateFlag** is at least this value.
+
 ```csharp
 public float GateAtLeast
 ```
@@ -34,15 +42,19 @@ public float GateAtLeast
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestCompassTarget_GateFlag"></a> GateFlag
 
+The world flag that gates the marker, or empty for no condition.
+
 ```csharp
 public NativeString64 GateFlag
 ```
 
 #### Field Value
 
- [NativeString64](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/Container/NativeString64.cs)
+ NativeString64
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestCompassTarget_QuestId"></a> QuestId
+
+The quest the marker belongs to.
 
 ```csharp
 public uint QuestId
@@ -54,6 +66,8 @@ public uint QuestId
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestCompassTarget_RefId"></a> RefId
 
+The reference the compass points at.
+
 ```csharp
 public uint RefId
 ```
@@ -64,6 +78,8 @@ public uint RefId
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestCompassTarget_Stage"></a> Stage
 
+The quest stage at which the marker applies.
+
 ```csharp
 public byte Stage
 ```
@@ -71,27 +87,5 @@ public byte Stage
 #### Field Value
 
  [byte](https://learn.microsoft.com/dotnet/api/system.byte)
-
-## Methods
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestCompassTarget_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestCompassTarget_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
 
 

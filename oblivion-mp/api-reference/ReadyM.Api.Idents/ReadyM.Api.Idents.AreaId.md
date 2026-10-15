@@ -1,11 +1,13 @@
+---
+title: 'Struct AreaId'
+description: 'Identifies an area: a part of the game world behind a loading screen, such as a whole map or a single interior.'
+---
 # Struct AreaId
 
 Namespace: [ReadyM.Api.Idents](../ReadyM.Api.Idents/ReadyM.Api.Idents.md)  
 Assembly: ReadyM.Api.dll  
 
-Identifies an area within the game world.
-Areas can be main Chapter maps, sub-areas such as the Zodiac Village, or hidden boss arenas.
-If going somewhere requires a loading screen, it's probably a different area.
+Identifies an area: a part of the game world behind a loading screen, such as a whole map or a single interior.
 
 ```csharp
 public struct AreaId : INetSerializable, IEquatable<AreaId>
@@ -29,15 +31,19 @@ INetSerializable,
 
 ### <a id="ReadyM_Api_Idents_AreaId__ctor_Yooni_Native_Container_NativeString256_"></a> AreaId\(NativeString256\)
 
+An area id from its native string.
+
 ```csharp
 public AreaId(NativeString256 id)
 ```
 
 #### Parameters
 
-`id` [NativeString256](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/Container/NativeString256.cs)
+`id` NativeString256
 
 ### <a id="ReadyM_Api_Idents_AreaId__ctor_System_String_"></a> AreaId\(string\)
+
+An area id from its string form.
 
 ```csharp
 public AreaId(string id)
@@ -48,6 +54,8 @@ public AreaId(string id)
 `id` [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 ### <a id="ReadyM_Api_Idents_AreaId__ctor_System_Int32_"></a> AreaId\(int\)
+
+An area id from a number, stored as its decimal text.
 
 ```csharp
 public AreaId(int id)
@@ -61,6 +69,8 @@ public AreaId(int id)
 
 ### <a id="ReadyM_Api_Idents_AreaId_Invalid"></a> Invalid
 
+No area.
+
 ```csharp
 public static AreaId Invalid { get; }
 ```
@@ -71,17 +81,9 @@ public static AreaId Invalid { get; }
 
 ## Methods
 
-### <a id="ReadyM_Api_Idents_AreaId_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
 ### <a id="ReadyM_Api_Idents_AreaId_Equals_ReadyM_Api_Idents_AreaId_"></a> Equals\(AreaId\)
+
+Whether both ids name the same area.
 
 ```csharp
 public bool Equals(AreaId other)
@@ -119,31 +121,15 @@ public override int GetHashCode()
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="ReadyM_Api_Idents_AreaId_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
+### <a id="ReadyM_Api_Idents_AreaId_ToManaged"></a> ToManaged\(\)
 
 ```csharp
-public void Serialize(NetDataWriter writer)
+public string ToManaged()
 ```
-
-#### Parameters
-
-`writer` NetDataWriter
-
-### <a id="ReadyM_Api_Idents_AreaId_TextDeserialize_System_Text_Json_Utf8JsonReader__System_Text_Json_JsonSerializerOptions_"></a> TextDeserialize\(ref Utf8JsonReader, JsonSerializerOptions\)
-
-```csharp
-public static AreaId TextDeserialize(ref Utf8JsonReader reader, JsonSerializerOptions options)
-```
-
-#### Parameters
-
-`reader` [Utf8JsonReader](https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonreader)
-
-`options` [JsonSerializerOptions](https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions)
 
 #### Returns
 
- [AreaId](../ReadyM.Api.Idents/ReadyM.Api.Idents.AreaId.md)
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 ### <a id="ReadyM_Api_Idents_AreaId_ToString"></a> ToString\(\)
 
@@ -158,6 +144,8 @@ public override string ToString()
 ## Operators
 
 ### <a id="ReadyM_Api_Idents_AreaId_op_Equality_ReadyM_Api_Idents_AreaId_ReadyM_Api_Idents_AreaId_"></a> operator ==\(AreaId, AreaId\)
+
+Whether both ids name the same area.
 
 ```csharp
 public static bool operator ==(AreaId left, AreaId right)
@@ -174,6 +162,8 @@ public static bool operator ==(AreaId left, AreaId right)
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="ReadyM_Api_Idents_AreaId_op_Inequality_ReadyM_Api_Idents_AreaId_ReadyM_Api_Idents_AreaId_"></a> operator \!=\(AreaId, AreaId\)
+
+Whether the ids name different areas.
 
 ```csharp
 public static bool operator !=(AreaId left, AreaId right)

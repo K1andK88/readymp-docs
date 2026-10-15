@@ -1,3 +1,7 @@
+---
+title: 'Struct ReadyMainCharacter'
+description: 'Represents the player character entity in the game.'
+---
 # Struct ReadyMainCharacter
 
 Namespace: [WukongMp.Sdk.Entities](../WukongMp.Sdk.Api/WukongMp.Sdk.Entities.md)  

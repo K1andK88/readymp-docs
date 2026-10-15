@@ -1,3 +1,7 @@
+---
+title: 'Interface IComponentRegistry'
+description: 'Allows registering components with the ECS system, both local and networked.'
+---
 # Interface IComponentRegistry
 
 Namespace: [ReadyM.Relay.Server.Sdk.Ecs.Components](../ReadyM.Relay.Server.Sdk.Ecs.Components/ReadyM.Relay.Server.Sdk.Ecs.Components.md)  

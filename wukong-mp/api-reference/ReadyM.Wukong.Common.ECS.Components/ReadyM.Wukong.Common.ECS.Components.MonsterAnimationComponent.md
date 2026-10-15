@@ -1,3 +1,7 @@
+---
+title: 'Struct MonsterAnimationComponent'
+description: 'Holds the state of the monster''s animation.'
+---
 # Struct MonsterAnimationComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

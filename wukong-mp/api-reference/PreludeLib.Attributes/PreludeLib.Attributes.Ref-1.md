@@ -1,3 +1,7 @@
+---
+title: 'Struct Ref<T>'
+description: 'Use in HarmonyTargetMethodHint parameter list to indicate that the parameter is an ref parameter. This is required for Harmony to correctly identify the method when matching signatures, as ref parameters are treated differently than regular parameters.'
+---
 # Struct Ref<T>
 
 Namespace: [PreludeLib.Attributes](../PreludeLib.Attributes/PreludeLib.Attributes.md)  

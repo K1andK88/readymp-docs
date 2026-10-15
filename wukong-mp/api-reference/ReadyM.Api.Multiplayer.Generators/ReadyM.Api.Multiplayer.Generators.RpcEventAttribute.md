@@ -1,3 +1,7 @@
+---
+title: 'Class RpcEventAttribute'
+description: 'Marks a method as an RPC event handler. Use this in partial classes extending from ClientRpcHandler.'
+---
 # Class RpcEventAttribute
 
 Namespace: [ReadyM.Api.Multiplayer.Generators](../ReadyM.Api.Multiplayer.Generators/ReadyM.Api.Multiplayer.Generators.md)  

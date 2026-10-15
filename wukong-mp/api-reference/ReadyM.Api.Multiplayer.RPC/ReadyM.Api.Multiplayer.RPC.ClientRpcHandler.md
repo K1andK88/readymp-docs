@@ -1,3 +1,7 @@
+---
+title: 'Class ClientRpcHandler'
+description: 'Base class for a client-side RPC handler. Each class that defines RPC methods with [RpcEvent] attributes must inherit from this class.'
+---
 # Class ClientRpcHandler
 
 Namespace: [ReadyM.Api.Multiplayer.RPC](../ReadyM.Api.Multiplayer.RPC/ReadyM.Api.Multiplayer.RPC.md)  

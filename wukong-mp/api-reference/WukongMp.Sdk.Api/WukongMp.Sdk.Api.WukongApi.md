@@ -1,3 +1,7 @@
+---
+title: 'Class WukongApi'
+description: 'The main entry point for accessing Wukong''s API. Provides access to all of the various APIs and services that WukongMP offers.'
+---
 # Class WukongApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

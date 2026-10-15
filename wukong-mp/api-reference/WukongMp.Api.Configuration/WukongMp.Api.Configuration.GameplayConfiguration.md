@@ -1,3 +1,7 @@
+---
+title: 'Class GameplayConfiguration'
+description: 'Configuration class for gameplay-related settings and queries.'
+---
 # Class GameplayConfiguration
 
 Namespace: [WukongMp.Api.Configuration](../WukongMp.Api.Configuration/WukongMp.Api.Configuration.md)  

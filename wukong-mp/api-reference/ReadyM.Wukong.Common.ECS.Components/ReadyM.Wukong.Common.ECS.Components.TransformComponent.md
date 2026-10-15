@@ -1,3 +1,7 @@
+---
+title: 'Struct TransformComponent'
+description: 'Holds entity position and rotation state.'
+---
 # Struct TransformComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

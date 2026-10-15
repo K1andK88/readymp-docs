@@ -1,3 +1,7 @@
+---
+title: 'Class Logging'
+description: 'Provides static logging methods that can be used throughout the codebase without needing to inject a logger instance.'
+---
 # Class Logging
 
 Namespace: [WukongMp.Api](../WukongMp.Api/WukongMp.Api.md)  

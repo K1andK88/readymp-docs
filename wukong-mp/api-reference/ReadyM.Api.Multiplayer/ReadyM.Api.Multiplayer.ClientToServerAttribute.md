@@ -1,3 +1,7 @@
+---
+title: 'Class ClientToServerAttribute'
+description: 'Client-to-server (request) leg of a contract method: generates a Send on the client and an On(RpcContext, ...) handler on the server. Different-shaped two-way RPCs are two overloads (one per direction); identical-shape two-way is one method with both attributes. Every contract method needs at least one direction attribute.'
+---
 # Class ClientToServerAttribute
 
 Namespace: [ReadyM.Api.Multiplayer](../ReadyM.Api.Multiplayer.Interop/ReadyM.Api.Multiplayer.md)  

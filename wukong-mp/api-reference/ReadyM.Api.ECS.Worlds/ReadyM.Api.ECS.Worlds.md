@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.ECS.Worlds'
+description: 'The types in the ReadyM.Api.ECS.Worlds namespace.'
+---
 # ReadyM.Api.ECS.Worlds
 
 ### Classes

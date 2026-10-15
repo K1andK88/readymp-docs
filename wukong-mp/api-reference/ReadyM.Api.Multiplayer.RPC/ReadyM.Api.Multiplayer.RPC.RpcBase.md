@@ -1,3 +1,7 @@
+---
+title: 'Class RpcBase'
+description: 'Base class for all RPC handlers, client and server.'
+---
 # Class RpcBase
 
 Namespace: [ReadyM.Api.Multiplayer.RPC](../ReadyM.Api.Multiplayer.RPC/ReadyM.Api.Multiplayer.RPC.md)  

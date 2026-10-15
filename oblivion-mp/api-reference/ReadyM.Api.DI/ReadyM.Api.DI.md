@@ -1,8 +1,8 @@
+---
+title: 'ReadyM.Api.DI'
+description: 'The types in the ReadyM.Api.DI namespace.'
+---
 # ReadyM.Api.DI
-
-### Classes
-
- [DependencyContainerBase](../ReadyM.Api.DI/ReadyM.Api.DI.DependencyContainerBase.md)
 
 ### Interfaces
 

@@ -1,3 +1,7 @@
+---
+title: 'Enum EquipPosition'
+description: 'A position in the player''s equipment.'
+---
 # Enum EquipPosition
 
 Namespace: [ReadyM.Wukong.Common.ECS.Values](../ReadyM.Wukong.Common.ECS.Values/ReadyM.Wukong.Common.ECS.Values.md)  

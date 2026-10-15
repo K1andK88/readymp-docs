@@ -1,3 +1,7 @@
+---
+title: 'Struct PlayerId'
+description: 'A unique identifier for a player in the current session. This is not a persistent identifier and can change over time, especially if players disconnect and reconnect. It should be used for identifying players during the current session, but not for long-term storage or cross-session identification.'
+---
 # Struct PlayerId
 
 Namespace: [ReadyM.Api.Idents](../ReadyM.Api.Idents/ReadyM.Api.Idents.md)  
@@ -64,16 +68,6 @@ public static PlayerId Server { get; }
 
 ## Methods
 
-### <a id="ReadyM_Api_Idents_PlayerId_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
 ### <a id="ReadyM_Api_Idents_PlayerId_Equals_ReadyM_Api_Idents_PlayerId_"></a> Equals\(PlayerId\)
 
 ```csharp
@@ -111,32 +105,6 @@ public override int GetHashCode()
 #### Returns
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
-
-### <a id="ReadyM_Api_Idents_PlayerId_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
-
-### <a id="ReadyM_Api_Idents_PlayerId_TextDeserialize_System_Text_Json_Utf8JsonReader__System_Text_Json_JsonSerializerOptions_"></a> TextDeserialize\(ref Utf8JsonReader, JsonSerializerOptions\)
-
-```csharp
-public static PlayerId TextDeserialize(ref Utf8JsonReader reader, JsonSerializerOptions options)
-```
-
-#### Parameters
-
-`reader` [Utf8JsonReader](https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonreader)
-
-`options` [JsonSerializerOptions](https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions)
-
-#### Returns
-
- [PlayerId](../ReadyM.Api.Idents/ReadyM.Api.Idents.PlayerId.md)
 
 ### <a id="ReadyM_Api_Idents_PlayerId_ToString"></a> ToString\(\)
 

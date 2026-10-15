@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Command'
+description: 'The types in the ReadyM.Api.Command namespace.'
+---
 # ReadyM.Api.Command
 
 ### Structs

@@ -1,5 +1,12 @@
 apiRules:
-- include:
-    uidRegex: ^PreludeLib\.Attributes
+# v0 API stays public for source compatibility, but the 1.0 reference leaves it out
 - exclude:
-    uidRegex: ^PreludeLib
+    hasAttribute:
+      uid: System.ObsoleteAttribute
+# Wukong's console API takes it; Oblivion has no console API, so nothing here would use it
+- exclude:
+    uidRegex: ^ReadyM\.Api\.Command\.ConsoleCommand
+# Serialize and Deserialize are how a type crosses the wire. Mods call them in their own payloads, so they stay in
+# IntelliSense, but on every value type they would bury what the page is about
+- exclude:
+    uidRegex: '\.(Serialize|Deserialize)\((LiteNetLib\.Utils\.)?NetData(Writer|Reader)\)$'

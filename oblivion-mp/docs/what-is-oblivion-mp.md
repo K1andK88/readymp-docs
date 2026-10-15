@@ -39,7 +39,7 @@ OblivionMP is built and maintained by the [ReadyM](https://www.ready.mp) team. I
 
 1. **Download the server binary** (Windows or Linux) or pull the Docker image, see the [Installation guide](Server/installation)
 2. **Configure.** Edit `config.json` to set your port
-3. **Build your game mode.** The server ships with no mods installed; write your own with the [server-side SDK](Server-development/getting-started), or install a mod built by the community
+3. **Build your game mode.** The server ships with no mods installed; write your own with the [C# SDK](Modding/Getting-started/your-first-mod.md), or install a mod built by the community
 4. **Launch and manage.** Start the server and use the built-in web admin panel to manage players, mods, and settings
 
 ---
@@ -62,13 +62,13 @@ ReadyM is designed to do for community-run game servers what FiveM did for *Gran
 
 ## Current status
 
-OblivionMP is in **active development**. The SDK is currently available as invite-only early access.
+OblivionMP is in **active development**. The server and the SDK are out as release candidate **1.0.0-rc.1**.
 
 | Area | Status |
 |---|---|
-| Server binary (Windows & Linux) | 🚧 Invite-only early access |
+| Server binary (Windows & Linux) | 🧪 Release candidate |
 | Docker image | 🔜 Coming soon |
-| SDK (C# scripting) | 🚧 Invite-only early access |
+| SDK (C# scripting) | 🧪 Release candidate |
 | Client-side mods | ✅ Available |
 | Server-side mods | ✅ Available |
 | Custom RPC | ✅ Available |
@@ -79,7 +79,7 @@ OblivionMP is in **active development**. The SDK is currently available as invit
 | Bundled game modes | ✅ PvP Arena mod |
 | Save file API | 🚧 Sync implemented, no public API yet |
 
-For the full SDK feature breakdown, see [Client-side mods](Client/getting-started) and [Server-side development](Server-development/getting-started).
+To start writing mods, see [Your first mod](Modding/Getting-started/your-first-mod.md). If you maintain a mod written for OblivionMP 0.2, its documentation is in the 0.2.0 version of these docs, in the version menu at the top of the page.
 
 ---
 
@@ -87,5 +87,5 @@ For the full SDK feature breakdown, see [Client-side mods](Client/getting-starte
 
 - 👾 **Player?** [Create a ReadyM account](https://portal.ready.mp/signup) and download the launcher
 - 🖥️ **Server owner?** Follow the [Installation guide](Server/installation) to get your server set up
-- ⚡ **Developer?** See [Client-side mods](Client/getting-started) to build your first client mod, or [Server-side development](Server-development/getting-started) to write server logic
+- ⚡ **Developer?** See [Your first mod](Modding/Getting-started/your-first-mod.md) to build a mod and run it on your own server
 - 💬 **Questions?** Join the [OblivionMP Discord](https://discord.gg/obmp)

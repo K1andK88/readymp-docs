@@ -1,3 +1,7 @@
+---
+title: 'Class GameUtils'
+description: 'Provides utility methods for directly interacting with the game world, bypassing the SDK.'
+---
 # Class GameUtils
 
 Namespace: [WukongMp.Api.WukongUtils](../WukongMp.Api.WukongUtils/WukongMp.Api.WukongUtils.md)  

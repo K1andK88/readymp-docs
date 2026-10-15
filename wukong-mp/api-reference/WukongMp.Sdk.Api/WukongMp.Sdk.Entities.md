@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Sdk.Entities'
+description: 'The types in the WukongMp.Sdk.Entities namespace.'
+---
 # WukongMp.Sdk.Entities
 
 ### Classes

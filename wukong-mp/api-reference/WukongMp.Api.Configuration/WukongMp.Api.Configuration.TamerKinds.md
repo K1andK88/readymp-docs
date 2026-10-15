@@ -1,3 +1,7 @@
+---
+title: 'Class TamerKinds'
+description: 'Defines constants for Tamer (monster) types.'
+---
 # Class TamerKinds
 
 Namespace: [WukongMp.Api.Configuration](../WukongMp.Api.Configuration/WukongMp.Api.Configuration.md)  

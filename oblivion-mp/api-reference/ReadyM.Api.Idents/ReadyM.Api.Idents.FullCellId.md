@@ -1,3 +1,7 @@
+---
+title: 'Struct FullCellId'
+description: 'Fully identifies a cell across the whole game world by pairing it with its parent area. A CellId only has to be unique within its parent AreaId, so a cell can only be uniquely identified by the (AreaId, CellId) pair represented by this struct.'
+---
 # Struct FullCellId
 
 Namespace: [ReadyM.Api.Idents](../ReadyM.Api.Idents/ReadyM.Api.Idents.md)  
@@ -69,16 +73,6 @@ public CellId CellId { get; }
 
 ## Methods
 
-### <a id="ReadyM_Api_Idents_FullCellId_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
 ### <a id="ReadyM_Api_Idents_FullCellId_Equals_ReadyM_Api_Idents_FullCellId_"></a> Equals\(FullCellId\)
 
 ```csharp
@@ -116,32 +110,6 @@ public override int GetHashCode()
 #### Returns
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
-
-### <a id="ReadyM_Api_Idents_FullCellId_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
-
-### <a id="ReadyM_Api_Idents_FullCellId_TextDeserialize_System_Text_Json_Utf8JsonReader__System_Text_Json_JsonSerializerOptions_"></a> TextDeserialize\(ref Utf8JsonReader, JsonSerializerOptions\)
-
-```csharp
-public static FullCellId TextDeserialize(ref Utf8JsonReader reader, JsonSerializerOptions options)
-```
-
-#### Parameters
-
-`reader` [Utf8JsonReader](https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonreader)
-
-`options` [JsonSerializerOptions](https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions)
-
-#### Returns
-
- [FullCellId](../ReadyM.Api.Idents/ReadyM.Api.Idents.FullCellId.md)
 
 ### <a id="ReadyM_Api_Idents_FullCellId_ToString"></a> ToString\(\)
 

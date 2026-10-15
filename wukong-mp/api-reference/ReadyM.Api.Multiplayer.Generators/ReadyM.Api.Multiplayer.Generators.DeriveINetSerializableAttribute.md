@@ -1,3 +1,7 @@
+---
+title: 'Class DeriveINetSerializableAttribute'
+description: 'Decorate a struct with this attribute to make it available for use as an RPC parameter.'
+---
 # Class DeriveINetSerializableAttribute
 
 Namespace: [ReadyM.Api.Multiplayer.Generators](../ReadyM.Api.Multiplayer.Generators/ReadyM.Api.Multiplayer.Generators.md)  

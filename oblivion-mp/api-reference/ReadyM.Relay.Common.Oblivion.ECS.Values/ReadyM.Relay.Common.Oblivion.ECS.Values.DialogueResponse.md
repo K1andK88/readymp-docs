@@ -1,7 +1,13 @@
+---
+title: 'Struct DialogueResponse'
+description: 'One line an NPC says for a mod-added dialogue topic.'
+---
 # Struct DialogueResponse
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
+
+One line an NPC says for a mod-added dialogue topic.
 
 ```csharp
 public struct DialogueResponse : INetSerializable
@@ -24,15 +30,19 @@ INetSerializable
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueResponse_Text"></a> Text
 
+What the NPC says.
+
 ```csharp
 public NativeString256 Text
 ```
 
 #### Field Value
 
- [NativeString256](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/Container/NativeString256.cs)
+ NativeString256
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueResponse_TopicId"></a> TopicId
+
+The topic this line belongs to.
 
 ```csharp
 public uint TopicId
@@ -41,27 +51,5 @@ public uint TopicId
 #### Field Value
 
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
-
-## Methods
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueResponse_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_DialogueResponse_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
 
 

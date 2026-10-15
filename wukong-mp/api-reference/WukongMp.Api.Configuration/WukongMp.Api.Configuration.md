@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Api.Configuration'
+description: 'The types in the WukongMp.Api.Configuration namespace.'
+---
 # WukongMp.Api.Configuration
 
 ### Classes

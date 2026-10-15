@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Loader'
+description: 'The types in the ReadyM.Api.Loader namespace.'
+---
 # ReadyM.Api.Loader
 
 ### Classes

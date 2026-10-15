@@ -1,3 +1,7 @@
+---
+title: 'Struct MainCharacterComponent'
+description: 'Holds the main character state.'
+---
 # Struct MainCharacterComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct In<T>'
+description: 'Use in HarmonyTargetMethodHint parameter list to indicate that the parameter is an in parameter. This is required for Harmony to correctly identify the method when matching signatures, as in parameters are treated differently than regular parameters.'
+---
 # Struct In<T>
 
 Namespace: [PreludeLib.Attributes](../PreludeLib.Attributes/PreludeLib.Attributes.md)  

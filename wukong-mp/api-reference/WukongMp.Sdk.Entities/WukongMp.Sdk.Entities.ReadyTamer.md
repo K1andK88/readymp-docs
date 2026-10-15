@@ -1,3 +1,7 @@
+---
+title: 'Struct ReadyTamer'
+description: 'Represents a tamer (monster) entity in the Wukong multiplayer SDK.'
+---
 # Struct ReadyTamer
 
 Namespace: [WukongMp.Sdk.Entities](../WukongMp.Sdk.Api/WukongMp.Sdk.Entities.md)  

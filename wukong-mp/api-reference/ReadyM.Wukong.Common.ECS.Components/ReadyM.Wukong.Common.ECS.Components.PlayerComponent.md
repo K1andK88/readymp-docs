@@ -1,3 +1,6 @@
+---
+title: 'Struct PlayerComponent'
+---
 # Struct PlayerComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

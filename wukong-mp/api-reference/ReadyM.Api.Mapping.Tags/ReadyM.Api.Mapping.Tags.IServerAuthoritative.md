@@ -1,3 +1,7 @@
+---
+title: 'Interface IServerAuthoritative'
+description: 'Marks a component only the server is allowed to modify.'
+---
 # Interface IServerAuthoritative
 
 Namespace: [ReadyM.Api.Mapping.Tags](../ReadyM.Api.Mapping.Tags/ReadyM.Api.Mapping.Tags.md)  

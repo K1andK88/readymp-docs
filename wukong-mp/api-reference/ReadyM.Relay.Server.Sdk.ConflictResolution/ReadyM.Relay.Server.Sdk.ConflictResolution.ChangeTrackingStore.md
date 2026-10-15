@@ -1,3 +1,6 @@
+---
+title: 'Class ChangeTrackingStore'
+---
 # Class ChangeTrackingStore
 
 Namespace: [ReadyM.Relay.Server.Sdk.ConflictResolution](../ReadyM.Relay.Server.Sdk.ConflictResolution/ReadyM.Relay.Server.Sdk.ConflictResolution.md)  

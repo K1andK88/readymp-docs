@@ -1,3 +1,7 @@
+---
+title: 'Class ServerRpcClient'
+description: 'Base class for server-defined RPC handlers.'
+---
 # Class ServerRpcClient
 
 Namespace: [ReadyM.Api.Multiplayer.RPC](../ReadyM.Api.Multiplayer.RPC/ReadyM.Api.Multiplayer.RPC.md)  

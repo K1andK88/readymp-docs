@@ -1,3 +1,7 @@
+---
+title: 'Enum SpectatorReason'
+description: 'The reason why the character is in spectator mode.'
+---
 # Enum SpectatorReason
 
 Namespace: [ReadyM.Wukong.Common.ECS.Values](../ReadyM.Wukong.Common.ECS.Values/ReadyM.Wukong.Common.ECS.Values.md)  

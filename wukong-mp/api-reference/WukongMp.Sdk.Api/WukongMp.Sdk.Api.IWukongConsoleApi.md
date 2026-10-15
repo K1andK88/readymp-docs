@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongConsoleApi'
+description: 'API for the in-game console (F1).'
+---
 # Interface IWukongConsoleApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

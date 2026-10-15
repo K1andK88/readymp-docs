@@ -1,3 +1,7 @@
+---
+title: 'Class ServerEventHandlersBase'
+description: 'Base class for server event handlers. Subclasses should implement the Subscribe and Unsubscribe methods to register and unregister event handlers with the ServerEventsApi.'
+---
 # Class ServerEventHandlersBase
 
 Namespace: [ReadyM.Relay.Server.Sdk.Events](../ReadyM.Relay.Server.Sdk.Ecs.Systems/ReadyM.Relay.Server.Sdk.Events.md)  

@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.ECS.Components'
+description: 'The types in the ReadyM.Api.ECS.Components namespace.'
+---
 # ReadyM.Api.ECS.Components
 
 ### Interfaces

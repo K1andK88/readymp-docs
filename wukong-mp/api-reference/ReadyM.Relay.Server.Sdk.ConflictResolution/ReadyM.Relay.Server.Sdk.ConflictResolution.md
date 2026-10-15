@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Server.Sdk.ConflictResolution'
+description: 'The types in the ReadyM.Relay.Server.Sdk.ConflictResolution namespace.'
+---
 # ReadyM.Relay.Server.Sdk.ConflictResolution
 
 ### Classes

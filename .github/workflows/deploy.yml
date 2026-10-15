@@ -47,3 +47,11 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      # Every link in the deployed llms.txt files has to resolve. The root file links the guides; the per-product
+      # files also link every API reference page.
+      - name: Check llms.txt
+        run: |
+          npx --yes llms-txt-check@0.1.5 https://docs.ready.mp/llms.txt
+          npx --yes llms-txt-check@0.1.5 https://docs.ready.mp/oblivion-mp/llms.txt
+          npx --yes llms-txt-check@0.1.5 https://docs.ready.mp/wukong-mp/llms.txt

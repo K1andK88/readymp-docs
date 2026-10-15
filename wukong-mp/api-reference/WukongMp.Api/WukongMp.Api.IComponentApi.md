@@ -1,3 +1,7 @@
+---
+title: 'Interface IComponentApi'
+description: 'Provides methods for registering custom networked components.'
+---
 # Interface IComponentApi
 
 Namespace: [WukongMp.Api](../WukongMp.Api/WukongMp.Api.md)  

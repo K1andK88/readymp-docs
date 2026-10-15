@@ -1,3 +1,7 @@
+---
+title: 'Class ServerEventsApi'
+description: 'Provides an API for subscribing to server events.'
+---
 # Class ServerEventsApi
 
 Namespace: [ReadyM.Relay.Server.Sdk.Events](../ReadyM.Relay.Server.Sdk.Ecs.Systems/ReadyM.Relay.Server.Sdk.Events.md)  

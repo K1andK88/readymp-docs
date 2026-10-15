@@ -1,3 +1,7 @@
+---
+title: 'Interface IServerDependencyContainer'
+description: 'Represents a dependency injection container for server-side mods. Allows registering systems, apart from standard DI services.'
+---
 # Interface IServerDependencyContainer
 
 Namespace: [ReadyM.Relay.Server.Sdk](../ReadyM.Relay.Server.Sdk/ReadyM.Relay.Server.Sdk.md)  

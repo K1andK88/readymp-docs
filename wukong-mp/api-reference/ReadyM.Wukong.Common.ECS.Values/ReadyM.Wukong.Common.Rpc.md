@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Wukong.Common.Rpc'
+description: 'The types in the ReadyM.Wukong.Common.Rpc namespace.'
+---
 # ReadyM.Wukong.Common.Rpc
 
 ### Structs

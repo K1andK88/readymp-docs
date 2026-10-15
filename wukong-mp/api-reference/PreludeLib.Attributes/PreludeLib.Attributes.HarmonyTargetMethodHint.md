@@ -1,3 +1,7 @@
+---
+title: 'Class HarmonyTargetMethodHint'
+description: 'When declaring a TargetMethod method in your patch class, you must decorate it with this attribute.'
+---
 # Class HarmonyTargetMethodHint
 
 Namespace: [PreludeLib.Attributes](../PreludeLib.Attributes/PreludeLib.Attributes.md)  

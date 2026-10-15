@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Sdk.Api'
+description: 'The types in the WukongMp.Sdk.Api namespace.'
+---
 # WukongMp.Sdk.Api
 
 ### Namespaces

@@ -1,3 +1,7 @@
+---
+title: 'Class PatchCategory'
+description: 'Category for Harmony patches. Each patch must be assigned to a category.'
+---
 # Class PatchCategory
 
 Namespace: [WukongMp.Api.Configuration](../WukongMp.Api.Configuration/WukongMp.Api.Configuration.md)  

@@ -1,3 +1,6 @@
+---
+title: 'Struct ServerEventPayload'
+---
 # Struct ServerEventPayload
 
 Namespace: [ReadyM.Api.Multiplayer.Interop](../ReadyM.Api.Multiplayer.Generators/ReadyM.Api.Multiplayer.Interop.md)  

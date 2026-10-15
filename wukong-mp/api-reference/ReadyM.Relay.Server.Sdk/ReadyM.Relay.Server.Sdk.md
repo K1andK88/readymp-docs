@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Server.Sdk'
+description: 'The types in the ReadyM.Relay.Server.Sdk namespace.'
+---
 # ReadyM.Relay.Server.Sdk
 
 ### Namespaces

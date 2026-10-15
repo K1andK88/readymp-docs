@@ -1,3 +1,7 @@
+---
+title: 'Struct Entity'
+description: 'Represents an entity in the ECS.'
+---
 # Struct Entity
 
 Namespace: [ReadyM.Relay.Server.Sdk.Ecs](../ReadyM.Relay.Server.Sdk.Ecs/ReadyM.Relay.Server.Sdk.Ecs.md)  
@@ -54,8 +58,10 @@ A mutable reference to the component.
 
 Type of the component
 
-#### Remarks
+#### Exceptions
 
-Attempting to access a component that does not exist on the entity's archetype will crash your mod.
+ [InvalidOperationException](https://learn.microsoft.com/dotnet/api/system.invalidoperationexception)
+
+The entity is gone, its id now belongs to another entity, or its archetype does not carry the component.
 
 

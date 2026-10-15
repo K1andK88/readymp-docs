@@ -1,3 +1,7 @@
+---
+title: 'Class USharpExtensions'
+description: 'Extension methods for Unreal Engine types and other helper methods.'
+---
 # Class USharpExtensions
 
 Namespace: [WukongMp.Api](../WukongMp.Api/WukongMp.Api.md)  

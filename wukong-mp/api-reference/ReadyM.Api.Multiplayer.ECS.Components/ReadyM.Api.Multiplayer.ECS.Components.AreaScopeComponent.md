@@ -1,3 +1,7 @@
+---
+title: 'Struct AreaScopeComponent'
+description: 'Holds information about the area entity, which is a scope for other entities.'
+---
 # Struct AreaScopeComponent
 
 Namespace: [ReadyM.Api.Multiplayer.ECS.Components](../ReadyM.Api.Multiplayer.ECS.Components/ReadyM.Api.Multiplayer.ECS.Components.md)  

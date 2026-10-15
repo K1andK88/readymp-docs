@@ -1,3 +1,7 @@
+---
+title: 'Struct TamerComponent'
+description: 'Holds the state of a tamer (monster) entity.'
+---
 # Struct TamerComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

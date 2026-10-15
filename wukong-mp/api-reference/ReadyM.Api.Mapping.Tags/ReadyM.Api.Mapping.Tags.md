@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Mapping.Tags'
+description: 'The types in the ReadyM.Api.Mapping.Tags namespace.'
+---
 # ReadyM.Api.Mapping.Tags
 
 ### Interfaces

@@ -1,3 +1,6 @@
+---
+title: 'Struct EntityList<T>'
+---
 # Struct EntityList<T>
 
 Namespace: [WukongMp.Sdk](../WukongMp.Sdk/WukongMp.Sdk.md)  

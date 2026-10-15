@@ -1,3 +1,7 @@
+---
+title: 'Class WukongArchetypes'
+description: 'Provides references for core entity archetypes in WukongMP.'
+---
 # Class WukongArchetypes
 
 Namespace: [WukongMp.Sdk.Api.Implementation](../WukongMp.Api.WukongUtils/WukongMp.Sdk.Api.Implementation.md)  

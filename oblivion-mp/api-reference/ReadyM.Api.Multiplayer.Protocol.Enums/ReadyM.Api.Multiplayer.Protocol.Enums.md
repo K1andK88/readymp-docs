@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer.Protocol.Enums'
+description: 'The types in the ReadyM.Api.Multiplayer.Protocol.Enums namespace.'
+---
 # ReadyM.Api.Multiplayer.Protocol.Enums
 
 ### Enums

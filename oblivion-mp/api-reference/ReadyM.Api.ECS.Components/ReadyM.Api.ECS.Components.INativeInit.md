@@ -1,3 +1,7 @@
+---
+title: 'Interface INativeInit'
+description: 'Interface for components that require native initialization, such as allocating unmanaged resources or setting up internal state.'
+---
 # Interface INativeInit
 
 Namespace: [ReadyM.Api.ECS.Components](../ReadyM.Api.ECS.Components/ReadyM.Api.ECS.Components.md)  
@@ -19,6 +23,6 @@ void Init(AllocatorKind allocatorKind)
 
 #### Parameters
 
-`allocatorKind` [AllocatorKind](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/LowLevel/AllocatorKind.cs)
+`allocatorKind` AllocatorKind
 
 

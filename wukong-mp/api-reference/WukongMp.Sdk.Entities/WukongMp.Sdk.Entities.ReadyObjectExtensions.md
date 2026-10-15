@@ -1,3 +1,6 @@
+---
+title: 'Class ReadyObjectExtensions'
+---
 # Class ReadyObjectExtensions
 
 Namespace: [WukongMp.Sdk.Entities](../WukongMp.Sdk.Api/WukongMp.Sdk.Entities.md)  

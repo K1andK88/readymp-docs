@@ -1,3 +1,7 @@
+---
+title: 'Struct SkipMovieData'
+description: 'Data structure for the RPC which is used to vote on skipping a cutscene in the game.'
+---
 # Struct SkipMovieData
 
 Namespace: [ReadyM.Wukong.Common.Rpc](../ReadyM.Wukong.Common.ECS.Values/ReadyM.Wukong.Common.Rpc.md)  

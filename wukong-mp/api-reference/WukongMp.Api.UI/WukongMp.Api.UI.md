@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Api.UI'
+description: 'The types in the WukongMp.Api.UI namespace.'
+---
 # WukongMp.Api.UI
 
 ### Classes

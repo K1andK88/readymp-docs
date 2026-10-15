@@ -1,3 +1,7 @@
+---
+title: 'Struct TeamComponent'
+description: 'Holds entity team ID.'
+---
 # Struct TeamComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

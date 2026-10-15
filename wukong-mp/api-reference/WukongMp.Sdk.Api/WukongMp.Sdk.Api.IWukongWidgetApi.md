@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongWidgetApi'
+description: 'Provides methods related to in-game widgets, such as chat messages, info messages, tips, and timers.'
+---
 # Interface IWukongWidgetApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

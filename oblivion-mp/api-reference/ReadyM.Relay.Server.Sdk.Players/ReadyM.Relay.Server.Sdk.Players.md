@@ -1,13 +1,13 @@
+---
+title: 'ReadyM.Relay.Server.Sdk.Players'
+description: 'The types in the ReadyM.Relay.Server.Sdk.Players namespace.'
+---
 # ReadyM.Relay.Server.Sdk.Players
 
-### Classes
+### Interfaces
 
- [PlayerApi](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.PlayerApi.md)
+ [IPlayers](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.IPlayers.md)
 
-Provides access to player events and actions on the server.
-
- [PlayerConnectedEvent](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.PlayerConnectedEvent.md)
-
- [PlayerDisconnectedEvent](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.PlayerDisconnectedEvent.md)
+What the server can do with a connected player, beyond their entities.
 
 
