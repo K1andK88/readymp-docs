@@ -158,7 +158,9 @@ export default function llmsTxtPlugin(context: LoadContext, options: LlmsTxtOpti
         filename: `${product.dir}/llms.txt`,
         includePatterns: [`${guidesDir(product)}/**`, `${apiDir(product)}/**`],
         fullContent: false,
+        // Under a heading of its own: links before the first section count as orphans to llms.txt checkers
         rootContent:
+          '## Full text\n\n' +
           `- [Guides, full text](${fileUrl(`${product.dir}/llms-full.txt`)}): every guide below in one file.\n` +
           `- [API reference, full text](${fileUrl(`${product.dir}/llms-api-full.txt`)}): every API reference page below in one file.`,
       },
