@@ -55,6 +55,8 @@ public EntityHandle Handle { get; }
 
 ### <a id="OblivionMp_Sdk_Archetypes_Mixins_MappedActorView_Pawn"></a> Pawn
 
+The game actor that shows this character, or <code>IntPtr.Zero</code> while there is none.
+
 ```csharp
 public nint Pawn { get; }
 ```

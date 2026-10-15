@@ -46,6 +46,8 @@ public int AnimActionSamplesCount { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AnimIsStaggered"></a> AnimIsStaggered
 
+The game's staggered animation flag.
+
 ```csharp
 public bool AnimIsStaggered { get; set; }
 ```
@@ -65,6 +67,8 @@ public int AnimTagsCount { get; }
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AttackingRequest"></a> AttackingRequest
+
+Whether an attack animation is requested.
 
 ```csharp
 public bool AttackingRequest { get; set; }
@@ -86,6 +90,8 @@ public int AttackingTagsCount { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_BaseId"></a> BaseId
 
+The form this entity is made from, such as which kind of chest or which creature.
+
 ```csharp
 public NetworkFormId BaseId { get; set; }
 ```
@@ -95,6 +101,8 @@ public NetworkFormId BaseId { get; set; }
  NetworkFormId
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_BlockAnimLayerClassName"></a> BlockAnimLayerClassName
+
+The class name of the animation layer for blocking.
 
 ```csharp
 public NativeString256 BlockAnimLayerClassName { get; set; }
@@ -116,6 +124,8 @@ public int BlockingTagsCount { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CanExitAttack"></a> CanExitAttack
 
+Whether the character can leave the attack animation.
+
 ```csharp
 public bool CanExitAttack { get; set; }
 ```
@@ -125,6 +135,8 @@ public bool CanExitAttack { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CanExitBlock"></a> CanExitBlock
+
+Whether the character can leave the block animation.
 
 ```csharp
 public bool CanExitBlock { get; set; }
@@ -136,6 +148,8 @@ public bool CanExitBlock { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CanFootLock"></a> CanFootLock
 
+The game's <code>CanFootLock</code> animation flag.
+
 ```csharp
 public bool CanFootLock { get; set; }
 ```
@@ -146,6 +160,8 @@ public bool CanFootLock { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CanUseOrientationWarping"></a> CanUseOrientationWarping
 
+The game's <code>CanUseOrientationWarping</code> animation flag.
+
 ```csharp
 public bool CanUseOrientationWarping { get; set; }
 ```
@@ -155,6 +171,8 @@ public bool CanUseOrientationWarping { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CastingRequest"></a> CastingRequest
+
+Whether a spell casting animation is requested.
 
 ```csharp
 public bool CastingRequest { get; set; }
@@ -176,6 +194,8 @@ public int CastingRequestSamplesCount { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CharacterStateFlags"></a> CharacterStateFlags
 
+Whether the character is running, sneaking, swimming, jumping, blocking, staggered, falling, dodging or holding a torch.
+
 ```csharp
 public CharacterStateFlags CharacterStateFlags { get; set; }
 ```
@@ -185,6 +205,8 @@ public CharacterStateFlags CharacterStateFlags { get; set; }
  CharacterStateFlags
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ComboHitIndex"></a> ComboHitIndex
+
+The index of the current hit in a melee combo.
 
 ```csharp
 public int ComboHitIndex { get; set; }
@@ -196,6 +218,8 @@ public int ComboHitIndex { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CompWeaponDrawn"></a> CompWeaponDrawn
 
+The game's <code>CompWeaponDrawn</code> animation flag.
+
 ```csharp
 public bool CompWeaponDrawn { get; set; }
 ```
@@ -205,6 +229,8 @@ public bool CompWeaponDrawn { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CurrentAnimAction"></a> CurrentAnimAction
+
+The game's current animation action, as a raw value.
 
 ```csharp
 public byte CurrentAnimAction { get; set; }
@@ -216,6 +242,8 @@ public byte CurrentAnimAction { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CurrentGait"></a> CurrentGait
 
+The name of the character's current gait.
+
 ```csharp
 public NativeString256 CurrentGait { get; set; }
 ```
@@ -225,6 +253,8 @@ public NativeString256 CurrentGait { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CurrentPoison"></a> CurrentPoison
+
+The poison on the equipped weapon.
 
 ```csharp
 public NetworkFormId CurrentPoison { get; set; }
@@ -236,6 +266,8 @@ public NetworkFormId CurrentPoison { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_DodgeAnimLayerClassName"></a> DodgeAnimLayerClassName
 
+The class name of the animation layer for dodging.
+
 ```csharp
 public NativeString256 DodgeAnimLayerClassName { get; set; }
 ```
@@ -245,6 +277,8 @@ public NativeString256 DodgeAnimLayerClassName { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_DodgingRequest"></a> DodgingRequest
+
+Whether a dodge animation is requested.
 
 ```csharp
 public bool DodgingRequest { get; set; }
@@ -266,6 +300,8 @@ public int EquipUnequipTagsCount { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Expires"></a> Expires
 
+Whether it runs out on its own.
+
 ```csharp
 public bool Expires { get; set; }
 ```
@@ -275,6 +311,8 @@ public bool Expires { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ExpiresAtMs"></a> ExpiresAtMs
+
+When it runs out, on the server's millisecond clock (<code>Environment.TickCount64</code>).
 
 ```csharp
 public long ExpiresAtMs { get; set; }
@@ -286,6 +324,8 @@ public long ExpiresAtMs { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Fatigue"></a> Fatigue
 
+Current fatigue.
+
 ```csharp
 public float Fatigue { get; set; }
 ```
@@ -296,6 +336,8 @@ public float Fatigue { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_FatigueBase"></a> FatigueBase
 
+Maximum fatigue.
+
 ```csharp
 public float FatigueBase { get; set; }
 ```
@@ -305,6 +347,8 @@ public float FatigueBase { get; set; }
  [float](https://learn.microsoft.com/dotnet/api/system.single)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ForceExitEquip"></a> ForceExitEquip
+
+The game's <code>ForceExitEquip</code> animation flag.
 
 ```csharp
 public bool ForceExitEquip { get; set; }
@@ -326,6 +370,8 @@ public int GameplayTagsCount { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetUpAnimLayerClassName"></a> GetUpAnimLayerClassName
 
+The class name of the animation layer for getting up.
+
 ```csharp
 public NativeString256 GetUpAnimLayerClassName { get; set; }
 ```
@@ -335,6 +381,8 @@ public NativeString256 GetUpAnimLayerClassName { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_HasMeleeWeapon"></a> HasMeleeWeapon
+
+Whether the character has a melee weapon equipped.
 
 ```csharp
 public bool HasMeleeWeapon { get; set; }
@@ -346,6 +394,8 @@ public bool HasMeleeWeapon { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Hp"></a> Hp
 
+Current health.
+
 ```csharp
 public float Hp { get; set; }
 ```
@@ -355,6 +405,8 @@ public float Hp { get; set; }
  [float](https://learn.microsoft.com/dotnet/api/system.single)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_HpBase"></a> HpBase
+
+Maximum health.
 
 ```csharp
 public float HpBase { get; set; }
@@ -366,6 +418,8 @@ public float HpBase { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InAirAnimLayerClassName"></a> InAirAnimLayerClassName
 
+The class name of the animation layer for being in the air.
+
 ```csharp
 public NativeString256 InAirAnimLayerClassName { get; set; }
 ```
@@ -375,6 +429,8 @@ public NativeString256 InAirAnimLayerClassName { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InCombatStance"></a> InCombatStance
+
+Whether the character is in a combat stance.
 
 ```csharp
 public bool InCombatStance { get; set; }
@@ -386,6 +442,8 @@ public bool InCombatStance { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsDead"></a> IsDead
 
+Whether the character is dead.
+
 ```csharp
 public bool IsDead { get; set; }
 ```
@@ -395,6 +453,8 @@ public bool IsDead { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsMoving"></a> IsMoving
+
+Whether the character is moving.
 
 ```csharp
 public bool IsMoving { get; set; }
@@ -406,6 +466,8 @@ public bool IsMoving { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsStartCompleted"></a> IsStartCompleted
 
+The game's <code>IsStartCompleted</code> animation flag.
+
 ```csharp
 public bool IsStartCompleted { get; set; }
 ```
@@ -415,6 +477,8 @@ public bool IsStartCompleted { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsUsingFullBody"></a> IsUsingFullBody
+
+Whether the current animation uses the full body.
 
 ```csharp
 public bool IsUsingFullBody { get; set; }
@@ -456,6 +520,8 @@ public int LastAnimTagsCount { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Level"></a> Level
 
+The current level.
+
 ```csharp
 public ushort Level { get; set; }
 ```
@@ -465,6 +531,8 @@ public ushort Level { get; set; }
  [ushort](https://learn.microsoft.com/dotnet/api/system.uint16)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Magicka"></a> Magicka
+
+Current magicka.
 
 ```csharp
 public float Magicka { get; set; }
@@ -476,6 +544,8 @@ public float Magicka { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MagickaBase"></a> MagickaBase
 
+Maximum magicka.
+
 ```csharp
 public float MagickaBase { get; set; }
 ```
@@ -486,6 +556,8 @@ public float MagickaBase { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MasterPlayer"></a> MasterPlayer
 
+The player it fights for.
+
 ```csharp
 public PlayerId MasterPlayer { get; set; }
 ```
@@ -495,6 +567,8 @@ public PlayerId MasterPlayer { get; set; }
  PlayerId
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MasterRefId"></a> MasterRefId
+
+The ref id of the actor it fights for.
 
 ```csharp
 public uint MasterRefId { get; set; }
@@ -516,6 +590,8 @@ public int MeleeMontageSamplesCount { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MeleePlayRate"></a> MeleePlayRate
 
+The play rate of that melee sequence.
+
 ```csharp
 public float MeleePlayRate { get; set; }
 ```
@@ -525,6 +601,8 @@ public float MeleePlayRate { get; set; }
  [float](https://learn.microsoft.com/dotnet/api/system.single)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MeleeSequenceName"></a> MeleeSequenceName
+
+The name of the melee animation sequence playing.
 
 ```csharp
 public NativeString256 MeleeSequenceName { get; set; }
@@ -536,6 +614,8 @@ public NativeString256 MeleeSequenceName { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MontageName"></a> MontageName
 
+The name of the animation montage playing.
+
 ```csharp
 public NativeString256 MontageName { get; set; }
 ```
@@ -545,6 +625,8 @@ public NativeString256 MontageName { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MontagePosition"></a> MontagePosition
+
+The play position within that montage.
 
 ```csharp
 public float MontagePosition { get; set; }
@@ -556,6 +638,8 @@ public float MontagePosition { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_OrientRotationToMovement"></a> OrientRotationToMovement
 
+Whether the character turns to face the way it moves.
+
 ```csharp
 public bool OrientRotationToMovement { get; set; }
 ```
@@ -565,6 +649,8 @@ public bool OrientRotationToMovement { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Overridden"></a> Overridden
+
+Whether the NPC runs a package laid over its schedule, such as a server order, rather than its own.
 
 ```csharp
 public bool Overridden { get; set; }
@@ -576,6 +662,8 @@ public bool Overridden { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_PackageFormId"></a> PackageFormId
 
+The form id of the AI package the NPC is running now.
+
 ```csharp
 public uint PackageFormId { get; set; }
 ```
@@ -585,6 +673,8 @@ public uint PackageFormId { get; set; }
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_PackageType"></a> PackageType
+
+The type of that package.
 
 ```csharp
 public AiPackageType PackageType { get; set; }
@@ -596,6 +686,8 @@ public AiPackageType PackageType { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ParentCellKind"></a> ParentCellKind
 
+Whether the cell is an interior or an exterior, or <code>Unknown</code> before the game has said.
+
 ```csharp
 public ParentCellKind ParentCellKind { get; set; }
 ```
@@ -605,6 +697,8 @@ public ParentCellKind ParentCellKind { get; set; }
  ParentCellKind
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ParentCellX"></a> ParentCellX
+
+The X coordinate of the exterior grid square.
 
 ```csharp
 public int ParentCellX { get; set; }
@@ -616,6 +710,8 @@ public int ParentCellX { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ParentCellY"></a> ParentCellY
 
+The Y coordinate of the exterior grid square.
+
 ```csharp
 public int ParentCellY { get; set; }
 ```
@@ -625,6 +721,8 @@ public int ParentCellY { get; set; }
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Position"></a> Position
+
+The position in the game's world space, in centimeters.
 
 ```csharp
 public Vector3 Position { get; set; }
@@ -636,6 +734,8 @@ public Vector3 Position { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Procedure"></a> Procedure
 
+The step of the package the NPC is on.
+
 ```csharp
 public AiProcedure Procedure { get; set; }
 ```
@@ -645,6 +745,8 @@ public AiProcedure Procedure { get; set; }
  AiProcedure
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ProcedureIndex"></a> ProcedureIndex
+
+The index of that step within the package.
 
 ```csharp
 public int ProcedureIndex { get; set; }
@@ -656,6 +758,8 @@ public int ProcedureIndex { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RecoilAnimLayerClassName"></a> RecoilAnimLayerClassName
 
+The class name of the animation layer for recoiling.
+
 ```csharp
 public NativeString256 RecoilAnimLayerClassName { get; set; }
 ```
@@ -665,6 +769,8 @@ public NativeString256 RecoilAnimLayerClassName { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RecoilingRequest"></a> RecoilingRequest
+
+Whether a recoil animation is requested.
 
 ```csharp
 public bool RecoilingRequest { get; set; }
@@ -676,6 +782,8 @@ public bool RecoilingRequest { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RefId"></a> RefId
 
+The ref id of this placed object or actor.
+
 ```csharp
 public uint RefId { get; set; }
 ```
@@ -685,6 +793,8 @@ public uint RefId { get; set; }
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ReportedOutcome"></a> ReportedOutcome
+
+How that order ended, or **None** before any has ended.
 
 ```csharp
 public AiIntentOutcome ReportedOutcome { get; set; }
@@ -696,6 +806,8 @@ public AiIntentOutcome ReportedOutcome { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ReportedSeq"></a> ReportedSeq
 
+The sequence number of the last order the NPC finished.
+
 ```csharp
 public ushort ReportedSeq { get; set; }
 ```
@@ -705,6 +817,8 @@ public ushort ReportedSeq { get; set; }
  [ushort](https://learn.microsoft.com/dotnet/api/system.uint16)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RequestId"></a> RequestId
+
+The summon's id in the requester's game.
 
 ```csharp
 public uint RequestId { get; set; }
@@ -716,6 +830,8 @@ public uint RequestId { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Requester"></a> Requester
 
+The player whose spell summoned it.
+
 ```csharp
 public PlayerId Requester { get; set; }
 ```
@@ -725,6 +841,8 @@ public PlayerId Requester { get; set; }
  PlayerId
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Rotation"></a> Rotation
+
+The yaw, in degrees.
 
 ```csharp
 public float Rotation { get; set; }
@@ -736,6 +854,8 @@ public float Rotation { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ShieldHandPoseAnimLayerClassName"></a> ShieldHandPoseAnimLayerClassName
 
+The class name of the animation layer for the shield hand pose.
+
 ```csharp
 public NativeString256 ShieldHandPoseAnimLayerClassName { get; set; }
 ```
@@ -745,6 +865,8 @@ public NativeString256 ShieldHandPoseAnimLayerClassName { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SpawnerRefId"></a> SpawnerRefId
+
+The ref id of the spawner that made this NPC, or 0.
 
 ```csharp
 public uint SpawnerRefId { get; set; }
@@ -756,6 +878,8 @@ public uint SpawnerRefId { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SpellCastAnimLayerClassName"></a> SpellCastAnimLayerClassName
 
+The class name of the animation layer for casting spells.
+
 ```csharp
 public NativeString256 SpellCastAnimLayerClassName { get; set; }
 ```
@@ -765,6 +889,8 @@ public NativeString256 SpellCastAnimLayerClassName { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_StaggerAnimLayerClassName"></a> StaggerAnimLayerClassName
+
+The class name of the animation layer for staggering.
 
 ```csharp
 public NativeString256 StaggerAnimLayerClassName { get; set; }
@@ -776,6 +902,8 @@ public NativeString256 StaggerAnimLayerClassName { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_TorchAnimLayerClassName"></a> TorchAnimLayerClassName
 
+The class name of the animation layer for holding a torch.
+
 ```csharp
 public NativeString256 TorchAnimLayerClassName { get; set; }
 ```
@@ -785,6 +913,8 @@ public NativeString256 TorchAnimLayerClassName { get; set; }
  NativeString256
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_UseControllerDesiredRotation"></a> UseControllerDesiredRotation
+
+The game's <code>UseControllerDesiredRotation</code> movement setting.
 
 ```csharp
 public bool UseControllerDesiredRotation { get; set; }
@@ -796,6 +926,8 @@ public bool UseControllerDesiredRotation { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_UseControllerRotationYaw"></a> UseControllerRotationYaw
 
+The game's <code>UseControllerRotationYaw</code> movement setting.
+
 ```csharp
 public bool UseControllerRotationYaw { get; set; }
 ```
@@ -805,6 +937,8 @@ public bool UseControllerRotationYaw { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_UseRotationSpeedCurve"></a> UseRotationSpeedCurve
+
+The game's <code>UseRotationSpeedCurve</code> movement setting.
 
 ```csharp
 public bool UseRotationSpeedCurve { get; set; }
@@ -816,6 +950,8 @@ public bool UseRotationSpeedCurve { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_WantsToRun"></a> WantsToRun
 
+Whether the character wants to run.
+
 ```csharp
 public bool WantsToRun { get; set; }
 ```
@@ -825,6 +961,8 @@ public bool WantsToRun { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_WeaponDrawn"></a> WeaponDrawn
+
+Whether the character has a weapon drawn.
 
 ```csharp
 public bool WeaponDrawn { get; set; }

@@ -42,6 +42,8 @@ IEntityShape
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_BaseId"></a> BaseId
 
+The form this entity is made from, such as which kind of chest or which creature.
+
 ```csharp
 public NetworkFormId BaseId { get; set; }
 ```
@@ -51,6 +53,8 @@ public NetworkFormId BaseId { get; set; }
  NetworkFormId
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_Charge"></a> Charge
+
+The item's enchantment charge, or -1 for its default or none.
 
 ```csharp
 public float Charge { get; set; }
@@ -62,6 +66,8 @@ public float Charge { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_Durability"></a> Durability
 
+The item's condition, or -1 for its default or none.
+
 ```csharp
 public float Durability { get; set; }
 ```
@@ -72,6 +78,8 @@ public float Durability { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_IsDisabled"></a> IsDisabled
 
+Whether a seeded ref is enabled in the world. Starts from the game files and only the server writes it.
+
 ```csharp
 public bool IsDisabled { get; set; }
 ```
@@ -81,6 +89,8 @@ public bool IsDisabled { get; set; }
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_IsPersistent"></a> IsPersistent
+
+Whether the item is a persistent reference in the game files, which does not respawn.
 
 ```csharp
 public bool IsPersistent { get; set; }
@@ -102,6 +112,8 @@ public bool IsValid { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_ParentCellKind"></a> ParentCellKind
 
+Whether the cell is an interior or an exterior, or <code>Unknown</code> before the game has said.
+
 ```csharp
 public ParentCellKind ParentCellKind { get; set; }
 ```
@@ -111,6 +123,8 @@ public ParentCellKind ParentCellKind { get; set; }
  ParentCellKind
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_ParentCellX"></a> ParentCellX
+
+The X coordinate of the exterior grid square.
 
 ```csharp
 public int ParentCellX { get; set; }
@@ -122,6 +136,8 @@ public int ParentCellX { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_ParentCellY"></a> ParentCellY
 
+The Y coordinate of the exterior grid square.
+
 ```csharp
 public int ParentCellY { get; set; }
 ```
@@ -131,6 +147,8 @@ public int ParentCellY { get; set; }
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_Position"></a> Position
+
+The position in the game's world space, in centimeters.
 
 ```csharp
 public Vector3 Position { get; set; }
@@ -142,6 +160,8 @@ public Vector3 Position { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_RefId"></a> RefId
 
+The ref id of this placed object or actor.
+
 ```csharp
 public uint RefId { get; set; }
 ```
@@ -152,6 +172,8 @@ public uint RefId { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_Rotation"></a> Rotation
 
+The yaw, in degrees.
+
 ```csharp
 public float Rotation { get; set; }
 ```
@@ -161,6 +183,8 @@ public float Rotation { get; set; }
  [float](https://learn.microsoft.com/dotnet/api/system.single)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_DroppedItem_SeededCount"></a> SeededCount
+
+How many items the stack held when the server seeded it, or 0 when it was not seeded.
 
 ```csharp
 public int SeededCount { get; set; }

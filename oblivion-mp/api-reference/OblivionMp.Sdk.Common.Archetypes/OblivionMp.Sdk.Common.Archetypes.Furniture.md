@@ -39,6 +39,8 @@ IEntityShape
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_Furniture_BaseId"></a> BaseId
 
+The form this entity is made from, such as which kind of chest or which creature.
+
 ```csharp
 public NetworkFormId BaseId { get; set; }
 ```
@@ -48,6 +50,8 @@ public NetworkFormId BaseId { get; set; }
  NetworkFormId
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_Furniture_IsDisabled"></a> IsDisabled
+
+Whether a seeded ref is enabled in the world. Starts from the game files and only the server writes it.
 
 ```csharp
 public bool IsDisabled { get; set; }
@@ -69,6 +73,8 @@ public bool IsValid { get; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_Furniture_Position"></a> Position
 
+The position in the game's world space, in centimeters.
+
 ```csharp
 public Vector3 Position { get; set; }
 ```
@@ -79,6 +85,8 @@ public Vector3 Position { get; set; }
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_Furniture_RefId"></a> RefId
 
+The ref id of this placed object or actor.
+
 ```csharp
 public uint RefId { get; set; }
 ```
@@ -88,6 +96,8 @@ public uint RefId { get; set; }
  [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_Furniture_Rotation"></a> Rotation
+
+The yaw, in degrees.
 
 ```csharp
 public float Rotation { get; set; }

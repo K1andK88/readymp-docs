@@ -34,6 +34,8 @@ IEntityShape
 
 ### <a id="OblivionMp_Sdk_Common_Archetypes_Mixins_ServerRefIdMark_NextServerRefId"></a> NextServerRefId
 
+The next ref id the server hands out; 0 until the first one.
+
 ```csharp
 public uint NextServerRefId { get; set; }
 ```

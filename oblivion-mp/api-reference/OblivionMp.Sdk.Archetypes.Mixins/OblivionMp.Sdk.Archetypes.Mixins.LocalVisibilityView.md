@@ -55,6 +55,8 @@ public EntityHandle Handle { get; }
 
 ### <a id="OblivionMp_Sdk_Archetypes_Mixins_LocalVisibilityView_Hidden"></a> Hidden
 
+How hard the character is to see here: 0 in plain sight, 1 invisible.
+
 ```csharp
 public float Hidden { get; set; }
 ```
