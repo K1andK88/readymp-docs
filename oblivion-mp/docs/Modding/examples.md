@@ -114,3 +114,34 @@ Open these first:
 | `OblivionMp.ChatMod/IChat.cs` and `Mod.cs` | The client API, and how it is offered. |
 | `OblivionMp.ChatMod/ChatOverlay.cs` | Creating the web view, showing it, and taking the keyboard. |
 | `OblivionMp.ChatMod/ChatPageMessages.cs` | Typed messages to and from the page. |
+
+## Seed loader
+
+[github.com/readycodeio/obmp-seed-loader](https://github.com/readycodeio/obmp-seed-loader)
+
+The mod that fills a fresh world from the seed, a snapshot of the game's data, and the one that does the
+[world seeding](Advanced/world-seeding.md) on a server. When a cell is created for the first time, it gets its
+furniture, containers, plants and items. When a new world is created, it gets the item values that trade checks
+against and the NPC templates that inventories are rolled from. It runs only on the server and offers no API, so it
+is the smallest complete example of a server-only mod. Read it before you write a seeder of your own.
+
+Read it to learn:
+
+* [Project layout](Getting-started/project-layout.md): a server-only mod, with no client project and no `client/`
+  folder.
+* [Mod entry and config](Getting-started/mod-entry-and-config.md): reading data shipped in the mod's own folder
+  through `ModDirectory`, and registering a singleton in `Init` for services to share.
+* [Services](Getting-started/services.md): services that implement the SDK's `ICellSeeder` and `IWorldSeeder`, which
+  the server calls for a new cell and a new world.
+* [Entities and queries](Concepts/entities-and-queries.md) and [Scopes](Concepts/scopes.md): creating entities in a
+  cell's scope.
+* [World seeding](Advanced/world-seeding.md): the entities a seeded cell holds.
+
+Open these first:
+
+| File | Shows |
+| --- | --- |
+| `OblivionMp.SnapshotLoader.Serverside/Mod.cs` | Where the seed is read from, and the snapshot the seeders share. |
+| `OblivionMp.SnapshotLoader.Serverside/SnapshotCellSeeder.cs` | Seeding a new cell: furniture, containers, plants and items. |
+| `OblivionMp.SnapshotLoader.Serverside/SnapshotWorldSeeder.cs` | Seeding a new world: item values and NPC templates. |
+| `OblivionMp.SnapshotLoader.Serverside/WorldSnapshot.cs` | Loading the seed from the mod's `server/content/` folder. |
