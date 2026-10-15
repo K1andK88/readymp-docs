@@ -203,7 +203,7 @@ Mapping is client only: the server has no game to keep in step with. The types a
 `ReadyM.SDK.Client.Mapping`. The tokens themselves are in the shared package, so the shared project can declare
 shapes and both halves see the same `Field` classes.
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

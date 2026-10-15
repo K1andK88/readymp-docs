@@ -251,7 +251,7 @@ The server writes what it likes: it is the one deciding. Assign the property, or
 with `[Extends]` inside a `foreach` (see [Shapes](shapes.md#adding-fields-to-a-shape-you-do-not-own)). Its changes
 reach every client that can see the entity. `Override` does not exist on the server.
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

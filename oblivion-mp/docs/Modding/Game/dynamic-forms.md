@@ -85,7 +85,7 @@ Not in 1.0 yet: going from such a `NetworkFormId` to the `AlchemyForm` or `Spell
 potion or spell from a mod.
 :::
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 |---|---|---|

@@ -129,7 +129,7 @@ convention. `TesUnrealSpace` converts them:
 | `ToUnrealYawDegrees(tesRotationZRadians)` | A Z rotation from the game files (radians), as a `Rotation`. |
 | `ToExteriorCellCoordinate(tesCoordinate)` | The exterior grid square a game file X or Y falls in. |
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

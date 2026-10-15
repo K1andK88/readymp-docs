@@ -137,7 +137,7 @@ A service can also react when entities of a shape are created or deleted, with `
 On the client, services start updating once the game has a world to sync with. Until then, their `Update` does not
 run, and the client log says so.
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

@@ -284,7 +284,7 @@ foreach (var npc in entities.Query<Npc>())
 `Override` (see [Replication and authority](replication.md)) and to the client's game-state mapping (see
 [Game state mapping](../Advanced/game-state-mapping.md)). A shape that does not replicate has no `Field` class.
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |
@@ -295,7 +295,7 @@ foreach (var npc in entities.Query<Npc>())
 | `CS9248` | A shape's partial property has no implementation. The SDK did not generate the shape: it is nested inside a class, or it has neither `[Archetype]` nor `[ArchetypeMixin]`. | Move the struct directly into a namespace and give it one of the two attributes. |
 
 The errors about replicating a shape (`READYM009`, `READYM014` and others) are listed on
-[Replication and authority](replication.md#mistakes-the-build-catches).
+[Replication and authority](replication.md#related-diagnostics).
 
 ## Reference
 

@@ -204,7 +204,7 @@ instead.
 | Sending | `SendX(...)` goes to the server, or to the clients the `RelayMode` picks. | `SendX(recipient, ...)` goes to one player. |
 | Messages it never sees | `[ClientToServer]` | `[ServerToClient]` and `[ClientToClients]` |
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

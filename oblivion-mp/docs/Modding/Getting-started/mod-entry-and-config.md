@@ -126,7 +126,7 @@ Each half reads its own folder:
 So anything that decides rules, prices or rewards belongs in a server config. Put a config class in the shared
 project only if both halves really need the same settings, and remember each half then reads its own copy of the file.
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

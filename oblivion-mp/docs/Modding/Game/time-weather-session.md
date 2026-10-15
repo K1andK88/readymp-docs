@@ -151,7 +151,7 @@ public sealed partial class Nightfall(IEntities entities, IPlayers players, IUse
 
 Clients do not set any of these values; time and weather come from the area's master client on its own.
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

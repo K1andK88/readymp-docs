@@ -159,7 +159,7 @@ if (players.LocalPlayer is { } me)
 
 It never changes them itself. The server writes `Journal` and `Dialogue`, and the game writes `SpokenTopics`.
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 |---|---|---|

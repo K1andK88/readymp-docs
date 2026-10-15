@@ -200,7 +200,7 @@ are, leveled lists rolled at a level. `Roll(template, level, into)` takes the le
 uses the level of that player's character, raised for a merchant's container by their Mercantile skill. Both add to
 what the container already holds. The templates are described in [Spawning](spawning.md).
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

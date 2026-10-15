@@ -274,7 +274,7 @@ expected, otherwise pass it to `Reply` or `ReplyText`, and answer exactly once),
 (the bytes) and `AsText()`. `Add` throws when the name is already taken, the same as for typed messages, since they
 share one list of names.
 
-## Mistakes the build catches
+## Related diagnostics
 
 These come from the page message generator. They are all errors.
 

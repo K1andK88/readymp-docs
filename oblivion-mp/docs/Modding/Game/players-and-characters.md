@@ -247,7 +247,7 @@ public sealed partial class Visits(PlayerApi playerApi)
 
 To run code when a player connects or leaves, see [Server events](server-events.md).
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

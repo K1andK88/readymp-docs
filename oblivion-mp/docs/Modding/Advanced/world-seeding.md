@@ -133,7 +133,7 @@ game hours, as in the single-player game.
 
 :::
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

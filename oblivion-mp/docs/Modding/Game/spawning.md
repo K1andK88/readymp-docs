@@ -165,7 +165,7 @@ game files get theirs from the server, but that roll is not open to mods, so a m
 inventory unless you fill it with `Inventories` (see [Items and inventories](items-and-inventories.md)).
 :::
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

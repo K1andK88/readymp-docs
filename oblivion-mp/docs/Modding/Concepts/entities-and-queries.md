@@ -265,7 +265,7 @@ On the client, `using OblivionMp.Sdk;` adds shortcuts to `IEntities`: `entities.
 `entities.AllMainCharacters` and `entities.AllDroppedItems` are the same as the matching `Query<T>()`. For the local
 player and the players around them, ask for `IPlayers`; see [Players and characters](../Game/players-and-characters.md).
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |

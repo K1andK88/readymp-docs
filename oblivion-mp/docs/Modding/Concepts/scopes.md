@@ -172,7 +172,7 @@ OblivionMP adds its own values to the built-in scopes the same way:
 When a player leaves an area, their client stops seeing what it held, and those entities' delete handlers run on that
 client. See [Entities and queries](entities-and-queries.md).
 
-## Mistakes the build catches
+## Related diagnostics
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |
