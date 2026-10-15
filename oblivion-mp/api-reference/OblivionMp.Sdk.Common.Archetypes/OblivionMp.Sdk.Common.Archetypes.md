@@ -10,17 +10,17 @@
 
 Tokens naming each of SpellForm's values, for mappings and overrides.
 
- [AlchemyForm.Field](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.AlchemyForm.Field.md)
+ [MainCharacter.Field](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.MainCharacter.Field.md)
 
-Tokens naming each of AlchemyForm's values, for mappings and overrides.
+Tokens naming each of MainCharacter's values, for mappings and overrides.
 
  [DroppedItem.Field](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.DroppedItem.Field.md)
 
 Tokens naming each of DroppedItem's values, for mappings and overrides.
 
- [MainCharacter.Field](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.MainCharacter.Field.md)
+ [AlchemyForm.Field](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.AlchemyForm.Field.md)
 
-Tokens naming each of MainCharacter's values, for mappings and overrides.
+Tokens naming each of AlchemyForm's values, for mappings and overrides.
 
 ### Structs
 

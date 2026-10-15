@@ -7,7 +7,6 @@ A container placed in the world, such as a chest, barrel or sack.
 
 ```csharp
 [Archetype(true)]
-[Tag(typeof(KeepEmptyOblivionScopeAliveTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(RefIdMixin), "")]

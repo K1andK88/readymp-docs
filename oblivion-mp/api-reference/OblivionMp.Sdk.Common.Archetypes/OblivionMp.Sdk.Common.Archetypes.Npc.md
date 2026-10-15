@@ -7,7 +7,6 @@ A person or creature from the game.
 
 ```csharp
 [Archetype(true)]
-[Tag(typeof(KeepEmptyOblivionScopeAliveTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(Transform), "")]

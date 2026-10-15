@@ -7,7 +7,6 @@ An item lying on the ground.
 
 ```csharp
 [Archetype(true)]
-[Tag(typeof(KeepEmptyOblivionScopeAliveTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(Transform), "")]

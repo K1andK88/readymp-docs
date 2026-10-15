@@ -7,7 +7,6 @@ A plant or other harvestable object placed in the world.
 
 ```csharp
 [Archetype(true)]
-[Tag(typeof(KeepEmptyOblivionScopeAliveTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(RefIdMixin), "")]

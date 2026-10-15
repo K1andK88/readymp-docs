@@ -2,6 +2,10 @@
 
 ### Classes
 
+ [Player.Field](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.Player.Field.md)
+
+Tokens naming each of Player's values, for mappings and overrides.
+
  [Area.Field](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.Area.Field.md)
 
 Tokens naming each of Area's values, for mappings and overrides.
@@ -9,10 +13,6 @@ Tokens naming each of Area's values, for mappings and overrides.
  [Cell.Field](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.Cell.Field.md)
 
 Tokens naming each of Cell's values, for mappings and overrides.
-
- [Player.Field](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.Player.Field.md)
-
-Tokens naming each of Player's values, for mappings and overrides.
 
 ### Structs
 

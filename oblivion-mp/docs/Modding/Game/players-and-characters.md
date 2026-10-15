@@ -215,7 +215,8 @@ Server mods read and write characters through `IEntities`, as in the example at 
 behind an RPC, use the sender: `entities.TryLookup(context.Sender, out MainCharacter main)`. The Arena template
 does this to heal and move players on request.
 
-`PlayerApi` covers what is about the player rather than their character:
+`IPlayers` from `ReadyM.Relay.Server.Sdk.Players` covers what is about the player rather than their character. It is
+the server's own interface, not the client's `IPlayers` above, and you ask for it the same way:
 
 | Method | What it does |
 | --- | --- |
@@ -233,13 +234,13 @@ using ReadyM.SDK.Attributes;
 namespace MyMod.Server;
 
 [Service]
-public sealed partial class Visits(PlayerApi playerApi)
+public sealed partial class Visits(IPlayers players)
 {
     private readonly Dictionary<Guid, int> _visits = [];
 
     public void Count(PlayerId player)
     {
-        if (playerApi.GetReadyMId(player) is { } account)
+        if (players.GetReadyMId(player) is { } account)
             _visits[account] = _visits.GetValueOrDefault(account) + 1;
     }
 }
@@ -277,9 +278,9 @@ To run code when a player connects or leaves, see [Server events](server-events.
   [CharacterSex](../../../api-reference/ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.CharacterSex.md),
   [CharacterStateFlags](../../../api-reference/ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.CharacterStateFlags.md)
 * [SummonedBy](../../../api-reference/OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.SummonedBy.md)
-* [IPlayers](../../../api-reference/OblivionMp.Sdk/OblivionMp.Sdk.IPlayers.md)
+* [IPlayers](../../../api-reference/OblivionMp.Sdk/OblivionMp.Sdk.IPlayers.md) (client)
 * [MainCharacterExtensions](../../../api-reference/OblivionMp.Sdk.Archetypes.Extensions/OblivionMp.Sdk.Archetypes.Extensions.MainCharacterExtensions.md)
 * [LocalVisibility](../../../api-reference/OblivionMp.Sdk.Archetypes.Mixins/OblivionMp.Sdk.Archetypes.Mixins.LocalVisibility.md)
 * [MappedActor](../../../api-reference/OblivionMp.Sdk.Archetypes.Mixins/OblivionMp.Sdk.Archetypes.Mixins.MappedActor.md)
 * [WriteExtensions](../../../api-reference/ReadyM.SDK.Client/ReadyM.SDK.Client.WriteExtensions.md)
-* [PlayerApi](../../../api-reference/ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.PlayerApi.md)
+* [IPlayers](../../../api-reference/ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.IPlayers.md) (server)

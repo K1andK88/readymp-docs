@@ -7,7 +7,6 @@ A creature a player summoned with a spell, created and deleted by the server.
 
 ```csharp
 [Archetype(true)]
-[Tag(typeof(KeepEmptyOblivionScopeAliveTag))]
 [Tag(typeof(KeepOwnerOnScopeLeaveTag))]
 [IncludeArchetype(typeof(Npc))]
 [Include(typeof(SummonedBy), "")]

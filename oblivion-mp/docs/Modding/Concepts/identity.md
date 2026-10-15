@@ -113,7 +113,7 @@ means "no player" or "the server" depending on where it came from.
 
 :::warning
 Do not store a `PlayerId` beyond the current connection. To remember a player across reconnects and server restarts,
-use their account id from `PlayerApi.GetReadyMId` on the server, as shown in
+use their account id from `IPlayers.GetReadyMId` on the server, as shown in
 [Players and characters](../Game/players-and-characters.md).
 :::
 
@@ -212,7 +212,7 @@ partial void OnPickSlot(RpcContext context, VarUInt slot)
 * [NetworkFormId](../../../api-reference/ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.NetworkFormId.md)
 * [FormType](../../../api-reference/ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.FormType.md)
 * [RpcContext](../../../api-reference/ReadyM.Relay.Server.Sdk.Rpc/ReadyM.Relay.Server.Sdk.Rpc.RpcContext.md)
-* [PlayerApi](../../../api-reference/ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.PlayerApi.md)
+* [IPlayers](../../../api-reference/ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.IPlayers.md) (server)
 * [SpawnerCell](../../../api-reference/OblivionMp.Sdk.Serverside.Spawners/OblivionMp.Sdk.Serverside.Spawners.SpawnerCell.md)
 * [VarUInt](../../../api-reference/ReadyM.Api.Serialization/ReadyM.Api.Serialization.VarUInt.md),
   [VarUShort](../../../api-reference/ReadyM.Api.Serialization/ReadyM.Api.Serialization.VarUShort.md)
