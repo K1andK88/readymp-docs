@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Idents'
+description: 'The types in the ReadyM.Api.Idents namespace.'
+---
 # ReadyM.Api.Idents
 
 ### Structs

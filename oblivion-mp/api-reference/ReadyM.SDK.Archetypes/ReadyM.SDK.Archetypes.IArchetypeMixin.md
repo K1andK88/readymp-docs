@@ -1,3 +1,7 @@
+---
+title: 'Interface IArchetypeMixin'
+description: 'Marks a shape that can be used as a mixin for archetypes.'
+---
 # Interface IArchetypeMixin
 
 Namespace: [ReadyM.SDK.Archetypes](../ReadyM.SDK.Archetypes/ReadyM.SDK.Archetypes.md)  

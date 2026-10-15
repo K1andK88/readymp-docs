@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Server.Sdk.Ecs.Components'
+description: 'The types in the ReadyM.Relay.Server.Sdk.Ecs.Components namespace.'
+---
 # ReadyM.Relay.Server.Sdk.Ecs.Components
 
 ### Interfaces

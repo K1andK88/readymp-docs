@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Common.Archetypes'
+description: 'The types in the OblivionMp.Sdk.Common.Archetypes namespace.'
+---
 # OblivionMp.Sdk.Common.Archetypes
 
 ### Namespaces

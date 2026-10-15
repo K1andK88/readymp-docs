@@ -1,3 +1,7 @@
+---
+title: 'Struct Entity'
+description: 'Represents an entity in the ECS.'
+---
 # Struct Entity
 
 Namespace: [ReadyM.Relay.Server.Sdk.Ecs](../ReadyM.Relay.Server.Sdk.Ecs/ReadyM.Relay.Server.Sdk.Ecs.md)  

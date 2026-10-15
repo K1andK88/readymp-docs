@@ -1,3 +1,7 @@
+---
+title: 'Delegate PageMessageCallback'
+description: 'Handles one named message from a page.'
+---
 # Delegate PageMessageCallback
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

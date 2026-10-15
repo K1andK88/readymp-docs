@@ -1,3 +1,7 @@
+---
+title: 'Struct AiState'
+description: 'What an NPC''s AI is doing, as reported by the game that simulates it.'
+---
 # Struct AiState
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

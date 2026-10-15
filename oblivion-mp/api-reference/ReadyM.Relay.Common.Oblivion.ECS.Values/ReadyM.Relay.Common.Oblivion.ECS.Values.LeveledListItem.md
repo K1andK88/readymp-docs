@@ -1,3 +1,7 @@
+---
+title: 'Struct LeveledListItem'
+description: 'One entry of a leveled list from the game files, like a form or a nested leveled list.'
+---
 # Struct LeveledListItem
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

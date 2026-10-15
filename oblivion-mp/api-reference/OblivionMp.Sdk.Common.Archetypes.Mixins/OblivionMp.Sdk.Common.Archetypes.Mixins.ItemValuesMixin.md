@@ -1,3 +1,7 @@
+---
+title: 'Struct ItemValuesMixin'
+description: 'The base value of every item in the game files, by form id.'
+---
 # Struct ItemValuesMixin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

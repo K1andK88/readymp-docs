@@ -1,3 +1,7 @@
+---
+title: 'Interface IEntitiesBase'
+description: 'Creating and finding entities, the same on the client and the server.'
+---
 # Interface IEntitiesBase
 
 Namespace: [ReadyM.SDK.Entities](../ReadyM.SDK.Entities/ReadyM.SDK.Entities.md)  

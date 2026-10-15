@@ -1,3 +1,7 @@
+---
+title: 'Struct MagicEffectEntry'
+description: 'One magic effect of a dynamic form. A single dynamic form (like a player-brewed potion type or a player-crafted spell) can contain multiple magic effects.'
+---
 # Struct MagicEffectEntry
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

@@ -1,3 +1,6 @@
+---
+title: 'Struct ReadyActor'
+---
 # Struct ReadyActor
 
 Namespace: [WukongMp.Sdk.Entities](../WukongMp.Sdk.Api/WukongMp.Sdk.Entities.md)  

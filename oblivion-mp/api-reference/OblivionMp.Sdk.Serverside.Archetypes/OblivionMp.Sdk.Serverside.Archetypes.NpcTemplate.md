@@ -1,3 +1,7 @@
+---
+title: 'Struct NpcTemplate'
+description: 'An NPC''s record from the game files, kept on the server only.'
+---
 # Struct NpcTemplate
 
 Namespace: [OblivionMp.Sdk.Serverside.Archetypes](../OblivionMp.Sdk.Serverside.Archetypes/OblivionMp.Sdk.Serverside.Archetypes.md)  

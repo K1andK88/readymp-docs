@@ -1,3 +1,7 @@
+---
+title: 'Struct JournalQuests'
+description: 'The Quests collection of a Journal.'
+---
 # Struct JournalQuests
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

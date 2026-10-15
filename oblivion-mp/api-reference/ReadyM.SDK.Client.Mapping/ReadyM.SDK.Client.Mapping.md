@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Client.Mapping'
+description: 'The types in the ReadyM.SDK.Client.Mapping namespace.'
+---
 # ReadyM.SDK.Client.Mapping
 
 ### Classes

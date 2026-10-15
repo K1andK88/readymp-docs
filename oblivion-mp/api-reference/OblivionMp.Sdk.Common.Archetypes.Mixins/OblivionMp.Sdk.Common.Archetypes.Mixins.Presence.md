@@ -1,3 +1,7 @@
+---
+title: 'Struct Presence'
+description: 'Whether a world object is in the world.'
+---
 # Struct Presence
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

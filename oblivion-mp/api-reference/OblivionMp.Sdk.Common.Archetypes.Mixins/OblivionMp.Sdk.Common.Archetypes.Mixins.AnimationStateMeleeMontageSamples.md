@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationStateMeleeMontageSamples'
+description: 'The MeleeMontageSamples collection of a AnimationState.'
+---
 # Struct AnimationStateMeleeMontageSamples
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

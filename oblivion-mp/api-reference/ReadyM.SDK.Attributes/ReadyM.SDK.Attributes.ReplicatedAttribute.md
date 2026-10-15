@@ -1,3 +1,7 @@
+---
+title: 'Class ReplicatedAttribute'
+description: 'Makes this mixin able to be replicated over the network, if included in a replicated archetype. Mixins without this attribute will not be replicated, even if the archetype is.'
+---
 # Class ReplicatedAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

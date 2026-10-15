@@ -1,3 +1,7 @@
+---
+title: 'Enum AiPackageType'
+description: 'The kind of an AI package in the game.'
+---
 # Enum AiPackageType
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

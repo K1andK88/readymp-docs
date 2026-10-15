@@ -1,3 +1,7 @@
+---
+title: 'Delegate Pull<TValue, TContext>'
+description: 'Reads a value out of the game and into the shape.'
+---
 # Delegate Pull<TValue, TContext>
 
 Namespace: [ReadyM.SDK.Client.Mapping](../ReadyM.SDK.Client.Mapping/ReadyM.SDK.Client.Mapping.md)  

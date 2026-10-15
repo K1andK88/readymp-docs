@@ -1,3 +1,7 @@
+---
+title: 'Class ServerRefIds'
+description: 'Hands out ref ids for entities the server creates (dropped items, spawned npcs). The next one is kept on the World (ServerRefIdMark), which is saved in Global, so cells that are not loaded keep their ids.'
+---
 # Class ServerRefIds
 
 Namespace: [OblivionMp.Sdk.Serverside](../OblivionMp.Sdk.Serverside/OblivionMp.Sdk.Serverside.md)  

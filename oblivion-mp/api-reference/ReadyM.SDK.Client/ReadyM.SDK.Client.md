@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Client'
+description: 'The types in the ReadyM.SDK.Client namespace.'
+---
 # ReadyM.SDK.Client
 
 ### Namespaces

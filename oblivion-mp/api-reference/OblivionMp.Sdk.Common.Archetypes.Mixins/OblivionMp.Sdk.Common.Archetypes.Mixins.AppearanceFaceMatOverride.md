@@ -1,3 +1,7 @@
+---
+title: 'Struct AppearanceFaceMatOverride'
+description: 'The FaceMatOverride collection of a Appearance.'
+---
 # Struct AppearanceFaceMatOverride
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

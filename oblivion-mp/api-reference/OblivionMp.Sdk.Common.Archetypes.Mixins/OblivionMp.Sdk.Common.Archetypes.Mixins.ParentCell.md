@@ -1,3 +1,7 @@
+---
+title: 'Struct ParentCell'
+description: 'The cell an entity is in.'
+---
 # Struct ParentCell
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

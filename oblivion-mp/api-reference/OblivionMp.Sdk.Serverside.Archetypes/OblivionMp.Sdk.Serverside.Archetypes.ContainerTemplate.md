@@ -1,3 +1,7 @@
+---
+title: 'Struct ContainerTemplate'
+description: 'A container''s record from the game files, kept on the server only.'
+---
 # Struct ContainerTemplate
 
 Namespace: [OblivionMp.Sdk.Serverside.Archetypes](../OblivionMp.Sdk.Serverside.Archetypes/OblivionMp.Sdk.Serverside.Archetypes.md)  

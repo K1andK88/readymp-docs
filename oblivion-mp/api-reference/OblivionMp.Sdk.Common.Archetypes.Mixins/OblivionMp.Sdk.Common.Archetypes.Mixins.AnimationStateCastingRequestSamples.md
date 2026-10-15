@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationStateCastingRequestSamples'
+description: 'The CastingRequestSamples collection of a AnimationState.'
+---
 # Struct AnimationStateCastingRequestSamples
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

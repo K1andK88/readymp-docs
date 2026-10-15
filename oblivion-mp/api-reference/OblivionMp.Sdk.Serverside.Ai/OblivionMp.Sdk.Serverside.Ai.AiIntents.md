@@ -1,3 +1,7 @@
+---
+title: 'Class AiIntents'
+description: 'Gives orders to an NPC through its AI queue.'
+---
 # Class AiIntents
 
 Namespace: [OblivionMp.Sdk.Serverside.Ai](../OblivionMp.Sdk.Serverside.Ai/OblivionMp.Sdk.Serverside.Ai.md)  

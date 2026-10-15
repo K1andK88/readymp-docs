@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationStateEquipUnequipTags'
+description: 'The EquipUnequipTags collection of a AnimationState.'
+---
 # Struct AnimationStateEquipUnequipTags
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

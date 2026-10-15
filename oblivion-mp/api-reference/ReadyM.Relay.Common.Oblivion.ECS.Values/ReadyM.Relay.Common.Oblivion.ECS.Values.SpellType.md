@@ -1,3 +1,7 @@
+---
+title: 'Enum SpellType'
+description: 'The kind of a spell.'
+---
 # Enum SpellType
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

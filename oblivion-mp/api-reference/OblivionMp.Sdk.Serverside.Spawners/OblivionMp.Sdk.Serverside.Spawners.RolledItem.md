@@ -1,3 +1,7 @@
+---
+title: 'Struct RolledItem'
+description: 'An item that a leveled list rolled, and how many.'
+---
 # Struct RolledItem
 
 Namespace: [OblivionMp.Sdk.Serverside.Spawners](../OblivionMp.Sdk.Serverside.Spawners/OblivionMp.Sdk.Serverside.Spawners.md)  

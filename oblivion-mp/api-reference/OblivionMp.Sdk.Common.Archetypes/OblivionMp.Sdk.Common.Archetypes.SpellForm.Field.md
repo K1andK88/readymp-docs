@@ -1,3 +1,7 @@
+---
+title: 'Class SpellForm.Field'
+description: 'Tokens naming each of SpellForm''s values, for mappings and overrides.'
+---
 # Class SpellForm.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

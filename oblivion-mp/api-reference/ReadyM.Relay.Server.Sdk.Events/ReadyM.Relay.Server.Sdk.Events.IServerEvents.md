@@ -1,3 +1,7 @@
+---
+title: 'Interface IServerEvents'
+description: 'The server''s events: players connecting and moving, and areas and cells coming and going.'
+---
 # Interface IServerEvents
 
 Namespace: [ReadyM.Relay.Server.Sdk.Events](../ReadyM.Relay.Server.Sdk.Events/ReadyM.Relay.Server.Sdk.Events.md)  

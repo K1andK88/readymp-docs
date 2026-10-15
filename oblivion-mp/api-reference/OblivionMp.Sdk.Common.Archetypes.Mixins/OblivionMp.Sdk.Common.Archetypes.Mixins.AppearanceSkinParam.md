@@ -1,3 +1,7 @@
+---
+title: 'Struct AppearanceSkinParam'
+description: 'The SkinParam collection of a Appearance.'
+---
 # Struct AppearanceSkinParam
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

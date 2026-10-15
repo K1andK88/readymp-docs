@@ -1,3 +1,7 @@
+---
+title: 'Class CreateHandlerAttribute'
+description: 'Runs this method on an entity right after it is created.'
+---
 # Class CreateHandlerAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

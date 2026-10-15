@@ -1,3 +1,7 @@
+---
+title: 'Struct EntityQuery<T>'
+description: 'Every entity of a shape. How it is walked is decided for you: a shape whose components are all known at compile time is walked by chunk, and anything else by identity. The choice is made by overload resolution, so this type has no GetEnumerator of its own and a foreach binds one of the extensions instead.'
+---
 # Struct EntityQuery<T>
 
 Namespace: [ReadyM.SDK.Server.Entities](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.md)  

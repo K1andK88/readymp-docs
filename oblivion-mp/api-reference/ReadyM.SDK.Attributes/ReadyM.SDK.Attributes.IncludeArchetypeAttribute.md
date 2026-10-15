@@ -1,3 +1,7 @@
+---
+title: 'Class IncludeArchetypeAttribute'
+description: 'Builds this archetype on another one, taking all of its fields. Including an archetype is inheritance, so there is one at most; combine data with IncludeAttribute and mixins instead.'
+---
 # Class IncludeArchetypeAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

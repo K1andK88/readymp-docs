@@ -1,3 +1,7 @@
+---
+title: 'Class LeveledListRoll'
+description: 'Rolls leveled lists the way the game does.'
+---
 # Class LeveledListRoll
 
 Namespace: [OblivionMp.Sdk.Serverside.Spawners](../OblivionMp.Sdk.Serverside.Spawners/OblivionMp.Sdk.Serverside.Spawners.md)  

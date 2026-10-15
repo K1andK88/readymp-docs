@@ -1,3 +1,7 @@
+---
+title: 'Struct DroppedItem'
+description: 'An item lying on the ground.'
+---
 # Struct DroppedItem
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

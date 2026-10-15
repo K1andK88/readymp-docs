@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Attributes'
+description: 'The types in the ReadyM.SDK.Attributes namespace.'
+---
 # ReadyM.SDK.Attributes
 
 ### Classes

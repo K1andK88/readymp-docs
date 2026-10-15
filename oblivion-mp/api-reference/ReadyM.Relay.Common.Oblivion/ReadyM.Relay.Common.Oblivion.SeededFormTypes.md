@@ -1,3 +1,7 @@
+---
+title: 'Class SeededFormTypes'
+description: 'Kinds of game file refs the server seeds as entities.'
+---
 # Class SeededFormTypes
 
 Namespace: [ReadyM.Relay.Common.Oblivion](../ReadyM.Relay.Common.Oblivion/ReadyM.Relay.Common.Oblivion.md)  

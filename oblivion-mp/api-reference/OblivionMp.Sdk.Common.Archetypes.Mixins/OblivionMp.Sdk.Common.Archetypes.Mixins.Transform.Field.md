@@ -1,3 +1,7 @@
+---
+title: 'Class Transform.Field'
+description: 'Tokens naming each of Transform''s values, for mappings and overrides.'
+---
 # Class Transform.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct LevelScaling'
+description: 'The level the session''s leveled lists roll at.'
+---
 # Struct LevelScaling
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

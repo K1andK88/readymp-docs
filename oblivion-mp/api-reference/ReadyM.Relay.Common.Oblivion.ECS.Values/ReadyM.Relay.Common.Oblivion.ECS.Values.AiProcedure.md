@@ -1,3 +1,7 @@
+---
+title: 'Enum AiProcedure'
+description: 'A step of an AI package that an NPC is on.'
+---
 # Enum AiProcedure
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

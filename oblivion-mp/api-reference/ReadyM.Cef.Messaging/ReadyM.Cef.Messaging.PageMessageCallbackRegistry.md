@@ -1,3 +1,7 @@
+---
+title: 'Class PageMessageCallbackRegistry'
+description: 'Which callback a message name belongs to, for every named message a page and the game exchange.'
+---
 # Class PageMessageCallbackRegistry
 
 Namespace: [ReadyM.Cef.Messaging](../ReadyM.Cef.Messaging/ReadyM.Cef.Messaging.md)  

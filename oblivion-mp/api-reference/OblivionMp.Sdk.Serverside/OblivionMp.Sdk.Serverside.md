@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Serverside'
+description: 'The types in the OblivionMp.Sdk.Serverside namespace.'
+---
 # OblivionMp.Sdk.Serverside
 
 ### Namespaces

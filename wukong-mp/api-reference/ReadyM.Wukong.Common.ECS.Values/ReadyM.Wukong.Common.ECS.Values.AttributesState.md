@@ -1,3 +1,7 @@
+---
+title: 'Struct AttributesState'
+description: 'Entity attributes. Keys correspond to the EBGUAttrFloat enum in the game.'
+---
 # Struct AttributesState
 
 Namespace: [ReadyM.Wukong.Common.ECS.Values](../ReadyM.Wukong.Common.ECS.Values/ReadyM.Wukong.Common.ECS.Values.md)  

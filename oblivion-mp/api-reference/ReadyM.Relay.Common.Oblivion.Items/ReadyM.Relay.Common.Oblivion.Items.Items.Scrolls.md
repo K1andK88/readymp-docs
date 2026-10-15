@@ -1,3 +1,7 @@
+---
+title: 'Class Items.Scrolls'
+description: 'Lists all scrolls in the game.'
+---
 # Class Items.Scrolls
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

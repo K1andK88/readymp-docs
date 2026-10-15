@@ -1,3 +1,7 @@
+---
+title: 'Struct TamerKind'
+description: 'Represents the type of a Tamer (monster).'
+---
 # Struct TamerKind
 
 Namespace: [WukongMp.Api.Configuration](../WukongMp.Api.Configuration/WukongMp.Api.Configuration.md)  

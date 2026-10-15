@@ -1,3 +1,7 @@
+---
+title: 'Enum Propagation'
+description: 'Which way a shape''s values may travel between the game and the ECS, and who may write them.'
+---
 # Enum Propagation
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Enum Delivery'
+description: 'How a replicated shape''s changes reach the other side.'
+---
 # Enum Delivery
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

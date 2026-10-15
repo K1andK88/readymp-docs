@@ -1,3 +1,7 @@
+---
+title: 'Interface ICellSeeder'
+description: 'Fills a new cell. Declare it on a [Service]; the server calls it once, when the cell is created rather than loaded from the save.'
+---
 # Interface ICellSeeder
 
 Namespace: [ReadyM.SDK.Server.Seeding](../ReadyM.SDK.Server.Seeding/ReadyM.SDK.Server.Seeding.md)  

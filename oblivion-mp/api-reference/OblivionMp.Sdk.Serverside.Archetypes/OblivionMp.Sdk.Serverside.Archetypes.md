@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Serverside.Archetypes'
+description: 'The types in the OblivionMp.Sdk.Serverside.Archetypes namespace.'
+---
 # OblivionMp.Sdk.Serverside.Archetypes
 
 ### Structs

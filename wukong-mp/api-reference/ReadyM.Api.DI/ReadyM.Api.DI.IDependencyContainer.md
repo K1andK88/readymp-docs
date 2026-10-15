@@ -1,3 +1,7 @@
+---
+title: 'Interface IDependencyContainer'
+description: 'Dependency injection container interface for registering and resolving services.'
+---
 # Interface IDependencyContainer
 
 Namespace: [ReadyM.Api.DI](../ReadyM.Api.DI/ReadyM.Api.DI.md)  

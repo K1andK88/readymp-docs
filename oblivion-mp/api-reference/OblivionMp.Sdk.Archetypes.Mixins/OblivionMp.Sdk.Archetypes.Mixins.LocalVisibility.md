@@ -1,3 +1,7 @@
+---
+title: 'Struct LocalVisibility'
+description: 'How visible a character is in this player''s game.'
+---
 # Struct LocalVisibility
 
 Namespace: [OblivionMp.Sdk.Archetypes.Mixins](../OblivionMp.Sdk.Archetypes.Mixins/OblivionMp.Sdk.Archetypes.Mixins.md)  

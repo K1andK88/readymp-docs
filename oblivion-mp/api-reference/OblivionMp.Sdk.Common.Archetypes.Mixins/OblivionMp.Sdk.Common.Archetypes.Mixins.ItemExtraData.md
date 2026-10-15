@@ -1,3 +1,7 @@
+---
+title: 'Struct ItemExtraData'
+description: 'The condition and enchantment charge of a dropped item.'
+---
 # Struct ItemExtraData
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

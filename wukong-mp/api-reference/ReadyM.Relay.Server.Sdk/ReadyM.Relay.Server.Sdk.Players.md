@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Server.Sdk.Players'
+description: 'The types in the ReadyM.Relay.Server.Sdk.Players namespace.'
+---
 # ReadyM.Relay.Server.Sdk.Players
 
 ### Classes

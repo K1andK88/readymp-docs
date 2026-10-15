@@ -1,3 +1,7 @@
+---
+title: 'Struct SeedOrigin'
+description: 'How a dropped item was seeded from the game files.'
+---
 # Struct SeedOrigin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

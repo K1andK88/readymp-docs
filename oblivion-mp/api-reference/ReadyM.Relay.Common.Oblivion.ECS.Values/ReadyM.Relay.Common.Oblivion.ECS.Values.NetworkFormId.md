@@ -1,3 +1,7 @@
+---
+title: 'Struct NetworkFormId'
+description: 'Names a form in a way every client can resolve.'
+---
 # Struct NetworkFormId
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

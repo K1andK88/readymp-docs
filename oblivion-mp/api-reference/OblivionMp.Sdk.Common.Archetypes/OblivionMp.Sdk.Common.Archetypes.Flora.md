@@ -1,3 +1,7 @@
+---
+title: 'Struct Flora'
+description: 'A plant or other harvestable object placed in the world.'
+---
 # Struct Flora
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

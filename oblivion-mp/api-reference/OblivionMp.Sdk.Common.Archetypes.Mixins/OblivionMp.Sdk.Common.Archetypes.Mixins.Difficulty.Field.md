@@ -1,3 +1,7 @@
+---
+title: 'Class Difficulty.Field'
+description: 'Tokens naming each of Difficulty''s values, for mappings and overrides.'
+---
 # Class Difficulty.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

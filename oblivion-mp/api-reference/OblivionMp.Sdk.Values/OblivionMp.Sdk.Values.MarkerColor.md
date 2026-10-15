@@ -1,3 +1,7 @@
+---
+title: 'Struct MarkerColor'
+description: 'RGBA marker color, each channel 0..1.'
+---
 # Struct MarkerColor
 
 Namespace: [OblivionMp.Sdk.Values](../OblivionMp.Sdk.Values/OblivionMp.Sdk.Values.md)  

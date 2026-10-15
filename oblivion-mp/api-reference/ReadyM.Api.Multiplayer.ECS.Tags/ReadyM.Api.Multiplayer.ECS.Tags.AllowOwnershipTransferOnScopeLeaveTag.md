@@ -1,3 +1,7 @@
+---
+title: 'Struct AllowOwnershipTransferOnScopeLeaveTag'
+description: 'When the entity''s owner leaves its area or cell, hands it to another player there, or to the server if nobody is left. Without this tag, or KeepOwnerOnScopeLeaveTag, the entity is deleted instead.'
+---
 # Struct AllowOwnershipTransferOnScopeLeaveTag
 
 Namespace: [ReadyM.Api.Multiplayer.ECS.Tags](../ReadyM.Api.Multiplayer.ECS.Tags/ReadyM.Api.Multiplayer.ECS.Tags.md)  

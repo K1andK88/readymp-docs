@@ -1,3 +1,7 @@
+---
+title: 'Enum DifficultyTier'
+description: 'A difficulty level of the game.'
+---
 # Enum DifficultyTier
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

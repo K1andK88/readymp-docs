@@ -1,3 +1,7 @@
+---
+title: 'Class ServerToClientAttribute'
+description: 'Server-to-client (response/push) leg of a contract method: generates a Send(PlayerId, ...) on the server and an On(...) handler on the client. See ClientToServerAttribute.'
+---
 # Class ServerToClientAttribute
 
 Namespace: [ReadyM.Api.Multiplayer](../ReadyM.Api.Multiplayer.Interop/ReadyM.Api.Multiplayer.md)  

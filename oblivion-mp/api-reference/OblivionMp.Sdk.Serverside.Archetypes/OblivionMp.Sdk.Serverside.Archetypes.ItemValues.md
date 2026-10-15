@@ -1,3 +1,7 @@
+---
+title: 'Struct ItemValues'
+description: 'The base value of every item by form id, kept on the server only.'
+---
 # Struct ItemValues
 
 Namespace: [OblivionMp.Sdk.Serverside.Archetypes](../OblivionMp.Sdk.Serverside.Archetypes/OblivionMp.Sdk.Serverside.Archetypes.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct Difficulty'
+description: 'The difficulty every player''s game runs at.'
+---
 # Struct Difficulty
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

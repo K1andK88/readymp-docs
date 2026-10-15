@@ -1,3 +1,7 @@
+---
+title: 'Interface IEntities'
+description: 'The entities this client can see: query, look up, create and delete them.'
+---
 # Interface IEntities
 
 Namespace: [ReadyM.SDK.Client.Entities](../ReadyM.SDK.Client.Entities/ReadyM.SDK.Client.Entities.md)  

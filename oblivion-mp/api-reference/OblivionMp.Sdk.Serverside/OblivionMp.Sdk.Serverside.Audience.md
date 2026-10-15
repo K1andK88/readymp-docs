@@ -1,3 +1,6 @@
+---
+title: 'Struct Audience'
+---
 # Struct Audience
 
 Namespace: [OblivionMp.Sdk.Serverside](../OblivionMp.Sdk.Serverside/OblivionMp.Sdk.Serverside.md)  

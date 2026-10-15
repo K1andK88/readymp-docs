@@ -1,3 +1,7 @@
+---
+title: 'Struct SpawnOrigin'
+description: 'The spawner an NPC came from.'
+---
 # Struct SpawnOrigin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

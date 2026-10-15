@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Archetypes.Core'
+description: 'The types in the ReadyM.SDK.Archetypes.Core namespace.'
+---
 # ReadyM.SDK.Archetypes.Core
 
 ### Classes

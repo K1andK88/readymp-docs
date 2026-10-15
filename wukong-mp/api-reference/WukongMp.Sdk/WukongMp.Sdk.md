@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Sdk'
+description: 'The types in the WukongMp.Sdk namespace.'
+---
 # WukongMp.Sdk
 
 ### Namespaces

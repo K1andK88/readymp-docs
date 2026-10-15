@@ -1,3 +1,7 @@
+---
+title: 'Class Items.Clothes'
+description: 'Lists all clothes in the game.'
+---
 # Class Items.Clothes
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

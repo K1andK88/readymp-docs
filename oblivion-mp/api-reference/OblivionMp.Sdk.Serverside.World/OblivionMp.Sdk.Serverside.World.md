@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Serverside.World'
+description: 'The types in the OblivionMp.Sdk.Serverside.World namespace.'
+---
 # OblivionMp.Sdk.Serverside.World
 
 ### Classes

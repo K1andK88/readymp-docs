@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Saves'
+description: 'The types in the ReadyM.Api.Saves namespace.'
+---
 # ReadyM.Api.Saves
 
 ### Structs

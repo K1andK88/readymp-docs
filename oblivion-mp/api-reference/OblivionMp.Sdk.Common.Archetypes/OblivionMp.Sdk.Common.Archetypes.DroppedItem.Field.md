@@ -1,3 +1,7 @@
+---
+title: 'Class DroppedItem.Field'
+description: 'Tokens naming each of DroppedItem''s values, for mappings and overrides.'
+---
 # Class DroppedItem.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

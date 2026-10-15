@@ -1,3 +1,7 @@
+---
+title: 'Interface IPlayers'
+description: 'The local player, and the other players in their area.'
+---
 # Interface IPlayers
 
 Namespace: [OblivionMp.Sdk](../OblivionMp.Sdk/OblivionMp.Sdk.md)  

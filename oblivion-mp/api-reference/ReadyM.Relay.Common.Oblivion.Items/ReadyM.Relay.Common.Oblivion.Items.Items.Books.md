@@ -1,3 +1,7 @@
+---
+title: 'Class Items.Books'
+description: 'Lists all books in the game.'
+---
 # Class Items.Books
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

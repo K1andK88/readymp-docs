@@ -1,3 +1,7 @@
+---
+title: 'Struct AreaId'
+description: 'Identifies an area: a part of the game world behind a loading screen, such as a whole map or a single interior.'
+---
 # Struct AreaId
 
 Namespace: [ReadyM.Api.Idents](../ReadyM.Api.Idents/ReadyM.Api.Idents.md)  

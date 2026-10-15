@@ -1,3 +1,7 @@
+---
+title: 'Struct ScopedQuery<T>'
+description: 'Every entity a scope holds that carries the shape. Walked by identity: a scope''s entities are scattered through the archetypes they belong to, so there are no chunks to hand back.'
+---
 # Struct ScopedQuery<T>
 
 Namespace: [ReadyM.SDK.Server.Entities](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.md)  

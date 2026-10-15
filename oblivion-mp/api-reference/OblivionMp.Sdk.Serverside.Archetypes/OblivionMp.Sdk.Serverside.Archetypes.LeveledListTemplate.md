@@ -1,3 +1,7 @@
+---
+title: 'Struct LeveledListTemplate'
+description: 'A leveled list from the game files, kept on the server only.'
+---
 # Struct LeveledListTemplate
 
 Namespace: [OblivionMp.Sdk.Serverside.Archetypes](../OblivionMp.Sdk.Serverside.Archetypes/OblivionMp.Sdk.Serverside.Archetypes.md)  

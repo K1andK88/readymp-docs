@@ -1,3 +1,7 @@
+---
+title: 'Struct LeveledListTemplateMixinEntries'
+description: 'The Entries collection of a LeveledListTemplateMixin.'
+---
 # Struct LeveledListTemplateMixinEntries
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

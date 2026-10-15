@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Api.Resources'
+description: 'The types in the WukongMp.Api.Resources namespace.'
+---
 # WukongMp.Api.Resources
 
 ### Classes

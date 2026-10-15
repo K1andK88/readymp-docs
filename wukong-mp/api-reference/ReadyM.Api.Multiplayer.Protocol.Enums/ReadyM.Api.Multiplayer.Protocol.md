@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer.Protocol'
+description: 'The types in the ReadyM.Api.Multiplayer.Protocol namespace.'
+---
 # ReadyM.Api.Multiplayer.Protocol
 
 ### Namespaces

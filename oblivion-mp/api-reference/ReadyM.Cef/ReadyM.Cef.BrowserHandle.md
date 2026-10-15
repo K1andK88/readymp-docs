@@ -1,3 +1,7 @@
+---
+title: 'Struct BrowserHandle'
+description: 'Identifies a browser: the thing that loads a page and produces frames.'
+---
 # Struct BrowserHandle
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

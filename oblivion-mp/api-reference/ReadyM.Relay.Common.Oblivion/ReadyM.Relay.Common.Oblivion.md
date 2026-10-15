@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Common.Oblivion'
+description: 'The types in the ReadyM.Relay.Common.Oblivion namespace.'
+---
 # ReadyM.Relay.Common.Oblivion
 
 ### Namespaces

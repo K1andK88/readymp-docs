@@ -1,3 +1,7 @@
+---
+title: 'Interface IAreaSeeder'
+description: 'Fills a new area. Declare it on a [Service]; the server calls it once, when the area is created rather than loaded from the save.'
+---
 # Interface IAreaSeeder
 
 Namespace: [ReadyM.SDK.Server.Seeding](../ReadyM.SDK.Server.Seeding/ReadyM.SDK.Server.Seeding.md)  

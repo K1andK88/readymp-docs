@@ -1,3 +1,7 @@
+---
+title: 'Class AnimationState.Field'
+description: 'Tokens naming each of AnimationState''s values, for mappings and overrides.'
+---
 # Class AnimationState.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Class OblivionAreaIds'
+description: 'Builds the area ids OblivionMP uses for interiors and exterior world spaces.'
+---
 # Class OblivionAreaIds
 
 Namespace: [ReadyM.Relay.Common.Oblivion](../ReadyM.Relay.Common.Oblivion/ReadyM.Relay.Common.Oblivion.md)  

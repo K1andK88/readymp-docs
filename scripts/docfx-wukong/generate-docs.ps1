@@ -115,3 +115,6 @@ Get-ChildItem -Path $docsTarget -Filter *.md -Recurse -File | ForEach-Object {
 
     Set-Content -Path $filePath -Value $newerContent -Encoding UTF8
 }
+
+# a title and description in each page's front matter, for search, link previews and the llms.txt files
+& (Join-Path $PSScriptRoot "../Add-ApiFrontMatter.ps1") -Path $docsTarget

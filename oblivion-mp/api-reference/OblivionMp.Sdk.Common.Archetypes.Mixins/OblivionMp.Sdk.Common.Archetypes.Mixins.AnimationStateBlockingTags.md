@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationStateBlockingTags'
+description: 'The BlockingTags collection of a AnimationState.'
+---
 # Struct AnimationStateBlockingTags
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

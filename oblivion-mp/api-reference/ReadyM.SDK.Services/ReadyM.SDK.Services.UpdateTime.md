@@ -1,3 +1,7 @@
+---
+title: 'Struct UpdateTime'
+description: 'A service''s clock for the current update.'
+---
 # Struct UpdateTime
 
 Namespace: [ReadyM.SDK.Services](../ReadyM.SDK.Services/ReadyM.SDK.Services.md)  

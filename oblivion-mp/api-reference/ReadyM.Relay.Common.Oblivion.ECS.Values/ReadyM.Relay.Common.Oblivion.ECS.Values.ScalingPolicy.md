@@ -1,3 +1,7 @@
+---
+title: 'Enum ScalingPolicy'
+description: 'How the session picks the level leveled lists roll at.'
+---
 # Enum ScalingPolicy
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

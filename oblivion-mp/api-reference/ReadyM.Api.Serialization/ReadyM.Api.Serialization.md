@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Serialization'
+description: 'The types in the ReadyM.Api.Serialization namespace.'
+---
 # ReadyM.Api.Serialization
 
 ### Classes

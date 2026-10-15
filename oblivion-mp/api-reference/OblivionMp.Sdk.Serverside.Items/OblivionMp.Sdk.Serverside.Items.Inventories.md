@@ -1,3 +1,7 @@
+---
+title: 'Class Inventories'
+description: 'Moves item stacks between the item lists of entities, worn copies last.'
+---
 # Class Inventories
 
 Namespace: [OblivionMp.Sdk.Serverside.Items](../OblivionMp.Sdk.Serverside.Items/OblivionMp.Sdk.Serverside.Items.md)  

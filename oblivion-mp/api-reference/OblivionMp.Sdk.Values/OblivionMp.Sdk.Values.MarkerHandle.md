@@ -1,3 +1,7 @@
+---
+title: 'Struct MarkerHandle'
+description: 'Handle to a marker. Zero means "no marker" (see None).'
+---
 # Struct MarkerHandle
 
 Namespace: [OblivionMp.Sdk.Values](../OblivionMp.Sdk.Values/OblivionMp.Sdk.Values.md)  

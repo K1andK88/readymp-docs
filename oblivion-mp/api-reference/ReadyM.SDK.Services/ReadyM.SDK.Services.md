@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Services'
+description: 'The types in the ReadyM.SDK.Services namespace.'
+---
 # ReadyM.SDK.Services
 
 ### Classes

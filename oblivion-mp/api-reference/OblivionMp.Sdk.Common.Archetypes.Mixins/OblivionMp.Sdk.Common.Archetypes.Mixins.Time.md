@@ -1,3 +1,7 @@
+---
+title: 'Struct Time'
+description: 'The clock of an area.'
+---
 # Struct Time
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct VarUInt'
+description: 'Variable-length unsigned integer. Most significant bit of each byte is used as a continuation flag. The remaining 7 bits are used to store the value.'
+---
 # Struct VarUInt
 
 Namespace: [ReadyM.Api.Serialization](../ReadyM.Api.Serialization/ReadyM.Api.Serialization.md)  

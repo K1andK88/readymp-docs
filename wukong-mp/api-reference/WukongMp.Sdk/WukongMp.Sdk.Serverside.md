@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Sdk.Serverside'
+description: 'The types in the WukongMp.Sdk.Serverside namespace.'
+---
 # WukongMp.Sdk.Serverside
 
 ### Classes

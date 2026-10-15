@@ -1,3 +1,7 @@
+---
+title: 'Enum ViewportAlign'
+description: 'Start, Center or End on one axis. NOT Left and Top: those mean different things per axis.'
+---
 # Enum ViewportAlign
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

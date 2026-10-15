@@ -1,3 +1,6 @@
+---
+title: 'Interface IReadyEntity<TSelf>'
+---
 # Interface IReadyEntity<TSelf>
 
 Namespace: [WukongMp.Sdk](../WukongMp.Sdk/WukongMp.Sdk.md)  

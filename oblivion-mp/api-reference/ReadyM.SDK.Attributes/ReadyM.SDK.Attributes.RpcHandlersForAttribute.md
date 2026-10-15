@@ -1,3 +1,7 @@
+---
+title: 'Class RpcHandlersForAttribute'
+description: 'Binds a class to the [RpcContracts] set it implements.'
+---
 # Class RpcHandlersForAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

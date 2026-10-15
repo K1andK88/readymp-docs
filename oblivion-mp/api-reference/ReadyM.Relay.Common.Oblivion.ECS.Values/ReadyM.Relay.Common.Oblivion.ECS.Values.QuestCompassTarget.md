@@ -1,3 +1,7 @@
+---
+title: 'Struct QuestCompassTarget'
+description: 'A compass marker for a quest stage.'
+---
 # Struct QuestCompassTarget
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct EquipmentState'
+description: 'Player character''s equipment.'
+---
 # Struct EquipmentState
 
 Namespace: [ReadyM.Wukong.Common.ECS.Values](../ReadyM.Wukong.Common.ECS.Values/ReadyM.Wukong.Common.ECS.Values.md)  

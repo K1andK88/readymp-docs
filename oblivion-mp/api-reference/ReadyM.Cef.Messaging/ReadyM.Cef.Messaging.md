@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Cef.Messaging'
+description: 'The types in the ReadyM.Cef.Messaging namespace.'
+---
 # ReadyM.Cef.Messaging
 
 ### Classes

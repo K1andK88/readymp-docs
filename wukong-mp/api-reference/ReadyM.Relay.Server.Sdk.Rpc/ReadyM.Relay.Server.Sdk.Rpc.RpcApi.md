@@ -1,3 +1,7 @@
+---
+title: 'Class RpcApi'
+description: 'Low-level API for handling RPC messages in the ReadyM Relay Server SDK.'
+---
 # Class RpcApi
 
 Namespace: [ReadyM.Relay.Server.Sdk.Rpc](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Rpc.md)  

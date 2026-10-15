@@ -1,3 +1,7 @@
+---
+title: 'Struct Spawner'
+description: 'A leveled creature spawn point from the game, kept on the server only.'
+---
 # Struct Spawner
 
 Namespace: [OblivionMp.Sdk.Serverside.Archetypes](../OblivionMp.Sdk.Serverside.Archetypes/OblivionMp.Sdk.Serverside.Archetypes.md)  

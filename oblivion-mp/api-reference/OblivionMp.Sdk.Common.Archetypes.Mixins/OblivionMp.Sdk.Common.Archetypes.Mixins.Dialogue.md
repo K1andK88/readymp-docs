@@ -1,3 +1,7 @@
+---
+title: 'Struct Dialogue'
+description: 'The dialogue topics and responses the server offers a player.'
+---
 # Struct Dialogue
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

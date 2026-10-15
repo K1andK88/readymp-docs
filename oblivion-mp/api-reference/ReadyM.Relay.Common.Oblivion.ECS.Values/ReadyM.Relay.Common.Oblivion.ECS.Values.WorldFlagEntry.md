@@ -1,3 +1,7 @@
+---
+title: 'Struct WorldFlagEntry'
+description: 'A named world flag and its value.'
+---
 # Struct WorldFlagEntry
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

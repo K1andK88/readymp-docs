@@ -1,3 +1,7 @@
+---
+title: 'Class SessionClock'
+description: 'The session''s game time, read from an area''s clock.'
+---
 # Class SessionClock
 
 Namespace: [OblivionMp.Sdk.Serverside](../OblivionMp.Sdk.Serverside/OblivionMp.Sdk.Serverside.md)  

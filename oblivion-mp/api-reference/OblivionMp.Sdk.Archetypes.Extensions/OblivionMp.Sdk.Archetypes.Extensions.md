@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Archetypes.Extensions'
+description: 'The types in the OblivionMp.Sdk.Archetypes.Extensions namespace.'
+---
 # OblivionMp.Sdk.Archetypes.Extensions
 
 ### Classes

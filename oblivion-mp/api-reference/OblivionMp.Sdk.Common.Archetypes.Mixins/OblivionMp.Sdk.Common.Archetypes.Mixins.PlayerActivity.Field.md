@@ -1,3 +1,7 @@
+---
+title: 'Class PlayerActivity.Field'
+description: 'Tokens naming each of PlayerActivity''s values, for mappings and overrides.'
+---
 # Class PlayerActivity.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

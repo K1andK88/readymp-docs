@@ -1,3 +1,7 @@
+---
+title: 'Interface IPlayers'
+description: 'What the server can do with a connected player, beyond their entities.'
+---
 # Interface IPlayers
 
 Namespace: [ReadyM.Relay.Server.Sdk.Players](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.md)  

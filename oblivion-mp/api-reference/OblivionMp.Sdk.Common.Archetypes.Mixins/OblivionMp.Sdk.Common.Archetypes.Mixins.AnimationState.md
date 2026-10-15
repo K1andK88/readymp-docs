@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationState'
+description: 'The animation state of a character, as its game reports it.'
+---
 # Struct AnimationState
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

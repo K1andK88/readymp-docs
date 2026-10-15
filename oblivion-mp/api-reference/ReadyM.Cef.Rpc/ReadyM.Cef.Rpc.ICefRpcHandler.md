@@ -1,3 +1,7 @@
+---
+title: 'Interface ICefRpcHandler'
+description: 'A class that declares typed messages, ready to be bound.'
+---
 # Interface ICefRpcHandler
 
 Namespace: [ReadyM.Cef.Rpc](../ReadyM.Cef.Rpc/ReadyM.Cef.Rpc.md)  

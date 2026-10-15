@@ -1,3 +1,7 @@
+---
+title: 'Class ModEntryAttribute'
+description: 'Indicates the entry point of a mod. The annotated class may declare a private void Init() method, which will be called when the mod is loaded.'
+---
 # Class ModEntryAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Enum DisconnectedReason'
+description: 'Denotes a reason for being disconnected from the server.'
+---
 # Enum DisconnectedReason
 
 Namespace: [ReadyM.Api.Multiplayer.Protocol](../ReadyM.Api.Multiplayer.Protocol/ReadyM.Api.Multiplayer.Protocol.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Enum CharacterSex'
+description: 'A character''s sex.'
+---
 # Enum CharacterSex
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

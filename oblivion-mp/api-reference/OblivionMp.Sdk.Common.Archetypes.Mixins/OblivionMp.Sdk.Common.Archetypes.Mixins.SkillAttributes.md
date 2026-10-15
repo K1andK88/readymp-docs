@@ -1,3 +1,7 @@
+---
+title: 'Struct SkillAttributes'
+description: 'A character''s attributes and skills, keyed by CharacterAttribute cast to byte.'
+---
 # Struct SkillAttributes
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

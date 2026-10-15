@@ -1,3 +1,7 @@
+---
+title: 'Class ArchetypeAttribute'
+description: 'Declares a struct as an archetype.'
+---
 # Class ArchetypeAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

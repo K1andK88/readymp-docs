@@ -1,3 +1,7 @@
+---
+title: 'Class ExtendsAttribute'
+description: 'Adds this mixin to every entity created as the named archetype.'
+---
 # Class ExtendsAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

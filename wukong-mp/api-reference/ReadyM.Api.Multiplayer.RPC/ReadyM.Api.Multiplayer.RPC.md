@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer.RPC'
+description: 'The types in the ReadyM.Api.Multiplayer.RPC namespace.'
+---
 # ReadyM.Api.Multiplayer.RPC
 
 ### Classes

@@ -1,3 +1,7 @@
+---
+title: 'Class Items.SoulGems'
+description: 'Lists all soulgems in the game.'
+---
 # Class Items.SoulGems
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

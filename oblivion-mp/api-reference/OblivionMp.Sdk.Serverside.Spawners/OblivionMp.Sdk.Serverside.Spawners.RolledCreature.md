@@ -1,3 +1,7 @@
+---
+title: 'Struct RolledCreature'
+description: 'A creature or NPC that a leveled list rolled, and how many.'
+---
 # Struct RolledCreature
 
 Namespace: [OblivionMp.Sdk.Serverside.Spawners](../OblivionMp.Sdk.Serverside.Spawners/OblivionMp.Sdk.Serverside.Spawners.md)  

@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Archetypes'
+description: 'The types in the ReadyM.SDK.Archetypes namespace.'
+---
 # ReadyM.SDK.Archetypes
 
 ### Namespaces

@@ -1,3 +1,7 @@
+---
+title: 'Struct EffectsAttributesAttribute'
+description: 'The Attribute collection of a EffectsAttributes.'
+---
 # Struct EffectsAttributesAttribute
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

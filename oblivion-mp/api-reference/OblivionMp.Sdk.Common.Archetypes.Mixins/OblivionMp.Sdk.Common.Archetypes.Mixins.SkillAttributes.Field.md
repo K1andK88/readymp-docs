@@ -1,3 +1,7 @@
+---
+title: 'Class SkillAttributes.Field'
+description: 'Tokens naming each of SkillAttributes''s values, for mappings and overrides.'
+---
 # Class SkillAttributes.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

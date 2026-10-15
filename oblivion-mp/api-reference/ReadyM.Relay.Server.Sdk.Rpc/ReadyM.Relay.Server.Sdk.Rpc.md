@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Server.Sdk.Rpc'
+description: 'The types in the ReadyM.Relay.Server.Sdk.Rpc namespace.'
+---
 # ReadyM.Relay.Server.Sdk.Rpc
 
 ### Structs

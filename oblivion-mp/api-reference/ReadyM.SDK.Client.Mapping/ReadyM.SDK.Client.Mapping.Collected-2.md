@@ -1,3 +1,7 @@
+---
+title: 'Delegate Collected<TAccess, TContext>'
+description: 'Moves one collection between the ECS and the game, in whichever direction it was declared for.'
+---
 # Delegate Collected<TAccess, TContext>
 
 Namespace: [ReadyM.SDK.Client.Mapping](../ReadyM.SDK.Client.Mapping/ReadyM.SDK.Client.Mapping.md)  

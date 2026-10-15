@@ -1,3 +1,7 @@
+---
+title: 'OblivionMpCSharpMod'
+description: 'The types in the OblivionMpCSharpMod namespace.'
+---
 # OblivionMpCSharpMod
 
 ### Namespaces

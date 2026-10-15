@@ -1,3 +1,7 @@
+---
+title: 'Struct EffectsAttributes'
+description: 'A character''s active effect values, keyed by CharacterEffect cast to byte.'
+---
 # Struct EffectsAttributes
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

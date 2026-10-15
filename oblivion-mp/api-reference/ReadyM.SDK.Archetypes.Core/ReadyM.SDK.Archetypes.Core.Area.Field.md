@@ -1,3 +1,7 @@
+---
+title: 'Class Area.Field'
+description: 'Tokens naming each of Area''s values, for mappings and overrides.'
+---
 # Class Area.Field
 
 Namespace: [ReadyM.SDK.Archetypes.Core](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.md)  

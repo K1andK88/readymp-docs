@@ -1,3 +1,7 @@
+---
+title: 'Class ArchetypeBuilder'
+description: 'Builder class for creating archetypes in the ECS (Entity Component System) framework. It allows adding components, tags, and custom filters to define the structure of an archetype.'
+---
 # Class ArchetypeBuilder
 
 Namespace: [ReadyM.Api.ECS.Worlds](../ReadyM.Api.ECS.Worlds/ReadyM.Api.ECS.Worlds.md)  

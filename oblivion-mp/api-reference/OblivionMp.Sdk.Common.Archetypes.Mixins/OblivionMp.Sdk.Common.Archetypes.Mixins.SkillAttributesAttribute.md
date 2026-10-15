@@ -1,3 +1,7 @@
+---
+title: 'Struct SkillAttributesAttribute'
+description: 'The Attribute collection of a SkillAttributes.'
+---
 # Struct SkillAttributesAttribute
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

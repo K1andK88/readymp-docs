@@ -1,3 +1,7 @@
+---
+title: 'Class GameWidgetBase'
+description: 'Base class for UI widgets defined in .pak files.'
+---
 # Class GameWidgetBase
 
 Namespace: [WukongMp.Api.UI](../WukongMp.Api.UI/WukongMp.Api.UI.md)  

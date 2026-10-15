@@ -1,3 +1,7 @@
+---
+title: 'Struct NicknameComponent'
+description: 'Holds the displayed nickname of an entity.'
+---
 # Struct NicknameComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

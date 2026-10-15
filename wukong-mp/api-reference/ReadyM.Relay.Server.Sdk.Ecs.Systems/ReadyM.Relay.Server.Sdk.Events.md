@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Server.Sdk.Events'
+description: 'The types in the ReadyM.Relay.Server.Sdk.Events namespace.'
+---
 # ReadyM.Relay.Server.Sdk.Events
 
 ### Classes

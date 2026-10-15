@@ -1,3 +1,7 @@
+---
+title: 'Class SyncExtensions'
+description: 'Extensions for moving one value between the ECS and the game at a sync point, usually a patch or system.'
+---
 # Class SyncExtensions
 
 Namespace: [ReadyM.SDK.Client.Mapping](../ReadyM.SDK.Client.Mapping/ReadyM.SDK.Client.Mapping.md)  

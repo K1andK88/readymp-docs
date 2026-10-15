@@ -1,3 +1,7 @@
+---
+title: 'Struct Area'
+description: 'A scope for one area of the world, holding what is in it while players are there.'
+---
 # Struct Area
 
 Namespace: [ReadyM.SDK.Archetypes.Core](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.md)  

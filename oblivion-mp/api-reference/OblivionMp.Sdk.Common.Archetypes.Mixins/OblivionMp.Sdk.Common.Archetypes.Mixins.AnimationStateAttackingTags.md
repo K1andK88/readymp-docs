@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationStateAttackingTags'
+description: 'The AttackingTags collection of a AnimationState.'
+---
 # Struct AnimationStateAttackingTags
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

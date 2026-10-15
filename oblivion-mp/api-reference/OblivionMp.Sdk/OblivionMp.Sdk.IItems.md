@@ -1,3 +1,7 @@
+---
+title: 'Interface IItems'
+description: 'Drops items into the world from the client.'
+---
 # Interface IItems
 
 Namespace: [OblivionMp.Sdk](../OblivionMp.Sdk/OblivionMp.Sdk.md)  

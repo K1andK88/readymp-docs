@@ -1,3 +1,7 @@
+---
+title: 'Enum SitSleepState'
+description: 'Where a character is in sitting down on, sleeping in or getting up from furniture.'
+---
 # Enum SitSleepState
 
 Namespace: [OblivionMpCSharpMod.ECS.Values](../OblivionMpCSharpMod.ECS.Values/OblivionMpCSharpMod.ECS.Values.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct Journal'
+description: 'The quests and compass targets in a player''s journal.'
+---
 # Struct Journal
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

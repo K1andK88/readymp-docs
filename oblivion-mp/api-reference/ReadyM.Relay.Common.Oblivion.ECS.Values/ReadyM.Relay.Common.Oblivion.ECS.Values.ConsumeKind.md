@@ -1,3 +1,7 @@
+---
+title: 'Enum ConsumeKind'
+description: 'How a player consumed an item.'
+---
 # Enum ConsumeKind
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

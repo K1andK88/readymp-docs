@@ -1,3 +1,6 @@
+---
+title: 'Class ServerModBase'
+---
 # Class ServerModBase
 
 Namespace: [ReadyM.Relay.Server.Sdk](../ReadyM.Relay.Server.Sdk/ReadyM.Relay.Server.Sdk.md)  

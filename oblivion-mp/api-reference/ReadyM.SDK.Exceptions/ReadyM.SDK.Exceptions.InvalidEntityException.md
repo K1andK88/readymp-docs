@@ -1,3 +1,7 @@
+---
+title: 'Class InvalidEntityException'
+description: 'The entity is gone, does not exist yet, or is not of the shape asked for.'
+---
 # Class InvalidEntityException
 
 Namespace: [ReadyM.SDK.Exceptions](../ReadyM.SDK.Exceptions/ReadyM.SDK.Exceptions.md)  

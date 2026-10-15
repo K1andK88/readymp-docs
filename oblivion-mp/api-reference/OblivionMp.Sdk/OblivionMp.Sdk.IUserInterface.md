@@ -1,3 +1,7 @@
+---
+title: 'Interface IUserInterface'
+description: 'On-screen messages, and the state of the game''s own menus.'
+---
 # Interface IUserInterface
 
 Namespace: [OblivionMp.Sdk](../OblivionMp.Sdk/OblivionMp.Sdk.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Enum CefInputMode'
+description: 'What should happen to input while a page is on screen.'
+---
 # Enum CefInputMode
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

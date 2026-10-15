@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Values'
+description: 'The types in the OblivionMp.Sdk.Values namespace.'
+---
 # OblivionMp.Sdk.Values
 
 ### Structs

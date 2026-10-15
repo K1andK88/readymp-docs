@@ -1,3 +1,7 @@
+---
+title: 'Class NpcTemplateMixin.Field'
+description: 'Tokens naming each of NpcTemplateMixin''s values, for mappings and overrides.'
+---
 # Class NpcTemplateMixin.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

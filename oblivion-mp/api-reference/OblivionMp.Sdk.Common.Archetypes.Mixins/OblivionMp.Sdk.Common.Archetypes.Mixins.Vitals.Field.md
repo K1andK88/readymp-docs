@@ -1,3 +1,7 @@
+---
+title: 'Class Vitals.Field'
+description: 'Tokens naming each of Vitals''s values, for mappings and overrides.'
+---
 # Class Vitals.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

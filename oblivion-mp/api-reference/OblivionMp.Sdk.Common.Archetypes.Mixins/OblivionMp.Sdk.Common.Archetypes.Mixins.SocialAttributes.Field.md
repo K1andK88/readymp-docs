@@ -1,3 +1,7 @@
+---
+title: 'Class SocialAttributes.Field'
+description: 'Tokens naming each of SocialAttributes''s values, for mappings and overrides.'
+---
 # Class SocialAttributes.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk'
+description: 'The types in the OblivionMp.Sdk namespace.'
+---
 # OblivionMp.Sdk
 
 ### Namespaces

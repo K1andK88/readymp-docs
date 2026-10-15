@@ -1,3 +1,7 @@
+---
+title: 'Struct ItemValue'
+description: 'The base value of an item in the game files, and whether the engine computes it instead, like for an enchanted item or a potion.'
+---
 # Struct ItemValue
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

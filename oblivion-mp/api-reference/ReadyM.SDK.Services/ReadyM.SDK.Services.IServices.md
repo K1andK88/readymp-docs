@@ -1,3 +1,7 @@
+---
+title: 'Interface IServices'
+description: 'Switches services on and off while the game runs.'
+---
 # Interface IServices
 
 Namespace: [ReadyM.SDK.Services](../ReadyM.SDK.Services/ReadyM.SDK.Services.md)  

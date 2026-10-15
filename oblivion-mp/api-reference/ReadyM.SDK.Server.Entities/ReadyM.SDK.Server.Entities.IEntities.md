@@ -1,3 +1,7 @@
+---
+title: 'Interface IEntities'
+description: 'Every entity on the server: create, query, look up and delete them.'
+---
 # Interface IEntities
 
 Namespace: [ReadyM.SDK.Server.Entities](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct ServerSummon'
+description: 'A creature a player summoned with a spell, created and deleted by the server.'
+---
 # Struct ServerSummon
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

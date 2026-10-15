@@ -1,3 +1,7 @@
+---
+title: 'Struct NpcTemplateMixin'
+description: 'An NPC''s record from the game files.'
+---
 # Struct NpcTemplateMixin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

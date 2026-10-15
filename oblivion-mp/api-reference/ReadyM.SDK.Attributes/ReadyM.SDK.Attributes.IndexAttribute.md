@@ -1,3 +1,7 @@
+---
+title: 'Class IndexAttribute'
+description: 'Indexes the shape by this property, so an entity can be found by its value. One property per shape may carry it, and writing it keeps the index current.'
+---
 # Class IndexAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

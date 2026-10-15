@@ -1,3 +1,7 @@
+---
+title: 'Struct ScopedQuery<T1, T2>'
+description: 'Every entity a scope holds that carries all 2 shapes. Walked by identity: a scope''s entities are scattered through the archetypes they belong to, so there are no chunks to hand back.'
+---
 # Struct ScopedQuery<T1, T2>
 
 Namespace: [ReadyM.SDK.Client.Entities](../ReadyM.SDK.Client.Entities/ReadyM.SDK.Client.Entities.md)  

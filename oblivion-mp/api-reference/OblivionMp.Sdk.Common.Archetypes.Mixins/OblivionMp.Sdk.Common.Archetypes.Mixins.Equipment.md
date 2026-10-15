@@ -1,3 +1,7 @@
+---
+title: 'Struct Equipment'
+description: 'The inventory of a character or NPC.'
+---
 # Struct Equipment
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

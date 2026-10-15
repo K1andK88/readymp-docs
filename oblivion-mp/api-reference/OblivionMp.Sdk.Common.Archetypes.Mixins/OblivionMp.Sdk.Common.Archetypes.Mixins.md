@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Common.Archetypes.Mixins'
+description: 'The types in the OblivionMp.Sdk.Common.Archetypes.Mixins namespace.'
+---
 # OblivionMp.Sdk.Common.Archetypes.Mixins
 
 ### Classes

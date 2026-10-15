@@ -1,3 +1,7 @@
+---
+title: 'Struct RefIdMixin'
+description: 'The reference id the game knows an entity by.'
+---
 # Struct RefIdMixin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Class ArchetypeMixinAttribute'
+description: 'Declares a struct as an archetype mixin.'
+---
 # Class ArchetypeMixinAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

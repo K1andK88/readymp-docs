@@ -1,3 +1,7 @@
+---
+title: 'Class ServerRpcForAttribute'
+description: 'Binds an RPC class (server ServerRpcHandlersBase, client ServerRpcClient) to the ServerRpcContractsAttribute class it implements, and is required on both. A project may reference several contract sets, directly or transitively; this is what tells the generator which one to emit against. Only the legs declared by the named class are generated, so one contract set per RPC class.'
+---
 # Class ServerRpcForAttribute
 
 Namespace: [ReadyM.Api.Multiplayer](../ReadyM.Api.Multiplayer.Interop/ReadyM.Api.Multiplayer.md)  

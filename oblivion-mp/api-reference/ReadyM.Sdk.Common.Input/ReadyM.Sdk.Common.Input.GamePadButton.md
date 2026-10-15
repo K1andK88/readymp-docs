@@ -1,3 +1,7 @@
+---
+title: 'Enum GamePadButton'
+description: 'Represents the buttons on a gamepad controller.'
+---
 # Enum GamePadButton
 
 Namespace: [ReadyM.Sdk.Common.Input](../ReadyM.Sdk.Common.Input/ReadyM.Sdk.Common.Input.md)  

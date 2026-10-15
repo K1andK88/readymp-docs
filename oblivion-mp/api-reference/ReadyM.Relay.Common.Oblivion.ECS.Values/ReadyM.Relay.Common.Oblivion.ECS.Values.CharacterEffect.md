@@ -1,3 +1,7 @@
+---
+title: 'Enum CharacterEffect'
+description: 'Character effects that can be applied to a character.'
+---
 # Enum CharacterEffect
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

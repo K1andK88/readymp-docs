@@ -1,3 +1,7 @@
+---
+title: 'Class ItemValuesMixin.Field'
+description: 'Tokens naming each of ItemValuesMixin''s values, for mappings and overrides.'
+---
 # Class ItemValuesMixin.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

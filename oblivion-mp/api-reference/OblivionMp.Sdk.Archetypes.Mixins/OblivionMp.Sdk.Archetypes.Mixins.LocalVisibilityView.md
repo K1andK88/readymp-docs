@@ -1,3 +1,7 @@
+---
+title: 'Struct LocalVisibilityView'
+description: 'Walks this shape by chunk. Valid only inside the loop that produced it.'
+---
 # Struct LocalVisibilityView
 
 Namespace: [OblivionMp.Sdk.Archetypes.Mixins](../OblivionMp.Sdk.Archetypes.Mixins/OblivionMp.Sdk.Archetypes.Mixins.md)  

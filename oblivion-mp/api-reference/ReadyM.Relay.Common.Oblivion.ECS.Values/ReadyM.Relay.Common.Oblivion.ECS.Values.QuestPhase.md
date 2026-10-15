@@ -1,3 +1,7 @@
+---
+title: 'Enum QuestPhase'
+description: 'Where a quest stands.'
+---
 # Enum QuestPhase
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

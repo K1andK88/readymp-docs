@@ -1,3 +1,7 @@
+---
+title: 'Interface IPageMessageTransport'
+description: 'Puts bytes on a page, under a name.'
+---
 # Interface IPageMessageTransport
 
 Namespace: [ReadyM.Cef.Messaging](../ReadyM.Cef.Messaging/ReadyM.Cef.Messaging.md)  

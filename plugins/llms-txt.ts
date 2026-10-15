@@ -57,44 +57,22 @@ function truncate(text: string): string {
 }
 
 /**
- * The summary of a generated API reference page: the paragraph after its `Assembly:` line.
- * Namespace pages have no summary of their own. The plugin would take the first paragraph instead,
- * which on these pages is the namespace and assembly.
- */
-function apiSummary(markdown: string): string {
-  const lines = markdown.split(/\r?\n/);
-  const assembly = lines.findIndex((line) => line.startsWith('Assembly:'));
-  if (assembly < 0) return '';
-  const paragraph: string[] = [];
-  for (const line of lines.slice(assembly + 1)) {
-    if (line.trim() === '') {
-      if (paragraph.length) break;
-      continue;
-    }
-    if (/^(```|#)/.test(line)) break;
-    paragraph.push(line);
-  }
-  return plainText(paragraph.join(' '));
-}
-
-/**
  * Writes llms.txt files with docusaurus-plugin-llms: a site index at /llms.txt and, for each product,
  * /<dir>/llms.txt (guides and API links), /<dir>/llms-full.txt (guides) and /<dir>/llms-api-full.txt (API reference),
- * plus a Markdown copy of every guide next to its HTML. Only the current docs version of the default locale is used,
- * in sidebar order.
+ * plus a Markdown copy of every page next to its HTML, with absolute links. Only the current docs version of the default
+ * locale is used, in sidebar order.
  */
 export default function llmsTxtPlugin(context: LoadContext, options: LlmsTxtOptions): Plugin<void> {
-  const {siteConfig, i18n, outDir, siteDir} = context;
+  const {siteConfig, i18n, outDir} = context;
   const siteUrl = siteConfig.url.replace(/\/+$/, '') + siteConfig.baseUrl;
   const guidesDir = (product: LlmsTxtProduct) => `${product.dir}/docs`;
   const apiDir = (product: LlmsTxtProduct) => `${product.dir}/api-reference`;
   const fileUrl = (filename: string) => `${siteUrl}${filename}`;
 
-  // Filled once all content is loaded: each product's site-relative source paths in sidebar order,
-  // its current version label, and the source path of every current page by permalink (no trailing slash).
+  // Filled once all content is loaded: each product's site-relative source paths in sidebar order, and its current
+  // version label.
   const sidebarOrder = new Map<string, string[]>();
   const currentLabel = new Map<string, string>();
-  const sourceByPermalink = new Map<string, string>();
 
   const productFiles = (product: LlmsTxtProduct) => {
     const version = currentLabel.get(product.docsPluginId);
@@ -143,11 +121,11 @@ export default function llmsTxtPlugin(context: LoadContext, options: LlmsTxtOpti
     ],
   });
 
-  // Second run: each product's index of guides and API reference, and the API reference in one file. It writes no
-  // Markdown copies: the generated API pages have no front matter description, so the plugin would move their first
-  // paragraph (the namespace line, or a namespace page's first entry) into the copy's header.
+  // Second run: each product's index of guides and API reference, and the API reference in one file, with a Markdown
+  // copy of every API page. The guides' copies come out the same as the first run's.
   const productsRun = (): LlmsOptions => ({
     ...common,
+    generateMarkdownFiles: true,
     docsDir: options.products.flatMap((product) => [
       {path: guidesDir(product), routeBasePath: guidesDir(product), label: `${product.name} guides`},
       {path: apiDir(product), routeBasePath: apiDir(product), label: `${product.name} API reference`},
@@ -175,14 +153,10 @@ export default function llmsTxtPlugin(context: LoadContext, options: LlmsTxtOpti
     ]),
   });
 
-  /**
-   * Gives API reference links in an llms.txt their summary, strips HTML from every description,
-   * and points links at the page's Markdown copy where the first run wrote one.
-   */
+  /** Strips HTML from every description in an llms.txt, and points links at the page's Markdown copy. */
   async function fixLinkDescriptions(filename: string) {
     const filePath = path.join(outDir, filename);
     const text = await fs.readFile(filePath, 'utf8');
-    const apiDirs = options.products.map((product) => `${apiDir(product)}/`);
     const lines = await Promise.all(
       text.split('\n').map(async (line) => {
         const link = /^- \[(.*)\]\((\S+?)\)(?:: (.*))?$/.exec(line);
@@ -191,11 +165,7 @@ export default function llmsTxtPlugin(context: LoadContext, options: LlmsTxtOpti
         const permalink = decodeURIComponent(new URL(pageUrl).pathname).replace(/\.md$/, '');
         const hasCopy = await fs.access(path.join(outDir, `${permalink}.md`)).then(() => true, () => false);
         const url = hasCopy && !pageUrl.endsWith('.md') ? `${pageUrl}.md` : pageUrl;
-        const source = sourceByPermalink.get(permalink);
-        const summary =
-          source && apiDirs.some((dir) => source.startsWith(dir))
-            ? apiSummary(await fs.readFile(path.join(siteDir, source), 'utf8'))
-            : plainText(description);
+        const summary = plainText(description);
         return `- [${title}](${url})${summary ? `: ${truncate(summary)}` : ''}`;
       }),
     );
@@ -207,6 +177,82 @@ export default function llmsTxtPlugin(context: LoadContext, options: LlmsTxtOpti
     const filePath = path.join(outDir, filename);
     const text = await fs.readFile(filePath, 'utf8');
     await fs.writeFile(filePath, text.replace(/^(## (.+?)<[^\n]*>(?: \([^)\n]*\))?\n\n)## \2\n\n/gm, '$1'));
+  }
+
+  /** Every `.md` file under a folder of the build output, as paths relative to it with forward slashes. */
+  async function markdownCopies(dir: string): Promise<string[]> {
+    const found: string[] = [];
+    const walk = async (rel: string) => {
+      const entries = await fs.readdir(path.join(outDir, rel), {withFileTypes: true}).catch(() => []);
+      for (const entry of entries) {
+        const child = `${rel}/${entry.name}`;
+        if (entry.isDirectory()) await walk(child);
+        else if (entry.name.endsWith('.md')) found.push(child);
+      }
+    };
+    await walk(dir);
+    return found;
+  }
+
+  /**
+   * Makes the relative links in Markdown absolute, pointing at the target page's copy. `sourceDir` is the folder of the
+   * page's source file, which its links are relative to. A link names a source file (`x.md`, `x.mdx`) or, as Docusaurus
+   * also allows, leaves the extension out. Anything else, an image say, has no copy and is left as it is.
+   */
+  function absoluteLinks(text: string, sourceDir: string, copies: Set<string>, byName?: Map<string, string | null>): string {
+    return text.replace(/\]\(([^)\s#]+?)(#[^)\s]*)?\)/g, (match, target: string, anchor = '') => {
+      if (/^[a-z]+:/i.test(target) || target.startsWith('/')) return match;
+      // docfx escapes the anchor separator, which the Wukong reference still carries as `x.md\#anchor`
+      if (anchor) target = target.replace(/\\$/, '');
+      const parts = path.posix.normalize(path.posix.join(sourceDir, target)).replace(/\.mdx?$/, '').split('/');
+      // a page named after its folder is served at the folder
+      if (parts.length > 1 && parts[parts.length - 1] === parts[parts.length - 2]) parts.pop();
+      let resolved: string | null | undefined = parts.join('/');
+      // a link within the page's own folder, where the source folder is not known: found by its unique file name
+      if (!copies.has(`${resolved}.md`) && byName && !target.includes('/')) resolved = byName.get(target.replace(/\.mdx?$/, ''));
+      return resolved && copies.has(`${resolved}.md`) ? `](${siteUrl}${resolved}.md${anchor})` : match;
+    });
+  }
+
+  /**
+   * Makes the relative links in a product's Markdown copies and full-text files absolute. A copy is written at its
+   * page's URL, but its links are relative to the page's source file, and the two differ for a page named after its
+   * folder: Docusaurus serves NS/NS.md at NS, so its copy is NS.md, one folder up from its source. In a full-text file
+   * every page is one section, in the order the files were written in.
+   */
+  async function fixLinks(product: LlmsTxtProduct) {
+    const copies = [...(await markdownCopies(guidesDir(product))), ...(await markdownCopies(apiDir(product)))];
+    const existing = new Set(copies);
+    for (const copy of copies) {
+      const stem = copy.replace(/\.md$/, '');
+      const isFolderPage = await fs.stat(path.join(outDir, stem)).then((stat) => stat.isDirectory(), () => false);
+      const filePath = path.join(outDir, copy);
+      const text = await fs.readFile(filePath, 'utf8');
+      const fixed = absoluteLinks(text, isFolderPage ? stem : path.posix.dirname(copy), existing);
+      if (fixed !== text) await fs.writeFile(filePath, fixed);
+    }
+
+    // Every API page's source is one folder deep, a namespace's folder, so one base serves the whole file. A link within
+    // that folder names only the file, which is unique in the API reference.
+    const byName = new Map<string, string | null>();
+    for (const copy of copies.filter((copy) => copy.startsWith(`${apiDir(product)}/`))) {
+      const name = path.posix.basename(copy, '.md');
+      byName.set(name, byName.has(name) ? null : copy.replace(/\.md$/, ''));
+    }
+    const apiFull = path.join(outDir, `${product.dir}/llms-api-full.txt`);
+    await fs.writeFile(apiFull, absoluteLinks(await fs.readFile(apiFull, 'utf8'), `${apiDir(product)}/namespace`, existing, byName));
+
+    // The guides sit at any depth: each section takes the folder of its page, in sidebar order. If the sections and the
+    // sidebar disagree on how many pages there are, the links are left as they are rather than guessed.
+    const guidesFull = path.join(outDir, `${product.dir}/llms-full.txt`);
+    const sections = (await fs.readFile(guidesFull, 'utf8')).split(/^(?=## )/m);
+    const sources = (sidebarOrder.get(product.docsPluginId) ?? []).filter((source) => source.startsWith(`${guidesDir(product)}/`));
+    if (sections.length - 1 !== sources.length) {
+      console.warn(`[llms-txt] ${product.dir}/llms-full.txt has ${sections.length - 1} pages, the sidebar ${sources.length}; links left relative`);
+      return;
+    }
+    const fixedSections = sections.map((section, i) => (i === 0 ? section : absoluteLinks(section, path.posix.dirname(sources[i - 1]), existing)));
+    await fs.writeFile(guidesFull, fixedSections.join(''));
   }
 
   // Validates the options at startup instead of after the build.
@@ -226,7 +272,6 @@ export default function llmsTxtPlugin(context: LoadContext, options: LlmsTxtOpti
         const ids = Object.values(current.sidebars).flatMap((sidebar) => sidebarDocIds(sidebar as SidebarItem[]));
         sidebarOrder.set(product.docsPluginId, [...new Set(ids)].flatMap((id) => sourceById.get(id) ?? []));
         currentLabel.set(product.docsPluginId, current.label);
-        for (const doc of current.docs) sourceByPermalink.set(doc.permalink.replace(/\/+$/, ''), doc.source.replace(/^@site\//, ''));
       }
     },
 
@@ -239,6 +284,7 @@ export default function llmsTxtPlugin(context: LoadContext, options: LlmsTxtOpti
       for (const product of options.products) {
         await fixLinkDescriptions(`${product.dir}/llms.txt`);
         await fixGenericHeadings(`${product.dir}/llms-api-full.txt`);
+        await fixLinks(product);
       }
       const files = ['llms.txt', ...options.products.flatMap((p) => ['llms.txt', 'llms-full.txt', 'llms-api-full.txt'].map((f) => `${p.dir}/${f}`))];
       for (const file of files) {

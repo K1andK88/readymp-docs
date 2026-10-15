@@ -1,3 +1,7 @@
+---
+title: 'Enum SerializableMode'
+description: 'Defines how a struct should be serialized when using DeriveINetSerializableAttribute.'
+---
 # Enum SerializableMode
 
 Namespace: [ReadyM.Api.Serialization](../ReadyM.Api.Saves/ReadyM.Api.Serialization.md)  

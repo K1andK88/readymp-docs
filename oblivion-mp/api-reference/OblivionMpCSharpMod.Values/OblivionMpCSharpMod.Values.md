@@ -1,3 +1,7 @@
+---
+title: 'OblivionMpCSharpMod.Values'
+description: 'The types in the OblivionMpCSharpMod.Values namespace.'
+---
 # OblivionMpCSharpMod.Values
 
 ### Structs

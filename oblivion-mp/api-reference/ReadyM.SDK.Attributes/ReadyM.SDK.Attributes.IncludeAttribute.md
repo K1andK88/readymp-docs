@@ -1,3 +1,7 @@
+---
+title: 'Class IncludeAttribute'
+description: 'Include a mixin into this archetype. Only a mixin: to build on another archetype, use IncludeArchetypeAttribute.'
+---
 # Class IncludeAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

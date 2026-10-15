@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Cef'
+description: 'The types in the ReadyM.Cef namespace.'
+---
 # ReadyM.Cef
 
 ### Namespaces

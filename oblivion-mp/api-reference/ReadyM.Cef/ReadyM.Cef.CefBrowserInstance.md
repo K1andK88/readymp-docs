@@ -1,3 +1,7 @@
+---
+title: 'Struct CefBrowserInstance'
+description: 'A browser, as a mod holds it: say what it should do, directly.'
+---
 # Struct CefBrowserInstance
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

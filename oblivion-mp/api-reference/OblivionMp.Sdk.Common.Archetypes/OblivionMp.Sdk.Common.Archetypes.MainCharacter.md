@@ -1,3 +1,7 @@
+---
+title: 'Struct MainCharacter'
+description: 'A player''s character in the world.'
+---
 # Struct MainCharacter
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

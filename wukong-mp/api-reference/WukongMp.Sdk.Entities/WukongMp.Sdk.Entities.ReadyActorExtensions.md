@@ -1,3 +1,6 @@
+---
+title: 'Class ReadyActorExtensions'
+---
 # Class ReadyActorExtensions
 
 Namespace: [WukongMp.Sdk.Entities](../WukongMp.Sdk.Api/WukongMp.Sdk.Entities.md)  

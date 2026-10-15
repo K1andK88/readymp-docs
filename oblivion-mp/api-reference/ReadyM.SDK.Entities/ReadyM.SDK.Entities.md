@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Entities'
+description: 'The types in the ReadyM.SDK.Entities namespace.'
+---
 # ReadyM.SDK.Entities
 
 ### Interfaces

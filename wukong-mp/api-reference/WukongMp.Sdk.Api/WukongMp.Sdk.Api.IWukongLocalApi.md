@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongLocalApi'
+description: 'Provides various utility methods not related to networking.'
+---
 # Interface IWukongLocalApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

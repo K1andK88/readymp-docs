@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongEventApi'
+description: 'Provides events related to gameplay, player actions, and multiplayer interactions in Wukong Multiplayer.'
+---
 # Interface IWukongEventApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

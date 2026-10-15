@@ -1,3 +1,7 @@
+---
+title: 'Class DeleteHandlerAttribute'
+description: 'Runs this method on an entity just before it is deleted.'
+---
 # Class DeleteHandlerAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

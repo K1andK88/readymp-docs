@@ -1,3 +1,7 @@
+---
+title: 'Class TesUnrealSpace'
+description: 'Converts positions and rotations from the game files to the world space the SDK uses.'
+---
 # Class TesUnrealSpace
 
 Namespace: [ReadyM.Relay.Common.Oblivion](../ReadyM.Relay.Common.Oblivion/ReadyM.Relay.Common.Oblivion.md)  

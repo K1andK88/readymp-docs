@@ -1,3 +1,7 @@
+---
+title: 'Class SessionDifficulty'
+description: 'The difficulty every client in the session runs at. Leaving a tier Unset keeps clients on the game''s own default tier (Adept).'
+---
 # Class SessionDifficulty
 
 Namespace: [OblivionMp.Sdk.Serverside](../OblivionMp.Sdk.Serverside/OblivionMp.Sdk.Serverside.md)  

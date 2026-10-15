@@ -1,3 +1,7 @@
+---
+title: 'Interface IArchetypeRegistry'
+description: 'Allows registering and modifying entity archetypes in the ECS.'
+---
 # Interface IArchetypeRegistry
 
 Namespace: [ReadyM.Api.ECS.Worlds](../ReadyM.Api.ECS.Worlds/ReadyM.Api.ECS.Worlds.md)  

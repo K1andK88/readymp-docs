@@ -1,3 +1,7 @@
+---
+title: 'Struct DialogueResponse'
+description: 'One line an NPC says for a mod-added dialogue topic.'
+---
 # Struct DialogueResponse
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

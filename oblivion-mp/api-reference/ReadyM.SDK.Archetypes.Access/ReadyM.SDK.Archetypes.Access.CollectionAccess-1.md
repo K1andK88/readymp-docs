@@ -1,3 +1,7 @@
+---
+title: 'Delegate CollectionAccess<TAccess>'
+description: 'Reads one of an entity''s collections, as its component exposes it.'
+---
 # Delegate CollectionAccess<TAccess>
 
 Namespace: [ReadyM.SDK.Archetypes.Access](../ReadyM.SDK.Archetypes.Access/ReadyM.SDK.Archetypes.Access.md)  

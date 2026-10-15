@@ -1,3 +1,7 @@
+---
+title: 'Struct FloraState'
+description: 'Whether a plant has been picked, and by whom.'
+---
 # Struct FloraState
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

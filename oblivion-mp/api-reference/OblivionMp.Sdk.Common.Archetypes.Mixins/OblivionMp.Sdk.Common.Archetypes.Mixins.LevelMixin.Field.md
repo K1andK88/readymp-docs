@@ -1,3 +1,7 @@
+---
+title: 'Class LevelMixin.Field'
+description: 'Tokens naming each of LevelMixin''s values, for mappings and overrides.'
+---
 # Class LevelMixin.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

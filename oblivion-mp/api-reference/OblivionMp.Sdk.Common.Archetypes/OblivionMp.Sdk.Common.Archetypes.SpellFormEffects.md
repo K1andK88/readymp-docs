@@ -1,3 +1,7 @@
+---
+title: 'Struct SpellFormEffects'
+description: 'The Effects collection of a SpellForm.'
+---
 # Struct SpellFormEffects
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

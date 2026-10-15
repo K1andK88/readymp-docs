@@ -1,3 +1,7 @@
+---
+title: 'Enum FormType'
+description: 'The kind of a record in the game files.'
+---
 # Enum FormType
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

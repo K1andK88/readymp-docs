@@ -1,3 +1,7 @@
+---
+title: 'Enum PayloadKind'
+description: 'What a payload is, which is the only thing the channel knows about it.'
+---
 # Enum PayloadKind
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

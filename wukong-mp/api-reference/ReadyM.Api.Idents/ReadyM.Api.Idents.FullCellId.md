@@ -1,3 +1,7 @@
+---
+title: 'Struct FullCellId'
+description: 'Fully identifies a cell across the whole game world by pairing it with its parent area. A CellId only has to be unique within its parent AreaId, so a cell can only be uniquely identified by the (AreaId, CellId) pair represented by this struct.'
+---
 # Struct FullCellId
 
 Namespace: [ReadyM.Api.Idents](../ReadyM.Api.Idents/ReadyM.Api.Idents.md)  

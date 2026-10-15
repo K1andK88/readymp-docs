@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongSynchronizationApi'
+description: 'Provides methods related to synchronizing game state between players in a multiplayer session.'
+---
 # Interface IWukongSynchronizationApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

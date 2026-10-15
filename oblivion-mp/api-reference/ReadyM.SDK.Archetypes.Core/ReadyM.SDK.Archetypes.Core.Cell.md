@@ -1,3 +1,7 @@
+---
+title: 'Struct Cell'
+description: 'A scope for one loaded cell of an area, holding what is in it.'
+---
 # Struct Cell
 
 Namespace: [ReadyM.SDK.Archetypes.Core](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.md)  

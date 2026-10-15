@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer.ECS.Components'
+description: 'The types in the ReadyM.Api.Multiplayer.ECS.Components namespace.'
+---
 # ReadyM.Api.Multiplayer.ECS.Components
 
 ### Structs

@@ -1,3 +1,7 @@
+---
+title: 'Struct PlayerActivity'
+description: 'What a player''s character is doing.'
+---
 # Struct PlayerActivity
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

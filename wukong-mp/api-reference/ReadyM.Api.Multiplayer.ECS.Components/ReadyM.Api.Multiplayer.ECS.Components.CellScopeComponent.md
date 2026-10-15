@@ -1,3 +1,6 @@
+---
+title: 'Struct CellScopeComponent'
+---
 # Struct CellScopeComponent
 
 Namespace: [ReadyM.Api.Multiplayer.ECS.Components](../ReadyM.Api.Multiplayer.ECS.Components/ReadyM.Api.Multiplayer.ECS.Components.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct SpokenTopicEntry'
+description: 'A mod-added topic a player has spoken.'
+---
 # Struct SpokenTopicEntry
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

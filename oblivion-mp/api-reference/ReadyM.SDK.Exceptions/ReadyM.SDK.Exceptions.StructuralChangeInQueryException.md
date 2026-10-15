@@ -1,3 +1,7 @@
+---
+title: 'Class StructuralChangeInQueryException'
+description: 'Something that would change the shape of the world was asked for while a query was running.'
+---
 # Class StructuralChangeInQueryException
 
 Namespace: [ReadyM.SDK.Exceptions](../ReadyM.SDK.Exceptions/ReadyM.SDK.Exceptions.md)  

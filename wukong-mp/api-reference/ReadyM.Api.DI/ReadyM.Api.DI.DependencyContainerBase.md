@@ -1,3 +1,6 @@
+---
+title: 'Class DependencyContainerBase'
+---
 # Class DependencyContainerBase
 
 Namespace: [ReadyM.Api.DI](../ReadyM.Api.DI/ReadyM.Api.DI.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct Value<TShape, TValue>'
+description: 'Strongly typed helper for a field on an archetype.'
+---
 # Struct Value<TShape, TValue>
 
 Namespace: [ReadyM.SDK.Archetypes.Access](../ReadyM.SDK.Archetypes.Access/ReadyM.SDK.Archetypes.Access.md)  

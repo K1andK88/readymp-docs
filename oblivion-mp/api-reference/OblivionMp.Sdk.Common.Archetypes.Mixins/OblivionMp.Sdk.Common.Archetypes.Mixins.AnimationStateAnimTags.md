@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationStateAnimTags'
+description: 'The AnimTags collection of a AnimationState.'
+---
 # Struct AnimationStateAnimTags
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

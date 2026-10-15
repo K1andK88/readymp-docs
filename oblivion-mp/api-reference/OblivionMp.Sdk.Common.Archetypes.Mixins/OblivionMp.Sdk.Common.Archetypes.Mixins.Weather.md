@@ -1,3 +1,7 @@
+---
+title: 'Struct Weather'
+description: 'The weather of an area.'
+---
 # Struct Weather
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

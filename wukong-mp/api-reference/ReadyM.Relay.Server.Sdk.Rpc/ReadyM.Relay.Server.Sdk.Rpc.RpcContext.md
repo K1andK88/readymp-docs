@@ -1,3 +1,7 @@
+---
+title: 'Struct RpcContext'
+description: 'Contextual information passed to every generated OnX server RPC stub. Wraps per-message metadata so handler signatures stay clean as the context grows.'
+---
 # Struct RpcContext
 
 Namespace: [ReadyM.Relay.Server.Sdk.Rpc](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Rpc.md)  

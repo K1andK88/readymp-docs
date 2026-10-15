@@ -1,3 +1,7 @@
+---
+title: 'Struct Npc'
+description: 'A person or creature from the game.'
+---
 # Struct Npc
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

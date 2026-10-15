@@ -1,3 +1,7 @@
+---
+title: 'Class RpcContractsAttribute'
+description: 'Marks the class as containing RPC contracts. Each must be a public static partial void method with serializable parameters. Each must be annotated with one of the direction attributes: * ClientToServerAttribute * ServerToClientAttribute * ClientToClientsAttribute'
+---
 # Class RpcContractsAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

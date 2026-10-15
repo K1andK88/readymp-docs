@@ -1,3 +1,7 @@
+---
+title: 'Struct Out<T>'
+description: 'Use in HarmonyTargetMethodHint parameter list to indicate that the parameter is an out parameter. This is required for Harmony to correctly identify the method when matching signatures, as out parameters are treated differently than regular parameters.'
+---
 # Struct Out<T>
 
 Namespace: [PreludeLib.Attributes](../PreludeLib.Attributes/PreludeLib.Attributes.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Class MainCharacterExtensions'
+description: 'Actions on the local player''s character, which log a warning and do nothing on anyone else''s.'
+---
 # Class MainCharacterExtensions
 
 Namespace: [OblivionMp.Sdk.Archetypes.Extensions](../OblivionMp.Sdk.Archetypes.Extensions/OblivionMp.Sdk.Archetypes.Extensions.md)  

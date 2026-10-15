@@ -1,3 +1,7 @@
+---
+title: 'Class Items.Ammunition'
+description: 'Lists all ammunition in the game.'
+---
 # Class Items.Ammunition
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

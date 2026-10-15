@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongInputApi'
+description: 'Provides methods related to input, such as registering key binds.'
+---
 # Interface IWukongInputApi
 
 Namespace: [WukongMp.Sdk.Api](../WukongMp.Sdk.Api/WukongMp.Sdk.Api.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Enum MessagePosition'
+description: 'Where on screen a message appears.'
+---
 # Enum MessagePosition
 
 Namespace: [OblivionMpCSharpMod](../OblivionMpCSharpMod/OblivionMpCSharpMod.md)  

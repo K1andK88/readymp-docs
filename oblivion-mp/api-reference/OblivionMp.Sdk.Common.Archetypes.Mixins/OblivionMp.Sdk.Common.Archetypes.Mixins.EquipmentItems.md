@@ -1,3 +1,7 @@
+---
+title: 'Struct EquipmentItems'
+description: 'The Items collection of a Equipment.'
+---
 # Struct EquipmentItems
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

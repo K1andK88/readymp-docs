@@ -1,3 +1,7 @@
+---
+title: 'Struct Container'
+description: 'A container placed in the world, such as a chest, barrel or sack.'
+---
 # Struct Container
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

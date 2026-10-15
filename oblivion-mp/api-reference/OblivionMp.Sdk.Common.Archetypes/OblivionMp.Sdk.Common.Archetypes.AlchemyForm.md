@@ -1,3 +1,7 @@
+---
+title: 'Struct AlchemyForm'
+description: 'A potion a player brewed, shared with every client and the server.'
+---
 # Struct AlchemyForm
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

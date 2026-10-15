@@ -1,3 +1,7 @@
+---
+title: 'Class Time.Field'
+description: 'Tokens naming each of Time''s values, for mappings and overrides.'
+---
 # Class Time.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

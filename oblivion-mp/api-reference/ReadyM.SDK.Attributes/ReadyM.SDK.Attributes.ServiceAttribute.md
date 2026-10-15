@@ -1,3 +1,7 @@
+---
+title: 'Class ServiceAttribute'
+description: 'Declares a service class.'
+---
 # Class ServiceAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

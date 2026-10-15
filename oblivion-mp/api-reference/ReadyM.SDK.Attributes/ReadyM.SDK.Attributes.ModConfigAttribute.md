@@ -1,3 +1,7 @@
+---
+title: 'Class ModConfigAttribute'
+description: 'Declares a class the SDK fills from a JSON file in the mod''s own folder and registers as injectable.'
+---
 # Class ModConfigAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

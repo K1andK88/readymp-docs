@@ -1,3 +1,7 @@
+---
+title: 'Struct AnimationStateAnimActionSamples'
+description: 'The AnimActionSamples collection of a AnimationState.'
+---
 # Struct AnimationStateAnimActionSamples
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

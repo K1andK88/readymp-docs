@@ -1,3 +1,7 @@
+---
+title: 'Class ModBase'
+description: 'Base class for WukongMP SDK mods. Each mod should have exactly one class extending from this, which will be instantiated by the mod loader.'
+---
 # Class ModBase
 
 Namespace: [WukongMp.Sdk](../WukongMp.Sdk/WukongMp.Sdk.md)  

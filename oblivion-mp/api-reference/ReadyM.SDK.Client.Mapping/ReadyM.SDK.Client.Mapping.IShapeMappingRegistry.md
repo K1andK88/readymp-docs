@@ -1,3 +1,7 @@
+---
+title: 'Interface IShapeMappingRegistry'
+description: 'Where a mod declares how its shapes map to and from game objects.'
+---
 # Interface IShapeMappingRegistry
 
 Namespace: [ReadyM.SDK.Client.Mapping](../ReadyM.SDK.Client.Mapping/ReadyM.SDK.Client.Mapping.md)  

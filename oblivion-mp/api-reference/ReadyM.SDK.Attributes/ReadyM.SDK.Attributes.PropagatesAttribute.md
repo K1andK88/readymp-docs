@@ -1,3 +1,7 @@
+---
+title: 'Class PropagatesAttribute'
+description: 'How this shape''s values travel between the game and the ECS, and who may write them.'
+---
 # Class PropagatesAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

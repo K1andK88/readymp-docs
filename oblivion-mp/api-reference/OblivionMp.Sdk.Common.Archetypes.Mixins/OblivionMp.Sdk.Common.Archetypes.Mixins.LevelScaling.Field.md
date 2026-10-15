@@ -1,3 +1,7 @@
+---
+title: 'Class LevelScaling.Field'
+description: 'Tokens naming each of LevelScaling''s values, for mappings and overrides.'
+---
 # Class LevelScaling.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

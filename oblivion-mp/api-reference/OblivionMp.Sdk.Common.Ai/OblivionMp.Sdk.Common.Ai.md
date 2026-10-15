@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Common.Ai'
+description: 'The types in the OblivionMp.Sdk.Common.Ai namespace.'
+---
 # OblivionMp.Sdk.Common.Ai
 
 ### Classes

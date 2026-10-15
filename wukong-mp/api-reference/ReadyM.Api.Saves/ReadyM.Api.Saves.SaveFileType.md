@@ -1,3 +1,7 @@
+---
+title: 'Enum SaveFileType'
+description: 'Indicates the type of a save file.'
+---
 # Enum SaveFileType
 
 Namespace: [ReadyM.Api.Saves](../ReadyM.Api.Saves/ReadyM.Api.Saves.md)  

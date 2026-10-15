@@ -1,3 +1,7 @@
+---
+title: 'Class ArchetypeExtensions'
+description: 'What a shape can do, for code that holds one as a type parameter.'
+---
 # Class ArchetypeExtensions
 
 Namespace: [ReadyM.SDK.Archetypes](../ReadyM.SDK.Archetypes/ReadyM.SDK.Archetypes.md)  

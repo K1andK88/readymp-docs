@@ -1,3 +1,7 @@
+---
+title: 'Struct ChunkQuery<TView>'
+description: 'A query that walks chunks rather than entity IDs.'
+---
 # Struct ChunkQuery<TView>
 
 Namespace: [ReadyM.SDK.Chunks](../ReadyM.SDK.Chunks/ReadyM.SDK.Chunks.md)  

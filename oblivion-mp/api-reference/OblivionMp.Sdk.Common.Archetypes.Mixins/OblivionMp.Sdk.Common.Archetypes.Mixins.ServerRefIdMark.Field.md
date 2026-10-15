@@ -1,3 +1,7 @@
+---
+title: 'Class ServerRefIdMark.Field'
+description: 'Tokens naming each of ServerRefIdMark''s values, for mappings and overrides.'
+---
 # Class ServerRefIdMark.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

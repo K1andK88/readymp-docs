@@ -1,3 +1,7 @@
+---
+title: 'Struct Collection<TShape, TAccess>'
+description: 'Names one of a shape''s collections, the way Value%602 names one of its values.'
+---
 # Struct Collection<TShape, TAccess>
 
 Namespace: [ReadyM.SDK.Archetypes.Access](../ReadyM.SDK.Archetypes.Access/ReadyM.SDK.Archetypes.Access.md)  

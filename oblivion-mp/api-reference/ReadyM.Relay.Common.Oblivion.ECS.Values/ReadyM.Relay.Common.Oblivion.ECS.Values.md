@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Common.Oblivion.ECS.Values'
+description: 'The types in the ReadyM.Relay.Common.Oblivion.ECS.Values namespace.'
+---
 # ReadyM.Relay.Common.Oblivion.ECS.Values
 
 ### Structs

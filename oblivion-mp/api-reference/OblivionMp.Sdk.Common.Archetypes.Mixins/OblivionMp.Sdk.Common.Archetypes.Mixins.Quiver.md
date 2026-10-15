@@ -1,3 +1,7 @@
+---
+title: 'Struct Quiver'
+description: 'The arrows a character has equipped.'
+---
 # Struct Quiver
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

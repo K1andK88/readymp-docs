@@ -1,3 +1,7 @@
+---
+title: 'Struct FileInfo'
+description: 'Represents a file with a name and binary content, used for saving game data.'
+---
 # Struct FileInfo
 
 Namespace: [ReadyM.Api.Saves](../ReadyM.Api.Saves/ReadyM.Api.Saves.md)  

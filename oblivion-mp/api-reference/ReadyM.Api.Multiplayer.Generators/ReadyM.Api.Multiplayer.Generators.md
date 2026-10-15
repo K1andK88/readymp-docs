@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer.Generators'
+description: 'The types in the ReadyM.Api.Multiplayer.Generators namespace.'
+---
 # ReadyM.Api.Multiplayer.Generators
 
 ### Classes

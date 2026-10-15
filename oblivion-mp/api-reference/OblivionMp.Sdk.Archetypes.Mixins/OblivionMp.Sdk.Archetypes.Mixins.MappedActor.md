@@ -1,3 +1,7 @@
+---
+title: 'Struct MappedActor'
+description: 'The game actor that shows a character in this player''s game.'
+---
 # Struct MappedActor
 
 Namespace: [OblivionMp.Sdk.Archetypes.Mixins](../OblivionMp.Sdk.Archetypes.Mixins/OblivionMp.Sdk.Archetypes.Mixins.md)  

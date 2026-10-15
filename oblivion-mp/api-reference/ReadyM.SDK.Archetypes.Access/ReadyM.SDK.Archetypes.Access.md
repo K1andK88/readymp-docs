@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Archetypes.Access'
+description: 'The types in the ReadyM.SDK.Archetypes.Access namespace.'
+---
 # ReadyM.SDK.Archetypes.Access
 
 ### Structs

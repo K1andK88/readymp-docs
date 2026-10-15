@@ -1,3 +1,7 @@
+---
+title: 'Struct InventoryEntry'
+description: 'Represents an entry in a player''s inventory, including the item form, quantity, and worn status.'
+---
 # Struct InventoryEntry
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

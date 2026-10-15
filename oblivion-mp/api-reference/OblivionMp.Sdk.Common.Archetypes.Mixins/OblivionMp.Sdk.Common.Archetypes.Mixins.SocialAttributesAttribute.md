@@ -1,3 +1,7 @@
+---
+title: 'Struct SocialAttributesAttribute'
+description: 'The Attribute collection of a SocialAttributes.'
+---
 # Struct SocialAttributesAttribute
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

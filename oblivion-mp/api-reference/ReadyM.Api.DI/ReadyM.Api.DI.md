@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.DI'
+description: 'The types in the ReadyM.Api.DI namespace.'
+---
 # ReadyM.Api.DI
 
 ### Interfaces

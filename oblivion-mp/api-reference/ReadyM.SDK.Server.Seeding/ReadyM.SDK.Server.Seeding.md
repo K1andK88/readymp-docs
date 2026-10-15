@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Server.Seeding'
+description: 'The types in the ReadyM.SDK.Server.Seeding namespace.'
+---
 # ReadyM.SDK.Server.Seeding
 
 ### Interfaces

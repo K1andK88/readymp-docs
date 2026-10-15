@@ -1,3 +1,7 @@
+---
+title: 'Class WriteExtensions'
+description: 'Changes a client makes to replicated values it does not set directly.'
+---
 # Class WriteExtensions
 
 Namespace: [ReadyM.SDK.Client](../ReadyM.SDK.Client/ReadyM.SDK.Client.md)  

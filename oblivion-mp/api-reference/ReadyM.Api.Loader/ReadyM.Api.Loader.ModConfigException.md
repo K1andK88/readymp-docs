@@ -1,3 +1,7 @@
+---
+title: 'Class ModConfigException'
+description: 'Thrown when a mod''s config file exists but cannot be used.'
+---
 # Class ModConfigException
 
 Namespace: [ReadyM.Api.Loader](../ReadyM.Api.Loader/ReadyM.Api.Loader.md)  

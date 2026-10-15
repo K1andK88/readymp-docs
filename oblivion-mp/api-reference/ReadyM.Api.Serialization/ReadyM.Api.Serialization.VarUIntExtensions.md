@@ -1,3 +1,7 @@
+---
+title: 'Class VarUIntExtensions'
+description: 'Writes and reads a uint in the compact VarUInt encoding.'
+---
 # Class VarUIntExtensions
 
 Namespace: [ReadyM.Api.Serialization](../ReadyM.Api.Serialization/ReadyM.Api.Serialization.md)  

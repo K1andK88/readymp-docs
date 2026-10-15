@@ -1,3 +1,7 @@
+---
+title: 'Class SendToCefAttribute'
+description: 'A message this class sends TO a page.'
+---
 # Class SendToCefAttribute
 
 Namespace: [ReadyM.Cef.Rpc](../ReadyM.Cef.Rpc/ReadyM.Cef.Rpc.md)  

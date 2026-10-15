@@ -1,3 +1,7 @@
+---
+title: 'Class SummonedBy.Field'
+description: 'Tokens naming each of SummonedBy''s values, for mappings and overrides.'
+---
 # Class SummonedBy.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct AppearanceFaceMorph'
+description: 'The FaceMorph collection of a Appearance.'
+---
 # Struct AppearanceFaceMorph
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

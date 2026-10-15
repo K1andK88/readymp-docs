@@ -1,3 +1,7 @@
+---
+title: 'Interface IWukongSaveApi'
+description: 'API for managing world and player saves in Wukong Multiplayer. Supports co-op style operations where each player has their own save file, and there''s a shared world save file for all players.'
+---
 # Interface IWukongSaveApi
 
 Namespace: [WukongMp.Api](../WukongMp.Api/WukongMp.Api.md)  

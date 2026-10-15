@@ -1,3 +1,7 @@
+---
+title: 'Enum AiIntentFlags'
+description: 'Options for an AI order.'
+---
 # Enum AiIntentFlags
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

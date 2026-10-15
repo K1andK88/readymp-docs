@@ -1,3 +1,7 @@
+---
+title: 'Struct ServerRefIdMark'
+description: 'The next server-assigned ref id, kept on the World so it is saved in Global.'
+---
 # Struct ServerRefIdMark
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

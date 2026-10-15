@@ -1,3 +1,7 @@
+---
+title: 'Struct Vitals'
+description: 'Health, magicka, fatigue, and whether the character is dead.'
+---
 # Struct Vitals
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Class SessionScaling'
+description: 'The level every client in the session resolves leveled lists at (creature spawns, container loot). The level blends between the lowest and the highest player level in the session: 0 follows the lowest, 1 the highest, 0.5 sits halfway. Until one of the setters is called each client keeps its own level.'
+---
 # Class SessionScaling
 
 Namespace: [OblivionMp.Sdk.Serverside](../OblivionMp.Sdk.Serverside/OblivionMp.Sdk.Serverside.md)  

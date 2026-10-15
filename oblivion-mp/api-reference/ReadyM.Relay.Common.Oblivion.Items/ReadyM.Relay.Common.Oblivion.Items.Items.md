@@ -1,3 +1,7 @@
+---
+title: 'Class Items'
+description: 'The game''s item catalogs, by category.'
+---
 # Class Items
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

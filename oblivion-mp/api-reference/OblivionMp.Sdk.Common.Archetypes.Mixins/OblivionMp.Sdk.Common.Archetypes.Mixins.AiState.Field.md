@@ -1,3 +1,7 @@
+---
+title: 'Class AiState.Field'
+description: 'Tokens naming each of AiState''s values, for mappings and overrides.'
+---
 # Class AiState.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

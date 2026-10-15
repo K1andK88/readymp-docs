@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Exceptions'
+description: 'The types in the ReadyM.SDK.Exceptions namespace.'
+---
 # ReadyM.SDK.Exceptions
 
 ### Classes

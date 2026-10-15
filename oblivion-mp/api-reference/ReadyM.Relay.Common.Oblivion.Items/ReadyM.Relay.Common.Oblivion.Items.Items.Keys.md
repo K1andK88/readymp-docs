@@ -1,3 +1,7 @@
+---
+title: 'Class Items.Keys'
+description: 'Lists all keys in the game.'
+---
 # Class Items.Keys
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

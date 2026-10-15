@@ -1,3 +1,7 @@
+---
+title: 'Struct ItemValuesMixinValues'
+description: 'The Values collection of a ItemValuesMixin.'
+---
 # Struct ItemValuesMixinValues
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

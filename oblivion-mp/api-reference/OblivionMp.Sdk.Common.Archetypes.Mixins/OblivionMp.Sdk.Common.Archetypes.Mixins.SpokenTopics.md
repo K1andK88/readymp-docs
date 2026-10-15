@@ -1,3 +1,7 @@
+---
+title: 'Struct SpokenTopics'
+description: 'The mod-added dialogue topics a player has spoken.'
+---
 # Struct SpokenTopics
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

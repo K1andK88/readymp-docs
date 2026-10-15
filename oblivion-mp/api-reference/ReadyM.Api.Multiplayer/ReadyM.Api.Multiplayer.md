@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer'
+description: 'The types in the ReadyM.Api.Multiplayer namespace.'
+---
 # ReadyM.Api.Multiplayer
 
 ### Namespaces

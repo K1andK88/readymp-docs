@@ -1,3 +1,7 @@
+---
+title: 'Struct Furniture'
+description: 'A chair, bed or other piece of furniture placed in the world.'
+---
 # Struct Furniture
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

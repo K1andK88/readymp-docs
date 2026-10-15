@@ -1,3 +1,7 @@
+---
+title: 'Struct HpComponent'
+description: 'Holds entity HP, max HP, scaling factor and death state.'
+---
 # Struct HpComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

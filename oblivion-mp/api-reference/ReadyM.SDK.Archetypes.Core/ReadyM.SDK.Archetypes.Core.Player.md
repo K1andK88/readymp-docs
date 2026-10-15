@@ -1,3 +1,7 @@
+---
+title: 'Struct Player'
+description: 'A scope for one connected player, from connecting until disconnecting.'
+---
 # Struct Player
 
 Namespace: [ReadyM.SDK.Archetypes.Core](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.md)  

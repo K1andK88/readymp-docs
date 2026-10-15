@@ -1,3 +1,7 @@
+---
+title: 'Enum MagicEffectRange'
+description: 'Whom a magic effect reaches.'
+---
 # Enum MagicEffectRange
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer.ECS.Tags'
+description: 'The types in the ReadyM.Api.Multiplayer.ECS.Tags namespace.'
+---
 # ReadyM.Api.Multiplayer.ECS.Tags
 
 ### Structs

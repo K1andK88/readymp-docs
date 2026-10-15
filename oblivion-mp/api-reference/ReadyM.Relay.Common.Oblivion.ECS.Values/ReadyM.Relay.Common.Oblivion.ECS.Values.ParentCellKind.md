@@ -1,3 +1,7 @@
+---
+title: 'Enum ParentCellKind'
+description: 'Whether a cell is an interior or an exterior.'
+---
 # Enum ParentCellKind
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

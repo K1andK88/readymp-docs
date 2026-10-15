@@ -1,3 +1,7 @@
+---
+title: 'Class ServiceOrderException'
+description: 'What services asked for cannot be done, because the order would have to come back on itself.'
+---
 # Class ServiceOrderException
 
 Namespace: [ReadyM.SDK.Services](../ReadyM.SDK.Services/ReadyM.SDK.Services.md)  

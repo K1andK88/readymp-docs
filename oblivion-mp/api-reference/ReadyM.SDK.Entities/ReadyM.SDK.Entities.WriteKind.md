@@ -1,3 +1,7 @@
+---
+title: 'Enum WriteKind'
+description: 'Component field write kind - either mirroring the game state or overriding it.'
+---
 # Enum WriteKind
 
 Namespace: [ReadyM.SDK.Entities](../ReadyM.SDK.Entities/ReadyM.SDK.Entities.md)  

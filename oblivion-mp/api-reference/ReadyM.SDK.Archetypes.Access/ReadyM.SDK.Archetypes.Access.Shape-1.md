@@ -1,3 +1,7 @@
+---
+title: 'Struct Shape<TShape>'
+description: 'Strongly typed wrapper around shape accessors.'
+---
 # Struct Shape<TShape>
 
 Namespace: [ReadyM.SDK.Archetypes.Access](../ReadyM.SDK.Archetypes.Access/ReadyM.SDK.Archetypes.Access.md)  

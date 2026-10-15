@@ -1,3 +1,7 @@
+---
+title: 'Struct SocialAttributes'
+description: 'A character''s social values, such as bounty and fame, keyed by CharacterSocialAttribute cast to byte.'
+---
 # Struct SocialAttributes
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

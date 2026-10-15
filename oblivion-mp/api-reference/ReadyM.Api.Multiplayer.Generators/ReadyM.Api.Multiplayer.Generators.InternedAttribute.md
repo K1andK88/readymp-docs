@@ -1,3 +1,7 @@
+---
+title: 'Class InternedAttribute'
+description: 'Sends a NativeString256, or a NativeList of them, as a small id once the server has seen the string.'
+---
 # Class InternedAttribute
 
 Namespace: [ReadyM.Api.Multiplayer.Generators](../ReadyM.Api.Multiplayer.Generators/ReadyM.Api.Multiplayer.Generators.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct NpcTemplateMixinItems'
+description: 'The Items collection of a NpcTemplateMixin.'
+---
 # Struct NpcTemplateMixinItems
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

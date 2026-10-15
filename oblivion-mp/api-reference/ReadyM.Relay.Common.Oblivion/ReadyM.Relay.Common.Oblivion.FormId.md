@@ -1,3 +1,7 @@
+---
+title: 'Struct FormId'
+description: 'Represents a unique identifier in the Oblivion game. Used for identifying various game objects, such as items, NPCs, and locations.'
+---
 # Struct FormId
 
 Namespace: [ReadyM.Relay.Common.Oblivion](../ReadyM.Relay.Common.Oblivion/ReadyM.Relay.Common.Oblivion.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Class TagAttribute'
+description: 'Puts a tag on every entity created as this archetype.'
+---
 # Class TagAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

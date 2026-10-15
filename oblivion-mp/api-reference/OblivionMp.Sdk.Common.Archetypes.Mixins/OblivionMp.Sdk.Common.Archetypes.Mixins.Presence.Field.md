@@ -1,3 +1,7 @@
+---
+title: 'Class Presence.Field'
+description: 'Tokens naming each of Presence''s values, for mappings and overrides.'
+---
 # Class Presence.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

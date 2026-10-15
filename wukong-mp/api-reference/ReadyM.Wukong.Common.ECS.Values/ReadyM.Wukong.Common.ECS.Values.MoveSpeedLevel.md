@@ -1,3 +1,7 @@
+---
+title: 'Enum MoveSpeedLevel'
+description: 'Represents the movement speed level of an entity in the game.'
+---
 # Enum MoveSpeedLevel
 
 Namespace: [ReadyM.Wukong.Common.ECS.Values](../ReadyM.Wukong.Common.ECS.Values/ReadyM.Wukong.Common.ECS.Values.md)  

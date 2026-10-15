@@ -1,3 +1,7 @@
+---
+title: 'Class MainCharacter.Field'
+description: 'Tokens naming each of MainCharacter''s values, for mappings and overrides.'
+---
 # Class MainCharacter.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

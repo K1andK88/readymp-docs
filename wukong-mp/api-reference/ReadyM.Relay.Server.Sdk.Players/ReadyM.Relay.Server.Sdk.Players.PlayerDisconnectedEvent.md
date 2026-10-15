@@ -1,3 +1,6 @@
+---
+title: 'Class PlayerDisconnectedEvent'
+---
 # Class PlayerDisconnectedEvent
 
 Namespace: [ReadyM.Relay.Server.Sdk.Players](../ReadyM.Relay.Server.Sdk/ReadyM.Relay.Server.Sdk.Players.md)  

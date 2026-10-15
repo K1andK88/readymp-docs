@@ -1,3 +1,7 @@
+---
+title: 'Struct CellId'
+description: 'Identifies a cell within an area. CellId has to be unique within its parent area (identified by AreaId). The main difference between a cell and an area is that a player can be only in one area at once, but can have many cells active within that area. Cells are only used in OblivionMP for now. WukongMP does not use cells.'
+---
 # Struct CellId
 
 Namespace: [ReadyM.Api.Idents](../ReadyM.Api.Idents/ReadyM.Api.Idents.md)  

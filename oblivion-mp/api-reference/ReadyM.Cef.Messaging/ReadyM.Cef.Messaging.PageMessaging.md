@@ -1,3 +1,7 @@
+---
+title: 'Class PageMessaging'
+description: 'Every named send.'
+---
 # Class PageMessaging
 
 Namespace: [ReadyM.Cef.Messaging](../ReadyM.Cef.Messaging/ReadyM.Cef.Messaging.md)  

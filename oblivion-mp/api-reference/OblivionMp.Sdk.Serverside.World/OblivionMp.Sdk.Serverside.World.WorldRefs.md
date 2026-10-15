@@ -1,3 +1,7 @@
+---
+title: 'Class WorldRefs'
+description: 'Finds the entities that stand for game refs and tells where they are.'
+---
 # Class WorldRefs
 
 Namespace: [OblivionMp.Sdk.Serverside.World](../OblivionMp.Sdk.Serverside.World/OblivionMp.Sdk.Serverside.World.md)  

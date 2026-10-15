@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Server.Entities'
+description: 'The types in the ReadyM.SDK.Server.Entities namespace.'
+---
 # ReadyM.SDK.Server.Entities
 
 ### Structs

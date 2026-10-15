@@ -1,3 +1,7 @@
+---
+title: 'Interface IShapeMappings'
+description: 'A client mod''s game-state mappings, declared once when the mod loads.'
+---
 # Interface IShapeMappings
 
 Namespace: [ReadyM.SDK.Client.Mapping](../ReadyM.SDK.Client.Mapping/ReadyM.SDK.Client.Mapping.md)  

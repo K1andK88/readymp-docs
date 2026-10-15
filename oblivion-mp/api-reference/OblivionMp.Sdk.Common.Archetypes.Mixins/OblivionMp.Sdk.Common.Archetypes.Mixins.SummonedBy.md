@@ -1,3 +1,7 @@
+---
+title: 'Struct SummonedBy'
+description: 'Who summoned a creature, who it fights for, and when it runs out.'
+---
 # Struct SummonedBy
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

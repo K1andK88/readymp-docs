@@ -1,3 +1,7 @@
+---
+title: 'Interface IInput'
+description: 'Key binds, and whether the keyboard is free for the game right now.'
+---
 # Interface IInput
 
 Namespace: [OblivionMp.Sdk](../OblivionMp.Sdk/OblivionMp.Sdk.md)  

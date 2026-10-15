@@ -1,3 +1,7 @@
+---
+title: 'Class CefHost'
+description: 'The one place that knows every viewport and every browser this reload cycle created.'
+---
 # Class CefHost
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

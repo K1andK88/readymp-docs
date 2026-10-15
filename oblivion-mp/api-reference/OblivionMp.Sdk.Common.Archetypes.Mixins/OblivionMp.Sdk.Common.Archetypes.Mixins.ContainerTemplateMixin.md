@@ -1,3 +1,7 @@
+---
+title: 'Struct ContainerTemplateMixin'
+description: 'A container''s record from the game files, which its contents are rolled from.'
+---
 # Struct ContainerTemplateMixin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

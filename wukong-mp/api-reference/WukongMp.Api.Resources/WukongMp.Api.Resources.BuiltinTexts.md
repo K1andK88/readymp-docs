@@ -1,3 +1,7 @@
+---
+title: 'Class BuiltinTexts'
+description: 'Lookup by resource name, for the few places that only learn which string they need at runtime, such as a localized chat message whose key arrived over the wire.'
+---
 # Class BuiltinTexts
 
 Namespace: [WukongMp.Api.Resources](../WukongMp.Api.Resources/WukongMp.Api.Resources.md)  

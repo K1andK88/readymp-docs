@@ -1,3 +1,7 @@
+---
+title: 'Class UpdateOrderAttribute'
+description: 'Specifies when a service''s update runs relative to the others.'
+---
 # Class UpdateOrderAttribute
 
 Namespace: [ReadyM.SDK.Attributes](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.md)  

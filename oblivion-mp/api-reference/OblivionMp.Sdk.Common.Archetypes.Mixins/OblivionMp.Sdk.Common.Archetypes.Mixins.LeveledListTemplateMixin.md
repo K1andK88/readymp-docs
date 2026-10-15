@@ -1,3 +1,7 @@
+---
+title: 'Struct LeveledListTemplateMixin'
+description: 'A leveled list from the game files.'
+---
 # Struct LeveledListTemplateMixin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

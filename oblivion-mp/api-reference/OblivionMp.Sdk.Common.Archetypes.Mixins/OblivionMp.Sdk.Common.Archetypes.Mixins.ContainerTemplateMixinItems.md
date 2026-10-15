@@ -1,3 +1,7 @@
+---
+title: 'Struct ContainerTemplateMixinItems'
+description: 'The Items collection of a ContainerTemplateMixin.'
+---
 # Struct ContainerTemplateMixinItems
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

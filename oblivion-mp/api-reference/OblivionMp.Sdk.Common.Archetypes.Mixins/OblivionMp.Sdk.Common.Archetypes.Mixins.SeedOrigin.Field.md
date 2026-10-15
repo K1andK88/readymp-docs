@@ -1,3 +1,7 @@
+---
+title: 'Class SeedOrigin.Field'
+description: 'Tokens naming each of SeedOrigin''s values, for mappings and overrides.'
+---
 # Class SeedOrigin.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

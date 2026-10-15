@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.SDK.Chunks'
+description: 'The types in the ReadyM.SDK.Chunks namespace.'
+---
 # ReadyM.SDK.Chunks
 
 ### Structs

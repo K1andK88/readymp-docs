@@ -1,3 +1,7 @@
+---
+title: 'Class IEntitiesExtensions'
+description: 'Shortcuts on IEntities for common client queries.'
+---
 # Class IEntitiesExtensions
 
 Namespace: [OblivionMp.Sdk](../OblivionMp.Sdk/OblivionMp.Sdk.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct Transform'
+description: 'Where an entity is and which way it faces.'
+---
 # Struct Transform
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

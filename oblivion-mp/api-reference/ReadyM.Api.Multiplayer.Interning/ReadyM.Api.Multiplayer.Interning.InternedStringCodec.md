@@ -1,3 +1,7 @@
+---
+title: 'Class InternedStringCodec'
+description: 'Writes and reads a string marked [Interned]. Called by generated code.'
+---
 # Class InternedStringCodec
 
 Namespace: [ReadyM.Api.Multiplayer.Interning](../ReadyM.Api.Multiplayer.Interning/ReadyM.Api.Multiplayer.Interning.md)  

@@ -1,3 +1,7 @@
+---
+title: 'OblivionMp.Sdk.Serverside.Items'
+description: 'The types in the OblivionMp.Sdk.Serverside.Items namespace.'
+---
 # OblivionMp.Sdk.Serverside.Items
 
 ### Classes

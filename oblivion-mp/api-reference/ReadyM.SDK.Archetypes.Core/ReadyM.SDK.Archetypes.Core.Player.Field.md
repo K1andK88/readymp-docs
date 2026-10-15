@@ -1,3 +1,7 @@
+---
+title: 'Class Player.Field'
+description: 'Tokens naming each of Player''s values, for mappings and overrides.'
+---
 # Class Player.Field
 
 Namespace: [ReadyM.SDK.Archetypes.Core](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.md)  

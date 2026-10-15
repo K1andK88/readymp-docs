@@ -1,3 +1,7 @@
+---
+title: 'Struct Appearance'
+description: 'How a player''s character looks: sex, race, face and hair.'
+---
 # Struct Appearance
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

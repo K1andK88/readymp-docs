@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Cef.Rpc'
+description: 'The types in the ReadyM.Cef.Rpc namespace.'
+---
 # ReadyM.Cef.Rpc
 
 ### Classes

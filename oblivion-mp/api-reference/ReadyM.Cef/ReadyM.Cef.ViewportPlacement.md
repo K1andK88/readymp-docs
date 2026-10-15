@@ -1,3 +1,7 @@
+---
+title: 'Struct ViewportPlacement'
+description: 'Where a viewport sits and how big it is: a normalized anchor rect in the parent, plus an offset per edge.'
+---
 # Struct ViewportPlacement
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

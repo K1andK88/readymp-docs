@@ -1,3 +1,7 @@
+---
+title: 'OblivionMpCSharpMod.ECS.Values'
+description: 'The types in the OblivionMpCSharpMod.ECS.Values namespace.'
+---
 # OblivionMpCSharpMod.ECS.Values
 
 ### Enums

@@ -1,3 +1,7 @@
+---
+title: 'Interface IInventory'
+description: 'The item list of an entity, so one set of transfer rules serves a corpse and a chest.'
+---
 # Interface IInventory
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

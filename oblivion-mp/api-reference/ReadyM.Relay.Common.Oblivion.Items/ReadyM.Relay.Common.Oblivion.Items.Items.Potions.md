@@ -1,3 +1,7 @@
+---
+title: 'Class Items.Potions'
+description: 'Lists all potions in the game.'
+---
 # Class Items.Potions
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

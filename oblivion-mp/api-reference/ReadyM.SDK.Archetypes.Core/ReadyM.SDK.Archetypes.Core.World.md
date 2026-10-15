@@ -1,3 +1,7 @@
+---
+title: 'Struct World'
+description: 'The one entity that stands for the whole session and carries session-wide values.'
+---
 # Struct World
 
 Namespace: [ReadyM.SDK.Archetypes.Core](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.md)  

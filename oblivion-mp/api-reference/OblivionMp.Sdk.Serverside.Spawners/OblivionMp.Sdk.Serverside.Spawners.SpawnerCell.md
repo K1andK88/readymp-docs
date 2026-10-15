@@ -1,3 +1,7 @@
+---
+title: 'Class SpawnerCell'
+description: 'Turns a ParentCell into a cell id.'
+---
 # Class SpawnerCell
 
 Namespace: [OblivionMp.Sdk.Serverside.Spawners](../OblivionMp.Sdk.Serverside.Spawners/OblivionMp.Sdk.Serverside.Spawners.md)  

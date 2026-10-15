@@ -1,3 +1,7 @@
+---
+title: 'Class Appearance.Field'
+description: 'Tokens naming each of Appearance''s values, for mappings and overrides.'
+---
 # Class Appearance.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

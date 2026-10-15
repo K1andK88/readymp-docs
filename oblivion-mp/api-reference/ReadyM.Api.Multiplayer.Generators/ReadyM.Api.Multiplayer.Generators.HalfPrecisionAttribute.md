@@ -1,3 +1,7 @@
+---
+title: 'Class HalfPrecisionAttribute'
+description: 'The annotated float or vector will be serialized on the wire as 16-bit floats, saving 2 bytes per float.'
+---
 # Class HalfPrecisionAttribute
 
 Namespace: [ReadyM.Api.Multiplayer.Generators](../ReadyM.Api.Multiplayer.Generators/ReadyM.Api.Multiplayer.Generators.md)  

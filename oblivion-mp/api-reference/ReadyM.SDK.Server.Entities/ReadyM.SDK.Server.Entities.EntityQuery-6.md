@@ -1,3 +1,7 @@
+---
+title: 'Struct EntityQuery<T1, T2, T3, T4, T5, T6>'
+description: 'Every entity carrying all 6 shapes, without an archetype that names them.'
+---
 # Struct EntityQuery<T1, T2, T3, T4, T5, T6>
 
 Namespace: [ReadyM.SDK.Server.Entities](../ReadyM.SDK.Server.Entities/ReadyM.SDK.Server.Entities.md)  

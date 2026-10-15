@@ -1,3 +1,7 @@
+---
+title: 'Class PageMessageDelivery'
+description: 'One message from a page, as a mod sees it.'
+---
 # Class PageMessageDelivery
 
 Namespace: [ReadyM.Cef.Messaging](../ReadyM.Cef.Messaging/ReadyM.Cef.Messaging.md)  

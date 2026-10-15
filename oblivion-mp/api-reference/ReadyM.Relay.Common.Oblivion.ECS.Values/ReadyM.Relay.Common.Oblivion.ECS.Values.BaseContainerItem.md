@@ -1,3 +1,7 @@
+---
+title: 'Struct BaseContainerItem'
+description: 'One entry of a container''s base record in the game files, like a form or a leveled list.'
+---
 # Struct BaseContainerItem
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

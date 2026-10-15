@@ -1,3 +1,7 @@
+---
+title: 'Class VarUShortExtensions'
+description: 'Writes and reads a ushort in the compact VarUShort encoding.'
+---
 # Class VarUShortExtensions
 
 Namespace: [ReadyM.Api.Serialization](../ReadyM.Api.Serialization/ReadyM.Api.Serialization.md)  

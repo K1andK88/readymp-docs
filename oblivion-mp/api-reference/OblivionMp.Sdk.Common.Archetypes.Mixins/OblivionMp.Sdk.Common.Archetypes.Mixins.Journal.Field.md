@@ -1,3 +1,7 @@
+---
+title: 'Class Journal.Field'
+description: 'Tokens naming each of Journal''s values, for mappings and overrides.'
+---
 # Class Journal.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

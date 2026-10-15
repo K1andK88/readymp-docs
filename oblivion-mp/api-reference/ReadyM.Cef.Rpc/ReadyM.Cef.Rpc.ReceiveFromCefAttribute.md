@@ -1,3 +1,7 @@
+---
+title: 'Class ReceiveFromCefAttribute'
+description: 'A message this class receives FROM a page.'
+---
 # Class ReceiveFromCefAttribute
 
 Namespace: [ReadyM.Cef.Rpc](../ReadyM.Cef.Rpc/ReadyM.Cef.Rpc.md)  

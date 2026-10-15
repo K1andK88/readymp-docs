@@ -1,3 +1,7 @@
+---
+title: 'Interface IArchetypeChunkView<TSelf>'
+description: 'The chunk-backed twin of an archetype or mixin: the same properties, reached straight off the chunk rather than by asking where the entity lives on every access.'
+---
 # Interface IArchetypeChunkView<TSelf>
 
 Namespace: [ReadyM.SDK.Chunks](../ReadyM.SDK.Chunks/ReadyM.SDK.Chunks.md)  

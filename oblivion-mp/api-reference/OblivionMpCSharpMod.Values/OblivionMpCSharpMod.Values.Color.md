@@ -1,3 +1,7 @@
+---
+title: 'Struct Color'
+description: 'A linear RGBA color with components in the 0..1 range.'
+---
 # Struct Color
 
 Namespace: [OblivionMpCSharpMod.Values](../OblivionMpCSharpMod.Values/OblivionMpCSharpMod.Values.md)  

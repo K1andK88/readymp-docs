@@ -1,3 +1,7 @@
+---
+title: 'Class CefRpcArgs'
+description: 'A typed message''s arguments, as the JSON array that crosses to a page.'
+---
 # Class CefRpcArgs
 
 Namespace: [ReadyM.Cef.Rpc](../ReadyM.Cef.Rpc/ReadyM.Cef.Rpc.md)  

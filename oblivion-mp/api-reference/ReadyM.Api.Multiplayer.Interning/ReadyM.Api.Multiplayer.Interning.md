@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Api.Multiplayer.Interning'
+description: 'The types in the ReadyM.Api.Multiplayer.Interning namespace.'
+---
 # ReadyM.Api.Multiplayer.Interning
 
 ### Classes

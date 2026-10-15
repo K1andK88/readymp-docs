@@ -1,3 +1,7 @@
+---
+title: 'Struct ContainerItems'
+description: 'The contents of a container.'
+---
 # Struct ContainerItems
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Class ClientToClientsAttribute'
+description: 'Generates a Send(...) and an On(...) handler on the client.'
+---
 # Class ClientToClientsAttribute
 
 Namespace: [ReadyM.Api.Multiplayer](../ReadyM.Api.Multiplayer/ReadyM.Api.Multiplayer.md)  

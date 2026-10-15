@@ -1,3 +1,7 @@
+---
+title: 'Enum ModifierKeys'
+description: 'Represents modifier keys that can be pressed in combination with other keys.'
+---
 # Enum ModifierKeys
 
 Namespace: [ReadyM.Sdk.Common.Input](../ReadyM.Sdk.Common.Input/ReadyM.Sdk.Common.Input.md)  

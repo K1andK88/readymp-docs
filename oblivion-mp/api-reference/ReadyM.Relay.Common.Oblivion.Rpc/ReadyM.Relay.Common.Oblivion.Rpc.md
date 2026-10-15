@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Relay.Common.Oblivion.Rpc'
+description: 'The types in the ReadyM.Relay.Common.Oblivion.Rpc namespace.'
+---
 # ReadyM.Relay.Common.Oblivion.Rpc
 
 ### Structs

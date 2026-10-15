@@ -1,3 +1,7 @@
+---
+title: 'Class CellSeeding.Field'
+description: 'Tokens naming each of CellSeeding''s values, for mappings and overrides.'
+---
 # Class CellSeeding.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

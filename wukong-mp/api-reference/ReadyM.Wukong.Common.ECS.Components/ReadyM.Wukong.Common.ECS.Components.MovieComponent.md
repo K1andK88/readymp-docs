@@ -1,3 +1,7 @@
+---
+title: 'Struct MovieComponent'
+description: 'Holds the state of the movie sequences that have been started in a given area.'
+---
 # Struct MovieComponent
 
 Namespace: [ReadyM.Wukong.Common.ECS.Components](../ReadyM.Wukong.Common.ECS.Components/ReadyM.Wukong.Common.ECS.Components.md)  

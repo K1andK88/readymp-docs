@@ -1,3 +1,7 @@
+---
+title: 'Class Items.Ingredients'
+description: 'Lists all ingredients in the game.'
+---
 # Class Items.Ingredients
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Items](../ReadyM.Relay.Common.Oblivion.Items/ReadyM.Relay.Common.Oblivion.Items.md)  

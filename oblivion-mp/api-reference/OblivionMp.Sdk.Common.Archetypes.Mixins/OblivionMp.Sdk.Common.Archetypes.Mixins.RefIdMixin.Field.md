@@ -1,3 +1,7 @@
+---
+title: 'Class RefIdMixin.Field'
+description: 'Tokens naming each of RefIdMixin''s values, for mappings and overrides.'
+---
 # Class RefIdMixin.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

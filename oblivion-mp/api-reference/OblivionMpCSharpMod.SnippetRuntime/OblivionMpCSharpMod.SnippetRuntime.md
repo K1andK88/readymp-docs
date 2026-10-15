@@ -1,3 +1,7 @@
+---
+title: 'OblivionMpCSharpMod.SnippetRuntime'
+description: 'The types in the OblivionMpCSharpMod.SnippetRuntime namespace.'
+---
 # OblivionMpCSharpMod.SnippetRuntime
 
 ### Classes

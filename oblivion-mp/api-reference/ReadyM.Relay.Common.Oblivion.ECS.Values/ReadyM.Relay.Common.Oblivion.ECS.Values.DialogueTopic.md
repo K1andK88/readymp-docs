@@ -1,3 +1,7 @@
+---
+title: 'Struct DialogueTopic'
+description: 'A dialogue topic a mod offers a player.'
+---
 # Struct DialogueTopic
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

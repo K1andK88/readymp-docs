@@ -1,3 +1,7 @@
+---
+title: 'Class ItemExtraData.Field'
+description: 'Tokens naming each of ItemExtraData''s values, for mappings and overrides.'
+---
 # Class ItemExtraData.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

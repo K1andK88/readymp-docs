@@ -1,3 +1,7 @@
+---
+title: 'Enum CharacterStateFlags'
+description: 'What a character is doing right now, as flags.'
+---
 # Enum CharacterStateFlags
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

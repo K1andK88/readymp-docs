@@ -1,3 +1,7 @@
+---
+title: 'Class Equipment.Field'
+description: 'Tokens naming each of Equipment''s values, for mappings and overrides.'
+---
 # Class Equipment.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

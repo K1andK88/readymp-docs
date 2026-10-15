@@ -1,3 +1,7 @@
+---
+title: 'Class OblivionCellIds'
+description: 'The cell ids OblivionMP uses within an area: every interior is one cell, an exterior cell is its grid coordinates.'
+---
 # Class OblivionCellIds
 
 Namespace: [ReadyM.Relay.Common.Oblivion](../ReadyM.Relay.Common.Oblivion/ReadyM.Relay.Common.Oblivion.md)  

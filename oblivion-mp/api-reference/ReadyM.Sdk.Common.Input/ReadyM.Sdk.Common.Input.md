@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Sdk.Common.Input'
+description: 'The types in the ReadyM.Sdk.Common.Input namespace.'
+---
 # ReadyM.Sdk.Common.Input
 
 ### Enums

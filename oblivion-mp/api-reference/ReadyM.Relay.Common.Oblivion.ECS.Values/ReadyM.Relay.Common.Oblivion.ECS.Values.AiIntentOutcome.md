@@ -1,3 +1,7 @@
+---
+title: 'Enum AiIntentOutcome'
+description: 'How an AI order ended.'
+---
 # Enum AiIntentOutcome
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

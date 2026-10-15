@@ -1,3 +1,6 @@
+---
+title: 'Class PlayerConnectedEvent'
+---
 # Class PlayerConnectedEvent
 
 Namespace: [ReadyM.Relay.Server.Sdk.Players](../ReadyM.Relay.Server.Sdk/ReadyM.Relay.Server.Sdk.Players.md)  

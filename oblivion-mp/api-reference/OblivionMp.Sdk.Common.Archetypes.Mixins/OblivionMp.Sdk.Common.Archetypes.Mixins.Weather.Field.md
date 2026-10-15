@@ -1,3 +1,7 @@
+---
+title: 'Class Weather.Field'
+description: 'Tokens naming each of Weather''s values, for mappings and overrides.'
+---
 # Class Weather.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

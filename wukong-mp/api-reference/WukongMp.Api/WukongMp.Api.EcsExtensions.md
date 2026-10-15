@@ -1,3 +1,6 @@
+---
+title: 'Class EcsExtensions'
+---
 # Class EcsExtensions
 
 Namespace: [WukongMp.Api](../WukongMp.Api/WukongMp.Api.md)  

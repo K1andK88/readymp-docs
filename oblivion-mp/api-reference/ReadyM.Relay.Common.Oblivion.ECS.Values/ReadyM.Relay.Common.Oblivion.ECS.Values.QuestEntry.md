@@ -1,3 +1,7 @@
+---
+title: 'Struct QuestEntry'
+description: 'A quest in a player''s journal.'
+---
 # Struct QuestEntry
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

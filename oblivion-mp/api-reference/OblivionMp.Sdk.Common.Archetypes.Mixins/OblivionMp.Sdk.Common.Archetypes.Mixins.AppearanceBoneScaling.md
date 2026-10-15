@@ -1,3 +1,7 @@
+---
+title: 'Struct AppearanceBoneScaling'
+description: 'The BoneScaling collection of a Appearance.'
+---
 # Struct AppearanceBoneScaling
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

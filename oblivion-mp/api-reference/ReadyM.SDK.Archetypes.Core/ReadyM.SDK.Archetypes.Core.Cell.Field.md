@@ -1,3 +1,7 @@
+---
+title: 'Class Cell.Field'
+description: 'Tokens naming each of Cell''s values, for mappings and overrides.'
+---
 # Class Cell.Field
 
 Namespace: [ReadyM.SDK.Archetypes.Core](../ReadyM.SDK.Archetypes.Core/ReadyM.SDK.Archetypes.Core.md)  

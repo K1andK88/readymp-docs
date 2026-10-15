@@ -1,3 +1,7 @@
+---
+title: 'Struct NicknameMixin'
+description: 'A player''s display name.'
+---
 # Struct NicknameMixin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'WukongMp.Api.WukongUtils'
+description: 'The types in the WukongMp.Api.WukongUtils namespace.'
+---
 # WukongMp.Api.WukongUtils
 
 ### Classes

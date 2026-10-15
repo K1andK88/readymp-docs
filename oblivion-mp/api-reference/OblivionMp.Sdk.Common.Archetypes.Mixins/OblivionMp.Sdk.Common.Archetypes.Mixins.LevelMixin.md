@@ -1,3 +1,7 @@
+---
+title: 'Struct LevelMixin'
+description: 'A character''s or NPC''s level.'
+---
 # Struct LevelMixin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

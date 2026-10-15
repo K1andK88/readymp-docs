@@ -1,3 +1,7 @@
+---
+title: 'Enum CharacterAttribute'
+description: 'Character attributes.'
+---
 # Enum CharacterAttribute
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

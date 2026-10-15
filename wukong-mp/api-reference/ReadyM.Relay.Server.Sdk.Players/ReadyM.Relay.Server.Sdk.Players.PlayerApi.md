@@ -1,3 +1,7 @@
+---
+title: 'Class PlayerApi'
+description: 'Provides access to player events and actions on the server.'
+---
 # Class PlayerApi
 
 Namespace: [ReadyM.Relay.Server.Sdk.Players](../ReadyM.Relay.Server.Sdk/ReadyM.Relay.Server.Sdk.Players.md)  

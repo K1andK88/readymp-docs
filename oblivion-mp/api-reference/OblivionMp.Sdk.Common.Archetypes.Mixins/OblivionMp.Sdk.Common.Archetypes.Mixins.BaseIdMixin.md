@@ -1,3 +1,7 @@
+---
+title: 'Struct BaseIdMixin'
+description: 'The game form an entity is an instance of.'
+---
 # Struct BaseIdMixin
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

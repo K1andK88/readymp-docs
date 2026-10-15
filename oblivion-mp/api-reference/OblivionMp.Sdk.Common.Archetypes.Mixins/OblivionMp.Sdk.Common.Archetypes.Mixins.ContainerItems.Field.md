@@ -1,3 +1,7 @@
+---
+title: 'Class ContainerItems.Field'
+description: 'Tokens naming each of ContainerItems''s values, for mappings and overrides.'
+---
 # Class ContainerItems.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

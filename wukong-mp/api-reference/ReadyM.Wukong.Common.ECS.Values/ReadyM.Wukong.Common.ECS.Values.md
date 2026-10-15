@@ -1,3 +1,7 @@
+---
+title: 'ReadyM.Wukong.Common.ECS.Values'
+description: 'The types in the ReadyM.Wukong.Common.ECS.Values namespace.'
+---
 # ReadyM.Wukong.Common.ECS.Values
 
 ### Classes

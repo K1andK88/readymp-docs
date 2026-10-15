@@ -1,3 +1,7 @@
+---
+title: 'Interface IShapeMappingScope<TShape, TContext>'
+description: 'The mappings between one shape and one kind of game object.'
+---
 # Interface IShapeMappingScope<TShape, TContext>
 
 Namespace: [ReadyM.SDK.Client.Mapping](../ReadyM.SDK.Client.Mapping/ReadyM.SDK.Client.Mapping.md)  

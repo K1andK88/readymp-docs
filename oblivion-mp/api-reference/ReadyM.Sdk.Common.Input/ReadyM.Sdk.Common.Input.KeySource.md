@@ -1,3 +1,7 @@
+---
+title: 'Enum KeySource'
+description: 'Where a key bind''s presses come from.'
+---
 # Enum KeySource
 
 Namespace: [ReadyM.Sdk.Common.Input](../ReadyM.Sdk.Common.Input/ReadyM.Sdk.Common.Input.md)  

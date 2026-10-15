@@ -1,3 +1,7 @@
+---
+title: 'Struct ViewportHandle'
+description: 'Identifies a viewport: a place a browser can be shown.'
+---
 # Struct ViewportHandle
 
 Namespace: [ReadyM.Cef](../ReadyM.Cef/ReadyM.Cef.md)  

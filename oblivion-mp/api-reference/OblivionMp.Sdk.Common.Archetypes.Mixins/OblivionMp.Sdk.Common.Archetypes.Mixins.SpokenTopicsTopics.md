@@ -1,3 +1,7 @@
+---
+title: 'Struct SpokenTopicsTopics'
+description: 'The Topics collection of a SpokenTopics.'
+---
 # Struct SpokenTopicsTopics
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

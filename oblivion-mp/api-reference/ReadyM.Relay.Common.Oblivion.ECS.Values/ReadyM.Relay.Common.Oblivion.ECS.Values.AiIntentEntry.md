@@ -1,3 +1,7 @@
+---
+title: 'Struct AiIntentEntry'
+description: 'One package the server wants an npc to run. The target and the location are entities when the server has them, otherwise ref IDs. When both are set the entity is used. Entities only exist within a session, so they are not saved.'
+---
 # Struct AiIntentEntry
 
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  

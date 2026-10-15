@@ -1,3 +1,7 @@
+---
+title: 'Class QuantizeAttribute'
+description: 'The float or vector field is sent over the wire as a fixed-point number in bits bits (8, 16 or 24) between min and max, instead of a 4-byte float per number.'
+---
 # Class QuantizeAttribute
 
 Namespace: [ReadyM.Api.Multiplayer.Generators](../ReadyM.Api.Multiplayer.Generators/ReadyM.Api.Multiplayer.Generators.md)  

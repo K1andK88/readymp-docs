@@ -1,3 +1,7 @@
+---
+title: 'Class ContainerRoll'
+description: 'Rolls a container''s contents from its template the way the engine''s RollLeveledItems does.'
+---
 # Class ContainerRoll
 
 Namespace: [OblivionMp.Sdk.Serverside.Items](../OblivionMp.Sdk.Serverside.Items/OblivionMp.Sdk.Serverside.Items.md)  

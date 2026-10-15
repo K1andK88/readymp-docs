@@ -1,3 +1,7 @@
+---
+title: 'Struct SpellForm'
+description: 'A spell a player made, shared with every client and the server.'
+---
 # Struct SpellForm
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  

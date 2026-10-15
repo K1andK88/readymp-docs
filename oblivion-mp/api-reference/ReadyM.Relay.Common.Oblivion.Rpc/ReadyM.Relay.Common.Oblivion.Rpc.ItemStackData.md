@@ -1,3 +1,7 @@
+---
+title: 'Struct ItemStackData'
+description: 'A stack of one kind of item, matched by form, durability and charge together.'
+---
 # Struct ItemStackData
 
 Namespace: [ReadyM.Relay.Common.Oblivion.Rpc](../ReadyM.Relay.Common.Oblivion.Rpc/ReadyM.Relay.Common.Oblivion.Rpc.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Class ComponentNotFoundException'
+description: 'The entity is alive but its archetype does not carry the component the accessor reads.'
+---
 # Class ComponentNotFoundException
 
 Namespace: [ReadyM.SDK.Exceptions](../ReadyM.SDK.Exceptions/ReadyM.SDK.Exceptions.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct AppearanceSkinColor'
+description: 'The SkinColor collection of a Appearance.'
+---
 # Struct AppearanceSkinColor
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct DialogueTopics'
+description: 'The Topics collection of a Dialogue.'
+---
 # Struct DialogueTopics
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

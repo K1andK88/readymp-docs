@@ -1,3 +1,7 @@
+---
+title: 'Class EffectsAttributes.Field'
+description: 'Tokens naming each of EffectsAttributes''s values, for mappings and overrides.'
+---
 # Class EffectsAttributes.Field
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

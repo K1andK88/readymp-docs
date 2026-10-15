@@ -1,3 +1,7 @@
+---
+title: 'Interface IWorldSeeder'
+description: 'Fills a new World. Declare it on a [Service]; the server calls it once, when the World is created rather than loaded from the save.'
+---
 # Interface IWorldSeeder
 
 Namespace: [ReadyM.SDK.Server.Seeding](../ReadyM.SDK.Server.Seeding/ReadyM.SDK.Server.Seeding.md)  

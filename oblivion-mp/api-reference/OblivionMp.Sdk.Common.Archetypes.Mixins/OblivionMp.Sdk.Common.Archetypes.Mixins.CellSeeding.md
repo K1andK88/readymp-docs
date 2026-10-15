@@ -1,3 +1,7 @@
+---
+title: 'Struct CellSeeding'
+description: 'Whether the server has seeded a cell from the game files, and when the cell last respawned.'
+---
 # Struct CellSeeding
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  

@@ -1,3 +1,7 @@
+---
+title: 'Struct JournalCompassTargets'
+description: 'The CompassTargets collection of a Journal.'
+---
 # Struct JournalCompassTargets
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  
