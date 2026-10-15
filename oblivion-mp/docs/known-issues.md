@@ -8,13 +8,13 @@ We are aware of the following issues in the current release candidate, and we're
 
 ## Gameplay
 
-* Weather is not decided by the server, so it can change abruptly, for example when you move between a city and the open world.
+* Hovering over another player shows "Player #0" instead of their name. Overhead name is correct.
 * After spawning, the player character's body may not match their head.
 * The player character's voice may not match their race or sex.
+* Weather is not decided by the server, so it can change abruptly, for example when you move between a city and the open world.
 * Items with custom enchantments cannot be dropped yet.
 * Physics and ragdolls of items and of NPC and player bodies make their positions go out of sync.
 * Not everything about a player is saved yet: name, race, class, birthsign and faction membership are lost.
-* Hovering over another player shows "Player #0" instead of their name. This is a regression.
 * The sitting animation is shown in the wrong state.
 * Using the `Rebirth` console command after dying lowers your Speed attribute by 20.
 * NPCs cannot be pickpocketed.
