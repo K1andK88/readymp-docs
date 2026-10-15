@@ -134,8 +134,26 @@ public readonly partial struct Achievements
 For a list called `Unlocked` you get `UnlockedCount`, `GetUnlocked(index)`, `SetUnlocked(index, value)`,
 `ContainsUnlocked(value)`, `AddUnlocked(value)`, `InsertUnlocked(index, value)`, `RemoveAtUnlocked(index)` and
 `ClearUnlocked()`, on the mixin and on every player: `player.AddUnlocked(7)`. A dictionary gets the same family keyed by its key, plus `ContainsXKey`. A public collection is an
-error (`READYM011`): a caller holding the list itself could change it without the change being sent. A collection on a
-shape that does not replicate is an error too (`READYM018`).
+error (`READYM011`): a caller holding the list itself could change it without the change being sent.
+
+`NativeList` and `NativeDictionary` exist for replication: they record which entries changed, so only those are sent.
+A shape that does not replicate has nothing to send, so a native collection on it is an error (`READYM018`). Use a
+plain `List<T>` or `Dictionary<TKey, TValue>` there instead, as a normal property:
+
+```csharp
+[ArchetypeMixin]
+[Extends(typeof(Player))]
+public readonly partial struct RecentTargets
+{
+    public partial List<int> Ids { get; set; }
+}
+```
+
+It starts as `null`, like any other reference: assign a list before adding to it.
+
+A replicated shape cannot hold `List<T>` or `Dictionary<TKey, TValue>`: the SDK cannot send them, and a change made
+inside one would not be noticed anyway. The build stops with `READYM046`, as it does for any value a replicated shape
+cannot send.
 
 ### Small changes to decimals
 
@@ -260,11 +278,12 @@ reach every client that can see the entity. `Override` does not exist on the ser
 | `READYM014` | A replicated shape with fields of its own does not say who may write them. | Add `[Propagates(Propagation.X)]`. |
 | `READYM016` | `[Propagates]` is on a shape that sends nothing. | Remove it, or replicate the shape. |
 | `READYM017` | Client code assigns a replicated value through its setter. | Use `shape.Override(Mixin.Field.X, value)`, write it on the server, or map it from the game (see [Game state mapping](../Advanced/game-state-mapping.md)). |
-| `READYM018` | A list or dictionary is on a shape that does not replicate. | Replicate the shape, or keep the values somewhere else. |
+| `READYM018` | A `NativeList` or `NativeDictionary` is on a shape that does not replicate. | Replicate the shape, or use a plain `List<T>` or `Dictionary<TKey, TValue>`. |
 | `READYM019` | Client code changes a replicated list or dictionary. | Change it on the server, or inside a game-state mapping. |
 | `READYM036` | `[Replicated]` is on an archetype. | Remove it and use `[Archetype(replicated: true)]`. Set delivery with `[Archetype(replicated: true, Delivery = ...)]`. |
 | `READYM038` | `[Interned]` is on a shape that does not replicate. | Remove it, or replicate the shape. |
 | `READYM040` | `[Quantize]`, `[QuantizeAngle]` or `[HalfPrecision]` is on a shape that does not replicate. | Remove it, or replicate the shape. |
+| `READYM046` | A replicated shape holds a value the SDK cannot send, such as a `List<T>`, a `Dictionary<TKey, TValue>` or an `Entity`. | Use a type it can send (a number, `bool`, enum, vector, `NativeString`, `NativeList`, `NativeDictionary`, or a type with `Serialize` and `Deserialize`), or keep the value on a shape that does not replicate. |
 
 ## Reference
 
