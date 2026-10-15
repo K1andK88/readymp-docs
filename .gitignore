@@ -8,6 +8,7 @@
 .docusaurus
 .cache-loader
 scripts/*/api
+scripts/*/_staging
 
 # Misc
 .DS_Store

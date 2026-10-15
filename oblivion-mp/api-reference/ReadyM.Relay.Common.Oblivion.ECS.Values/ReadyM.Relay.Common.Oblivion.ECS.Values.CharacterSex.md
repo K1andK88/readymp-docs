@@ -3,6 +3,8 @@
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
 
+A character's sex.
+
 ```csharp
 public enum CharacterSex : byte
 ```
@@ -11,6 +13,14 @@ public enum CharacterSex : byte
 
 `Male = 0` 
 
+Male.
+
+
+
 `Female = 1` 
+
+Female.
+
+
 
 

@@ -3,13 +3,10 @@
 Namespace: [ReadyM.Api.Multiplayer](../ReadyM.Api.Multiplayer/ReadyM.Api.Multiplayer.md)  
 Assembly: ReadyM.Api.Multiplayer.dll  
 
-Client-to-server (request) leg of a contract method: generates a Send on the client and an
-On(RpcContext, ...) handler on the server. Different-shaped two-way RPCs are two overloads
-(one per direction); identical-shape two-way is one method with both attributes. Every contract
-method needs at least one direction attribute.
+Generates a Send(...) on the client and an On(...) handler on the server.
 
 ```csharp
-[AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
+[AttributeUsage(AttributeTargets.Method)]
 public sealed class ClientToServerAttribute : Attribute
 ```
 

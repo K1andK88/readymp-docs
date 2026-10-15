@@ -38,7 +38,7 @@ public Guid? GetReadyMId(PlayerId player)
 
 #### Parameters
 
-`player` [PlayerId](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/Idents/PlayerId.cs)
+`player` PlayerId
 
 #### Returns
 
@@ -54,34 +54,21 @@ public void Kick(PlayerId player)
 
 #### Parameters
 
-`player` [PlayerId](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/Idents/PlayerId.cs)
+`player` PlayerId
 
 The player to kick.
 
-### <a id="ReadyM_Relay_Server_Sdk_Players_PlayerApi_OnPlayerConnected"></a> OnPlayerConnected
+### <a id="ReadyM_Relay_Server_Sdk_Players_PlayerApi_RotateCellMasters_ReadyM_Api_Idents_PlayerId_"></a> RotateCellMasters\(PlayerId\)
 
-Fired once the player has finished the handshake and their ECS entity exists.
-
-```csharp
-[Obsolete("This API is being deprecated in favor of the more general ServerEventsApi.")]
-public event Action<PlayerConnectedEvent>? OnPlayerConnected
-```
-
-#### Event Type
-
- [Action](https://learn.microsoft.com/dotnet/api/system.action-1)<[PlayerConnectedEvent](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.PlayerConnectedEvent.md)\>?
-
-### <a id="ReadyM_Relay_Server_Sdk_Players_PlayerApi_OnPlayerDisconnected"></a> OnPlayerDisconnected
-
-Fired when the player leaves, whichever way they left.
+Test tool: every cell the requester has active gets the next player in it as master client,
+and every entity in that cell that allows ownership transfer follows to the new master.
 
 ```csharp
-[Obsolete("This API is being deprecated in favor of the more general ServerEventsApi.")]
-public event Action<PlayerDisconnectedEvent>? OnPlayerDisconnected
+public void RotateCellMasters(PlayerId requester)
 ```
 
-#### Event Type
+#### Parameters
 
- [Action](https://learn.microsoft.com/dotnet/api/system.action-1)<[PlayerDisconnectedEvent](../ReadyM.Relay.Server.Sdk.Players/ReadyM.Relay.Server.Sdk.Players.PlayerDisconnectedEvent.md)\>?
+`requester` PlayerId
 
 

@@ -12,7 +12,7 @@ public readonly struct KeepEmptyOblivionScopeAliveTag : ITag
 
 #### Implements
 
-[ITag](https://github.com/readycodeio/Friflo.Engine.ECS/blob/1a45e3364ed58ecef9294b4024b79ec07ece0732/src/ECS/ITag.cs)
+ITag
 
 #### Inherited Members
 

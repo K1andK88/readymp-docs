@@ -3,6 +3,8 @@
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
 
+Where a quest stands.
+
 ```csharp
 public enum QuestPhase : byte
 ```
@@ -11,8 +13,20 @@ public enum QuestPhase : byte
 
 `Active = 0` 
 
+In progress.
+
+
+
 `Completed = 1` 
 
+Completed.
+
+
+
 `Failed = 2` 
+
+Failed.
+
+
 
 

@@ -36,7 +36,7 @@ public CellId(NativeString256 id)
 
 #### Parameters
 
-`id` [NativeString256](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/Container/NativeString256.cs)
+`id` NativeString256
 
 ### <a id="ReadyM_Api_Idents_CellId__ctor_System_String_"></a> CellId\(string\)
 
@@ -71,16 +71,6 @@ public static CellId Invalid { get; }
  [CellId](../ReadyM.Api.Idents/ReadyM.Api.Idents.CellId.md)
 
 ## Methods
-
-### <a id="ReadyM_Api_Idents_CellId_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
 
 ### <a id="ReadyM_Api_Idents_CellId_Equals_ReadyM_Api_Idents_CellId_"></a> Equals\(CellId\)
 
@@ -120,31 +110,15 @@ public override int GetHashCode()
 
  [int](https://learn.microsoft.com/dotnet/api/system.int32)
 
-### <a id="ReadyM_Api_Idents_CellId_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
+### <a id="ReadyM_Api_Idents_CellId_ToManaged"></a> ToManaged\(\)
 
 ```csharp
-public void Serialize(NetDataWriter writer)
+public string ToManaged()
 ```
-
-#### Parameters
-
-`writer` NetDataWriter
-
-### <a id="ReadyM_Api_Idents_CellId_TextDeserialize_System_Text_Json_Utf8JsonReader__System_Text_Json_JsonSerializerOptions_"></a> TextDeserialize\(ref Utf8JsonReader, JsonSerializerOptions\)
-
-```csharp
-public static CellId TextDeserialize(ref Utf8JsonReader reader, JsonSerializerOptions options)
-```
-
-#### Parameters
-
-`reader` [Utf8JsonReader](https://learn.microsoft.com/dotnet/api/system.text.json.utf8jsonreader)
-
-`options` [JsonSerializerOptions](https://learn.microsoft.com/dotnet/api/system.text.json.jsonserializeroptions)
 
 #### Returns
 
- [CellId](../ReadyM.Api.Idents/ReadyM.Api.Idents.CellId.md)
+ [string](https://learn.microsoft.com/dotnet/api/system.string)
 
 ### <a id="ReadyM_Api_Idents_CellId_ToString"></a> ToString\(\)
 

@@ -26,22 +26,24 @@ public sealed class SessionDifficulty
 
 ## Constructors
 
-### <a id="OblivionMp_Sdk_Serverside_SessionDifficulty__ctor_ReadyM_Relay_Server_Sdk_Ecs_EcsApi_"></a> SessionDifficulty\(EcsApi\)
+### <a id="OblivionMp_Sdk_Serverside_SessionDifficulty__ctor_ReadyM_SDK_Server_Entities_IEntities_"></a> SessionDifficulty\(IEntities\)
 
 The difficulty every client in the session runs at.
 Leaving a tier Unset keeps clients on the game's own default tier (Adept).
 
 ```csharp
-public SessionDifficulty(EcsApi ecs)
+public SessionDifficulty(IEntities entities)
 ```
 
 #### Parameters
 
-`ecs` [EcsApi](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Relay.Server.Sdk/Ecs/EcsApi.cs)
+`entities` IEntities
 
 ## Methods
 
 ### <a id="OblivionMp_Sdk_Serverside_SessionDifficulty_Set_ReadyM_Relay_Common_Oblivion_ECS_Values_DifficultyTier_ReadyM_Relay_Common_Oblivion_ECS_Values_DifficultyTier_"></a> Set\(DifficultyTier, DifficultyTier\)
+
+Sets the difficulty tier for damage players deal and for damage they take.
 
 ```csharp
 public void Set(DifficultyTier damageDealt, DifficultyTier damageTaken)
@@ -49,8 +51,8 @@ public void Set(DifficultyTier damageDealt, DifficultyTier damageTaken)
 
 #### Parameters
 
-`damageDealt` [DifficultyTier](https://github.com/readycodeio/readym\-gameserver/blob/6fb11f3692d46ddd626b1f9523831647d30a9ca4/src/ReadyM.Relay.Common.Oblivion/ECS/Values/DifficultyTier.cs)
+`damageDealt` DifficultyTier
 
-`damageTaken` [DifficultyTier](https://github.com/readycodeio/readym\-gameserver/blob/6fb11f3692d46ddd626b1f9523831647d30a9ca4/src/ReadyM.Relay.Common.Oblivion/ECS/Values/DifficultyTier.cs)
+`damageTaken` DifficultyTier
 
 

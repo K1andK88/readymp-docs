@@ -42,6 +42,8 @@ public MarkerColor(float r, float g, float b, float a = 1)
 
 ### <a id="OblivionMp_Sdk_Values_MarkerColor_A"></a> A
 
+The opacity, from 0 to 1.
+
 ```csharp
 public float A { get; }
 ```
@@ -51,6 +53,8 @@ public float A { get; }
  [float](https://learn.microsoft.com/dotnet/api/system.single)
 
 ### <a id="OblivionMp_Sdk_Values_MarkerColor_B"></a> B
+
+The blue channel, from 0 to 1.
 
 ```csharp
 public float B { get; }
@@ -62,6 +66,8 @@ public float B { get; }
 
 ### <a id="OblivionMp_Sdk_Values_MarkerColor_G"></a> G
 
+The green channel, from 0 to 1.
+
 ```csharp
 public float G { get; }
 ```
@@ -72,6 +78,8 @@ public float G { get; }
 
 ### <a id="OblivionMp_Sdk_Values_MarkerColor_R"></a> R
 
+The red channel, from 0 to 1.
+
 ```csharp
 public float R { get; }
 ```
@@ -81,6 +89,8 @@ public float R { get; }
  [float](https://learn.microsoft.com/dotnet/api/system.single)
 
 ### <a id="OblivionMp_Sdk_Values_MarkerColor_White"></a> White
+
+Opaque white.
 
 ```csharp
 public static MarkerColor White { get; }

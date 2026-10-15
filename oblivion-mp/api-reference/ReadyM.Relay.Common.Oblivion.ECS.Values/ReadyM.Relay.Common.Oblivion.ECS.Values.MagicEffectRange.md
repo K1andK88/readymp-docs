@@ -3,6 +3,8 @@
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
 
+Whom a magic effect reaches.
+
 ```csharp
 public enum MagicEffectRange
 ```
@@ -11,8 +13,20 @@ public enum MagicEffectRange
 
 `Self = 0` 
 
+The caster.
+
+
+
 `Touch = 1` 
 
+A target the caster touches.
+
+
+
 `Target = 2` 
+
+A target at range.
+
+
 
 

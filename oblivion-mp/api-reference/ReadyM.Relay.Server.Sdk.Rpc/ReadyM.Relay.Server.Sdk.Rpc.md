@@ -1,13 +1,5 @@
 # ReadyM.Relay.Server.Sdk.Rpc
 
-### Classes
-
- [RpcApi](../ReadyM.Relay.Server.Sdk.Rpc/ReadyM.Relay.Server.Sdk.Rpc.RpcApi.md)
-
-Low-level API for handling RPC messages in the ReadyM Relay Server SDK.
-
- [ServerRpcHandlersBase](../ReadyM.Relay.Server.Sdk.Rpc/ReadyM.Relay.Server.Sdk.Rpc.ServerRpcHandlersBase.md)
-
 ### Structs
 
  [RpcContext](../ReadyM.Relay.Server.Sdk.Rpc/ReadyM.Relay.Server.Sdk.Rpc.RpcContext.md)

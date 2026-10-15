@@ -2,34 +2,36 @@
 
 ### Namespaces
 
- [OblivionMp.Sdk.Api](../OblivionMp.Sdk.Api/OblivionMp.Sdk.Api.md)
-
  [OblivionMp.Sdk.Serverside](../OblivionMp.Sdk.Serverside/OblivionMp.Sdk.Serverside.md)
 
  [OblivionMp.Sdk.Values](../OblivionMp.Sdk.Values/OblivionMp.Sdk.Values.md)
 
 ### Classes
 
- [SDK.Archetypes](../OblivionMp.Sdk/OblivionMp.Sdk.SDK.Archetypes.md)
+ [IEntitiesExtensions](../OblivionMp.Sdk/OblivionMp.Sdk.IEntitiesExtensions.md)
 
- [Mod](../OblivionMp.Sdk/OblivionMp.Sdk.Mod.md)
+Shortcuts on **IEntities** for common client queries.
 
- [SDK](../OblivionMp.Sdk/OblivionMp.Sdk.SDK.md)
+### Interfaces
 
-Provides access to the OblivionMp SDK services and APIs.
+ [IInput](../OblivionMp.Sdk/OblivionMp.Sdk.IInput.md)
 
-### Structs
+Key binds, and whether the keyboard is free for the game right now.
 
- [CustomPotion](../OblivionMp.Sdk/OblivionMp.Sdk.CustomPotion.md)
+ [IItems](../OblivionMp.Sdk/OblivionMp.Sdk.IItems.md)
 
-Properties of a custom potion item.
+Drops items into the world from the client.
 
- [CustomSpell](../OblivionMp.Sdk/OblivionMp.Sdk.CustomSpell.md)
+ [IMarkers](../OblivionMp.Sdk/OblivionMp.Sdk.IMarkers.md)
 
-Properties of a custom spell.
+Markers over player characters: a line of text above their head, seen only by this player.
 
- [MagicEffect](../OblivionMp.Sdk/OblivionMp.Sdk.MagicEffect.md)
+ [IPlayers](../OblivionMp.Sdk/OblivionMp.Sdk.IPlayers.md)
 
-Properties of a magic effect that is part of a custom spell or potion.
+The local player, and the other players in their area.
+
+ [IUserInterface](../OblivionMp.Sdk/OblivionMp.Sdk.IUserInterface.md)
+
+On-screen messages, and the state of the game's own menus.
 
 

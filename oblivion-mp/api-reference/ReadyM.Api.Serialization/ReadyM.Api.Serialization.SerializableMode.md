@@ -3,7 +3,7 @@
 Namespace: [ReadyM.Api.Serialization](../ReadyM.Api.Serialization/ReadyM.Api.Serialization.md)  
 Assembly: ReadyM.Api.dll  
 
-Defines how a struct should be serialized when using DeriveINetSerializableAttribute.
+Defines how a struct should be serialized when using <code>[DeriveINetSerializable]</code>.
 
 ```csharp
 [Flags]

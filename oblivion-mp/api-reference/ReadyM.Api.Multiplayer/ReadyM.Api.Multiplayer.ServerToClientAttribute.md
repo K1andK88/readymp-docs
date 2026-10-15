@@ -3,11 +3,10 @@
 Namespace: [ReadyM.Api.Multiplayer](../ReadyM.Api.Multiplayer/ReadyM.Api.Multiplayer.md)  
 Assembly: ReadyM.Api.Multiplayer.dll  
 
-Server-to-client (response/push) leg of a contract method: generates a Send(PlayerId, ...) on
-the server and an On(...) handler on the client. See **ClientToServerAttribute**.
+Generates a Send(...) on the server and an On(...) handler on the client.
 
 ```csharp
-[AttributeUsage(AttributeTargets.Method, AllowMultiple = false)]
+[AttributeUsage(AttributeTargets.Method)]
 public sealed class ServerToClientAttribute : Attribute
 ```
 

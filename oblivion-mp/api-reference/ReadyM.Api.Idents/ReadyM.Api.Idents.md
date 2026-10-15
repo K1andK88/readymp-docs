@@ -2,16 +2,9 @@
 
 ### Structs
 
- [ArchetypeId](../ReadyM.Api.Idents/ReadyM.Api.Idents.ArchetypeId.md)
-
-Represents a unique identifier for an archetype in the ECS.
-Entities of a given archetype have a fixed set of components, never changed after creation.
-
  [AreaId](../ReadyM.Api.Idents/ReadyM.Api.Idents.AreaId.md)
 
-Identifies an area within the game world.
-Areas can be main Chapter maps, sub-areas such as the Zodiac Village, or hidden boss arenas.
-If going somewhere requires a loading screen, it's probably a different area.
+Identifies an area: a part of the game world behind a loading screen, such as a whole map or a single interior.
 
  [CellId](../ReadyM.Api.Idents/ReadyM.Api.Idents.CellId.md)
 

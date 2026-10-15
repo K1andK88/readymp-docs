@@ -30,7 +30,7 @@ public AudienceKind Kind { get; }
 
 #### Property Value
 
- [AudienceKind](https://github.com/readycodeio/readym\-gameserver/blob/6fb11f3692d46ddd626b1f9523831647d30a9ca4/src/ReadyM.Relay.Common.Oblivion/ECS/Values/AudienceKind.cs)
+ AudienceKind
 
 ### <a id="OblivionMp_Sdk_Serverside_Audience_World"></a> World
 
@@ -80,7 +80,7 @@ public static Audience ForPlayer(PlayerId player)
 
 #### Parameters
 
-`player` [PlayerId](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/Idents/PlayerId.cs)
+`player` PlayerId
 
 #### Returns
 
@@ -104,7 +104,7 @@ public bool Includes(PlayerId player)
 
 #### Parameters
 
-`player` [PlayerId](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/Idents/PlayerId.cs)
+`player` PlayerId
 
 #### Returns
 

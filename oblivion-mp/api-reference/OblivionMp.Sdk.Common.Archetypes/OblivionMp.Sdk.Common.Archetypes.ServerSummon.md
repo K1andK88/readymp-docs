@@ -1,0 +1,2010 @@
+# Struct ServerSummon
+
+Namespace: [OblivionMp.Sdk.Common.Archetypes](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.md)  
+Assembly: OblivionMp.Sdk.Common.dll  
+
+A creature a player summoned with a spell, created and deleted by the server.
+
+```csharp
+[Archetype(true)]
+[Tag(typeof(KeepEmptyOblivionScopeAliveTag))]
+[Tag(typeof(KeepOwnerOnScopeLeaveTag))]
+[IncludeArchetype(typeof(Npc))]
+[Include(typeof(SummonedBy), "")]
+public readonly struct ServerSummon : IArchetype, IArchetypeQueryable, IEntityShape
+```
+
+#### Implements
+
+IArchetype, 
+IArchetypeQueryable, 
+IEntityShape
+
+#### Inherited Members
+
+[object.GetType\(\)](https://learn.microsoft.com/dotnet/api/system.object.gettype), 
+[object.ToString\(\)](https://learn.microsoft.com/dotnet/api/system.object.tostring), 
+[object.Equals\(object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\)), 
+[object.Equals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.equals\#system\-object\-equals\(system\-object\-system\-object\)), 
+[object.ReferenceEquals\(object?, object?\)](https://learn.microsoft.com/dotnet/api/system.object.referenceequals), 
+[object.GetHashCode\(\)](https://learn.microsoft.com/dotnet/api/system.object.gethashcode)
+
+## Properties
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AnimActionSamplesCount"></a> AnimActionSamplesCount
+
+```csharp
+public int AnimActionSamplesCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AnimIsStaggered"></a> AnimIsStaggered
+
+```csharp
+public bool AnimIsStaggered { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AnimTagsCount"></a> AnimTagsCount
+
+```csharp
+public int AnimTagsCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AttackingRequest"></a> AttackingRequest
+
+```csharp
+public bool AttackingRequest { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AttackingTagsCount"></a> AttackingTagsCount
+
+```csharp
+public int AttackingTagsCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_BaseId"></a> BaseId
+
+```csharp
+public NetworkFormId BaseId { get; set; }
+```
+
+#### Property Value
+
+ NetworkFormId
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_BlockAnimLayerClassName"></a> BlockAnimLayerClassName
+
+```csharp
+public NativeString256 BlockAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_BlockingTagsCount"></a> BlockingTagsCount
+
+```csharp
+public int BlockingTagsCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CanExitAttack"></a> CanExitAttack
+
+```csharp
+public bool CanExitAttack { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CanExitBlock"></a> CanExitBlock
+
+```csharp
+public bool CanExitBlock { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CanFootLock"></a> CanFootLock
+
+```csharp
+public bool CanFootLock { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CanUseOrientationWarping"></a> CanUseOrientationWarping
+
+```csharp
+public bool CanUseOrientationWarping { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CastingRequest"></a> CastingRequest
+
+```csharp
+public bool CastingRequest { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CastingRequestSamplesCount"></a> CastingRequestSamplesCount
+
+```csharp
+public int CastingRequestSamplesCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CharacterStateFlags"></a> CharacterStateFlags
+
+```csharp
+public CharacterStateFlags CharacterStateFlags { get; set; }
+```
+
+#### Property Value
+
+ CharacterStateFlags
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ComboHitIndex"></a> ComboHitIndex
+
+```csharp
+public int ComboHitIndex { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CompWeaponDrawn"></a> CompWeaponDrawn
+
+```csharp
+public bool CompWeaponDrawn { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CurrentAnimAction"></a> CurrentAnimAction
+
+```csharp
+public byte CurrentAnimAction { get; set; }
+```
+
+#### Property Value
+
+ [byte](https://learn.microsoft.com/dotnet/api/system.byte)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CurrentGait"></a> CurrentGait
+
+```csharp
+public NativeString256 CurrentGait { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_CurrentPoison"></a> CurrentPoison
+
+```csharp
+public NetworkFormId CurrentPoison { get; set; }
+```
+
+#### Property Value
+
+ NetworkFormId
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_DodgeAnimLayerClassName"></a> DodgeAnimLayerClassName
+
+```csharp
+public NativeString256 DodgeAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_DodgingRequest"></a> DodgingRequest
+
+```csharp
+public bool DodgingRequest { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_EquipUnequipTagsCount"></a> EquipUnequipTagsCount
+
+```csharp
+public int EquipUnequipTagsCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Expires"></a> Expires
+
+```csharp
+public bool Expires { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ExpiresAtMs"></a> ExpiresAtMs
+
+```csharp
+public long ExpiresAtMs { get; set; }
+```
+
+#### Property Value
+
+ [long](https://learn.microsoft.com/dotnet/api/system.int64)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Fatigue"></a> Fatigue
+
+```csharp
+public float Fatigue { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_FatigueBase"></a> FatigueBase
+
+```csharp
+public float FatigueBase { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ForceExitEquip"></a> ForceExitEquip
+
+```csharp
+public bool ForceExitEquip { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GameplayTagsCount"></a> GameplayTagsCount
+
+```csharp
+public int GameplayTagsCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetUpAnimLayerClassName"></a> GetUpAnimLayerClassName
+
+```csharp
+public NativeString256 GetUpAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_HasMeleeWeapon"></a> HasMeleeWeapon
+
+```csharp
+public bool HasMeleeWeapon { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Hp"></a> Hp
+
+```csharp
+public float Hp { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_HpBase"></a> HpBase
+
+```csharp
+public float HpBase { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InAirAnimLayerClassName"></a> InAirAnimLayerClassName
+
+```csharp
+public NativeString256 InAirAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InCombatStance"></a> InCombatStance
+
+```csharp
+public bool InCombatStance { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsDead"></a> IsDead
+
+```csharp
+public bool IsDead { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsMoving"></a> IsMoving
+
+```csharp
+public bool IsMoving { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsStartCompleted"></a> IsStartCompleted
+
+```csharp
+public bool IsStartCompleted { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsUsingFullBody"></a> IsUsingFullBody
+
+```csharp
+public bool IsUsingFullBody { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_IsValid"></a> IsValid
+
+```csharp
+public bool IsValid { get; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ItemsCount"></a> ItemsCount
+
+```csharp
+public int ItemsCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_LastAnimTagsCount"></a> LastAnimTagsCount
+
+```csharp
+public int LastAnimTagsCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Level"></a> Level
+
+```csharp
+public ushort Level { get; set; }
+```
+
+#### Property Value
+
+ [ushort](https://learn.microsoft.com/dotnet/api/system.uint16)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Magicka"></a> Magicka
+
+```csharp
+public float Magicka { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MagickaBase"></a> MagickaBase
+
+```csharp
+public float MagickaBase { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MasterPlayer"></a> MasterPlayer
+
+```csharp
+public PlayerId MasterPlayer { get; set; }
+```
+
+#### Property Value
+
+ PlayerId
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MasterRefId"></a> MasterRefId
+
+```csharp
+public uint MasterRefId { get; set; }
+```
+
+#### Property Value
+
+ [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MeleeMontageSamplesCount"></a> MeleeMontageSamplesCount
+
+```csharp
+public int MeleeMontageSamplesCount { get; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MeleePlayRate"></a> MeleePlayRate
+
+```csharp
+public float MeleePlayRate { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MeleeSequenceName"></a> MeleeSequenceName
+
+```csharp
+public NativeString256 MeleeSequenceName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MontageName"></a> MontageName
+
+```csharp
+public NativeString256 MontageName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_MontagePosition"></a> MontagePosition
+
+```csharp
+public float MontagePosition { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_OrientRotationToMovement"></a> OrientRotationToMovement
+
+```csharp
+public bool OrientRotationToMovement { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Overridden"></a> Overridden
+
+```csharp
+public bool Overridden { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_PackageFormId"></a> PackageFormId
+
+```csharp
+public uint PackageFormId { get; set; }
+```
+
+#### Property Value
+
+ [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_PackageType"></a> PackageType
+
+```csharp
+public AiPackageType PackageType { get; set; }
+```
+
+#### Property Value
+
+ AiPackageType
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ParentCellKind"></a> ParentCellKind
+
+```csharp
+public ParentCellKind ParentCellKind { get; set; }
+```
+
+#### Property Value
+
+ ParentCellKind
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ParentCellX"></a> ParentCellX
+
+```csharp
+public int ParentCellX { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ParentCellY"></a> ParentCellY
+
+```csharp
+public int ParentCellY { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Position"></a> Position
+
+```csharp
+public Vector3 Position { get; set; }
+```
+
+#### Property Value
+
+ [Vector3](https://learn.microsoft.com/dotnet/api/system.numerics.vector3)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Procedure"></a> Procedure
+
+```csharp
+public AiProcedure Procedure { get; set; }
+```
+
+#### Property Value
+
+ AiProcedure
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ProcedureIndex"></a> ProcedureIndex
+
+```csharp
+public int ProcedureIndex { get; set; }
+```
+
+#### Property Value
+
+ [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RecoilAnimLayerClassName"></a> RecoilAnimLayerClassName
+
+```csharp
+public NativeString256 RecoilAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RecoilingRequest"></a> RecoilingRequest
+
+```csharp
+public bool RecoilingRequest { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RefId"></a> RefId
+
+```csharp
+public uint RefId { get; set; }
+```
+
+#### Property Value
+
+ [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ReportedOutcome"></a> ReportedOutcome
+
+```csharp
+public AiIntentOutcome ReportedOutcome { get; set; }
+```
+
+#### Property Value
+
+ AiIntentOutcome
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ReportedSeq"></a> ReportedSeq
+
+```csharp
+public ushort ReportedSeq { get; set; }
+```
+
+#### Property Value
+
+ [ushort](https://learn.microsoft.com/dotnet/api/system.uint16)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RequestId"></a> RequestId
+
+```csharp
+public uint RequestId { get; set; }
+```
+
+#### Property Value
+
+ [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Requester"></a> Requester
+
+```csharp
+public PlayerId Requester { get; set; }
+```
+
+#### Property Value
+
+ PlayerId
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Rotation"></a> Rotation
+
+```csharp
+public float Rotation { get; set; }
+```
+
+#### Property Value
+
+ [float](https://learn.microsoft.com/dotnet/api/system.single)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ShieldHandPoseAnimLayerClassName"></a> ShieldHandPoseAnimLayerClassName
+
+```csharp
+public NativeString256 ShieldHandPoseAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SpawnerRefId"></a> SpawnerRefId
+
+```csharp
+public uint SpawnerRefId { get; set; }
+```
+
+#### Property Value
+
+ [uint](https://learn.microsoft.com/dotnet/api/system.uint32)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SpellCastAnimLayerClassName"></a> SpellCastAnimLayerClassName
+
+```csharp
+public NativeString256 SpellCastAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_StaggerAnimLayerClassName"></a> StaggerAnimLayerClassName
+
+```csharp
+public NativeString256 StaggerAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_TorchAnimLayerClassName"></a> TorchAnimLayerClassName
+
+```csharp
+public NativeString256 TorchAnimLayerClassName { get; set; }
+```
+
+#### Property Value
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_UseControllerDesiredRotation"></a> UseControllerDesiredRotation
+
+```csharp
+public bool UseControllerDesiredRotation { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_UseControllerRotationYaw"></a> UseControllerRotationYaw
+
+```csharp
+public bool UseControllerRotationYaw { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_UseRotationSpeedCurve"></a> UseRotationSpeedCurve
+
+```csharp
+public bool UseRotationSpeedCurve { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_WantsToRun"></a> WantsToRun
+
+```csharp
+public bool WantsToRun { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_WeaponDrawn"></a> WeaponDrawn
+
+```csharp
+public bool WeaponDrawn { get; set; }
+```
+
+#### Property Value
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+## Methods
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddAnimActionSamples_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> AddAnimActionSamples\(in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.AnimActionSamples")]
+public void AddAnimActionSamples(in SequencedSample value)
+```
+
+#### Parameters
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddAnimTags_Yooni_Native_Container_NativeString256__"></a> AddAnimTags\(in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.AnimTags")]
+public void AddAnimTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddAttackingTags_Yooni_Native_Container_NativeString256__"></a> AddAttackingTags\(in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.AttackingTags")]
+public void AddAttackingTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddBlockingTags_Yooni_Native_Container_NativeString256__"></a> AddBlockingTags\(in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.BlockingTags")]
+public void AddBlockingTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddCastingRequestSamples_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> AddCastingRequestSamples\(in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.CastingRequestSamples")]
+public void AddCastingRequestSamples(in SequencedSample value)
+```
+
+#### Parameters
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddEquipUnequipTags_Yooni_Native_Container_NativeString256__"></a> AddEquipUnequipTags\(in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.EquipUnequipTags")]
+public void AddEquipUnequipTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddGameplayTags_Yooni_Native_Container_NativeString256__"></a> AddGameplayTags\(in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.GameplayTags")]
+public void AddGameplayTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddItems_ReadyM_Relay_Common_Oblivion_ECS_Values_InventoryEntry__"></a> AddItems\(in InventoryEntry\)
+
+```csharp
+[Changes("Equipment.Field.Items")]
+public void AddItems(in InventoryEntry value)
+```
+
+#### Parameters
+
+`value` InventoryEntry
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddLastAnimTags_Yooni_Native_Container_NativeString256__"></a> AddLastAnimTags\(in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.LastAnimTags")]
+public void AddLastAnimTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_AddMeleeMontageSamples_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> AddMeleeMontageSamples\(in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.MeleeMontageSamples")]
+public void AddMeleeMontageSamples(in SequencedSample value)
+```
+
+#### Parameters
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_As__1"></a> As<T\>\(\)
+
+```csharp
+public T As<T>() where T : struct, IArchetypeQueryable
+```
+
+#### Returns
+
+ T
+
+#### Type Parameters
+
+`T` 
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearAnimActionSamples"></a> ClearAnimActionSamples\(\)
+
+```csharp
+[Changes("AnimationState.Field.AnimActionSamples")]
+public void ClearAnimActionSamples()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearAnimTags"></a> ClearAnimTags\(\)
+
+```csharp
+[Changes("AnimationState.Field.AnimTags")]
+public void ClearAnimTags()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearAttackingTags"></a> ClearAttackingTags\(\)
+
+```csharp
+[Changes("AnimationState.Field.AttackingTags")]
+public void ClearAttackingTags()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearBlockingTags"></a> ClearBlockingTags\(\)
+
+```csharp
+[Changes("AnimationState.Field.BlockingTags")]
+public void ClearBlockingTags()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearCastingRequestSamples"></a> ClearCastingRequestSamples\(\)
+
+```csharp
+[Changes("AnimationState.Field.CastingRequestSamples")]
+public void ClearCastingRequestSamples()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearEquipUnequipTags"></a> ClearEquipUnequipTags\(\)
+
+```csharp
+[Changes("AnimationState.Field.EquipUnequipTags")]
+public void ClearEquipUnequipTags()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearGameplayTags"></a> ClearGameplayTags\(\)
+
+```csharp
+[Changes("AnimationState.Field.GameplayTags")]
+public void ClearGameplayTags()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearItems"></a> ClearItems\(\)
+
+```csharp
+[Changes("Equipment.Field.Items")]
+public void ClearItems()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearLastAnimTags"></a> ClearLastAnimTags\(\)
+
+```csharp
+[Changes("AnimationState.Field.LastAnimTags")]
+public void ClearLastAnimTags()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ClearMeleeMontageSamples"></a> ClearMeleeMontageSamples\(\)
+
+```csharp
+[Changes("AnimationState.Field.MeleeMontageSamples")]
+public void ClearMeleeMontageSamples()
+```
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsAnimActionSamples_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> ContainsAnimActionSamples\(in SequencedSample\)
+
+```csharp
+public bool ContainsAnimActionSamples(in SequencedSample value)
+```
+
+#### Parameters
+
+`value` SequencedSample
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsAnimTags_Yooni_Native_Container_NativeString256__"></a> ContainsAnimTags\(in NativeString256\)
+
+```csharp
+public bool ContainsAnimTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsAttackingTags_Yooni_Native_Container_NativeString256__"></a> ContainsAttackingTags\(in NativeString256\)
+
+```csharp
+public bool ContainsAttackingTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsBlockingTags_Yooni_Native_Container_NativeString256__"></a> ContainsBlockingTags\(in NativeString256\)
+
+```csharp
+public bool ContainsBlockingTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsCastingRequestSamples_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> ContainsCastingRequestSamples\(in SequencedSample\)
+
+```csharp
+public bool ContainsCastingRequestSamples(in SequencedSample value)
+```
+
+#### Parameters
+
+`value` SequencedSample
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsEquipUnequipTags_Yooni_Native_Container_NativeString256__"></a> ContainsEquipUnequipTags\(in NativeString256\)
+
+```csharp
+public bool ContainsEquipUnequipTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsGameplayTags_Yooni_Native_Container_NativeString256__"></a> ContainsGameplayTags\(in NativeString256\)
+
+```csharp
+public bool ContainsGameplayTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsItems_ReadyM_Relay_Common_Oblivion_ECS_Values_InventoryEntry__"></a> ContainsItems\(in InventoryEntry\)
+
+```csharp
+public bool ContainsItems(in InventoryEntry value)
+```
+
+#### Parameters
+
+`value` InventoryEntry
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsLastAnimTags_Yooni_Native_Container_NativeString256__"></a> ContainsLastAnimTags\(in NativeString256\)
+
+```csharp
+public bool ContainsLastAnimTags(in NativeString256 value)
+```
+
+#### Parameters
+
+`value` NativeString256
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_ContainsMeleeMontageSamples_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> ContainsMeleeMontageSamples\(in SequencedSample\)
+
+```csharp
+public bool ContainsMeleeMontageSamples(in SequencedSample value)
+```
+
+#### Parameters
+
+`value` SequencedSample
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetAnimActionSamples"></a> GetAnimActionSamples\(\)
+
+```csharp
+public NativeList<SequencedSample>.ReadOnly GetAnimActionSamples()
+```
+
+#### Returns
+
+ NativeList<SequencedSample\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetAnimActionSamples_System_Int32_"></a> GetAnimActionSamples\(int\)
+
+```csharp
+public SequencedSample GetAnimActionSamples(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetAnimTags"></a> GetAnimTags\(\)
+
+```csharp
+public NativeList<NativeString256>.ReadOnly GetAnimTags()
+```
+
+#### Returns
+
+ NativeList<NativeString256\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetAnimTags_System_Int32_"></a> GetAnimTags\(int\)
+
+```csharp
+public NativeString256 GetAnimTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetAttackingTags"></a> GetAttackingTags\(\)
+
+```csharp
+public NativeList<NativeString256>.ReadOnly GetAttackingTags()
+```
+
+#### Returns
+
+ NativeList<NativeString256\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetAttackingTags_System_Int32_"></a> GetAttackingTags\(int\)
+
+```csharp
+public NativeString256 GetAttackingTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetBlockingTags"></a> GetBlockingTags\(\)
+
+```csharp
+public NativeList<NativeString256>.ReadOnly GetBlockingTags()
+```
+
+#### Returns
+
+ NativeList<NativeString256\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetBlockingTags_System_Int32_"></a> GetBlockingTags\(int\)
+
+```csharp
+public NativeString256 GetBlockingTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetCastingRequestSamples"></a> GetCastingRequestSamples\(\)
+
+```csharp
+public NativeList<SequencedSample>.ReadOnly GetCastingRequestSamples()
+```
+
+#### Returns
+
+ NativeList<SequencedSample\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetCastingRequestSamples_System_Int32_"></a> GetCastingRequestSamples\(int\)
+
+```csharp
+public SequencedSample GetCastingRequestSamples(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetEquipUnequipTags"></a> GetEquipUnequipTags\(\)
+
+```csharp
+public NativeList<NativeString256>.ReadOnly GetEquipUnequipTags()
+```
+
+#### Returns
+
+ NativeList<NativeString256\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetEquipUnequipTags_System_Int32_"></a> GetEquipUnequipTags\(int\)
+
+```csharp
+public NativeString256 GetEquipUnequipTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetGameplayTags"></a> GetGameplayTags\(\)
+
+```csharp
+public NativeList<NativeString256>.ReadOnly GetGameplayTags()
+```
+
+#### Returns
+
+ NativeList<NativeString256\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetGameplayTags_System_Int32_"></a> GetGameplayTags\(int\)
+
+```csharp
+public NativeString256 GetGameplayTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetItems"></a> GetItems\(\)
+
+```csharp
+public NativeList<InventoryEntry>.ReadOnly GetItems()
+```
+
+#### Returns
+
+ NativeList<InventoryEntry\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetItems_System_Int32_"></a> GetItems\(int\)
+
+```csharp
+public InventoryEntry GetItems(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ InventoryEntry
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetLastAnimTags"></a> GetLastAnimTags\(\)
+
+```csharp
+public NativeList<NativeString256>.ReadOnly GetLastAnimTags()
+```
+
+#### Returns
+
+ NativeList<NativeString256\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetLastAnimTags_System_Int32_"></a> GetLastAnimTags\(int\)
+
+```csharp
+public NativeString256 GetLastAnimTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetMeleeMontageSamples"></a> GetMeleeMontageSamples\(\)
+
+```csharp
+public NativeList<SequencedSample>.ReadOnly GetMeleeMontageSamples()
+```
+
+#### Returns
+
+ NativeList<SequencedSample\>.ReadOnly
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_GetMeleeMontageSamples_System_Int32_"></a> GetMeleeMontageSamples\(int\)
+
+```csharp
+public SequencedSample GetMeleeMontageSamples(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertAnimActionSamples_System_Int32_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> InsertAnimActionSamples\(int, in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.AnimActionSamples")]
+public void InsertAnimActionSamples(int index, in SequencedSample value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertAnimTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> InsertAnimTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.AnimTags")]
+public void InsertAnimTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertAttackingTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> InsertAttackingTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.AttackingTags")]
+public void InsertAttackingTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertBlockingTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> InsertBlockingTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.BlockingTags")]
+public void InsertBlockingTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertCastingRequestSamples_System_Int32_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> InsertCastingRequestSamples\(int, in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.CastingRequestSamples")]
+public void InsertCastingRequestSamples(int index, in SequencedSample value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertEquipUnequipTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> InsertEquipUnequipTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.EquipUnequipTags")]
+public void InsertEquipUnequipTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertGameplayTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> InsertGameplayTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.GameplayTags")]
+public void InsertGameplayTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertItems_System_Int32_ReadyM_Relay_Common_Oblivion_ECS_Values_InventoryEntry__"></a> InsertItems\(int, in InventoryEntry\)
+
+```csharp
+[Changes("Equipment.Field.Items")]
+public void InsertItems(int index, in InventoryEntry value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` InventoryEntry
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertLastAnimTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> InsertLastAnimTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.LastAnimTags")]
+public void InsertLastAnimTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_InsertMeleeMontageSamples_System_Int32_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> InsertMeleeMontageSamples\(int, in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.MeleeMontageSamples")]
+public void InsertMeleeMontageSamples(int index, in SequencedSample value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Is__1"></a> Is<T\>\(\)
+
+```csharp
+public bool Is<T>() where T : struct, IArchetypeQueryable
+```
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+#### Type Parameters
+
+`T` 
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_Keep"></a> Keep\(\)
+
+This entity, which it already is: a loop over this shape hands over the shape itself.
+
+```csharp
+public ServerSummon Keep()
+```
+
+#### Returns
+
+ [ServerSummon](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.ServerSummon.md)
+
+#### Remarks
+
+Here so taking something out of a loop reads the same whichever way the loop walks. Whether a
+shape is walked by chunk follows from what it includes, which the call site cannot see and which
+changes when an include does.
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtAnimActionSamples_System_Int32_"></a> RemoveAtAnimActionSamples\(int\)
+
+```csharp
+[Changes("AnimationState.Field.AnimActionSamples")]
+public SequencedSample RemoveAtAnimActionSamples(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtAnimTags_System_Int32_"></a> RemoveAtAnimTags\(int\)
+
+```csharp
+[Changes("AnimationState.Field.AnimTags")]
+public NativeString256 RemoveAtAnimTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtAttackingTags_System_Int32_"></a> RemoveAtAttackingTags\(int\)
+
+```csharp
+[Changes("AnimationState.Field.AttackingTags")]
+public NativeString256 RemoveAtAttackingTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtBlockingTags_System_Int32_"></a> RemoveAtBlockingTags\(int\)
+
+```csharp
+[Changes("AnimationState.Field.BlockingTags")]
+public NativeString256 RemoveAtBlockingTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtCastingRequestSamples_System_Int32_"></a> RemoveAtCastingRequestSamples\(int\)
+
+```csharp
+[Changes("AnimationState.Field.CastingRequestSamples")]
+public SequencedSample RemoveAtCastingRequestSamples(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtEquipUnequipTags_System_Int32_"></a> RemoveAtEquipUnequipTags\(int\)
+
+```csharp
+[Changes("AnimationState.Field.EquipUnequipTags")]
+public NativeString256 RemoveAtEquipUnequipTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtGameplayTags_System_Int32_"></a> RemoveAtGameplayTags\(int\)
+
+```csharp
+[Changes("AnimationState.Field.GameplayTags")]
+public NativeString256 RemoveAtGameplayTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtItems_System_Int32_"></a> RemoveAtItems\(int\)
+
+```csharp
+[Changes("Equipment.Field.Items")]
+public InventoryEntry RemoveAtItems(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ InventoryEntry
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtLastAnimTags_System_Int32_"></a> RemoveAtLastAnimTags\(int\)
+
+```csharp
+[Changes("AnimationState.Field.LastAnimTags")]
+public NativeString256 RemoveAtLastAnimTags(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_RemoveAtMeleeMontageSamples_System_Int32_"></a> RemoveAtMeleeMontageSamples\(int\)
+
+```csharp
+[Changes("AnimationState.Field.MeleeMontageSamples")]
+public SequencedSample RemoveAtMeleeMontageSamples(int index)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+#### Returns
+
+ SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetAnimActionSamples_Yooni_Native_Container_NativeList_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample___"></a> SetAnimActionSamples\(in NativeList<SequencedSample\>\)
+
+```csharp
+[Changes("AnimationState.Field.AnimActionSamples")]
+public void SetAnimActionSamples(in NativeList<SequencedSample> value)
+```
+
+#### Parameters
+
+`value` NativeList<SequencedSample\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetAnimActionSamples_System_Int32_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> SetAnimActionSamples\(int, in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.AnimActionSamples")]
+public void SetAnimActionSamples(int index, in SequencedSample value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetAnimTags_Yooni_Native_Container_NativeList_Yooni_Native_Container_NativeString256___"></a> SetAnimTags\(in NativeList<NativeString256\>\)
+
+```csharp
+[Changes("AnimationState.Field.AnimTags")]
+public void SetAnimTags(in NativeList<NativeString256> value)
+```
+
+#### Parameters
+
+`value` NativeList<NativeString256\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetAnimTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> SetAnimTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.AnimTags")]
+public void SetAnimTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetAttackingTags_Yooni_Native_Container_NativeList_Yooni_Native_Container_NativeString256___"></a> SetAttackingTags\(in NativeList<NativeString256\>\)
+
+```csharp
+[Changes("AnimationState.Field.AttackingTags")]
+public void SetAttackingTags(in NativeList<NativeString256> value)
+```
+
+#### Parameters
+
+`value` NativeList<NativeString256\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetAttackingTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> SetAttackingTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.AttackingTags")]
+public void SetAttackingTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetBlockingTags_Yooni_Native_Container_NativeList_Yooni_Native_Container_NativeString256___"></a> SetBlockingTags\(in NativeList<NativeString256\>\)
+
+```csharp
+[Changes("AnimationState.Field.BlockingTags")]
+public void SetBlockingTags(in NativeList<NativeString256> value)
+```
+
+#### Parameters
+
+`value` NativeList<NativeString256\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetBlockingTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> SetBlockingTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.BlockingTags")]
+public void SetBlockingTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetCastingRequestSamples_Yooni_Native_Container_NativeList_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample___"></a> SetCastingRequestSamples\(in NativeList<SequencedSample\>\)
+
+```csharp
+[Changes("AnimationState.Field.CastingRequestSamples")]
+public void SetCastingRequestSamples(in NativeList<SequencedSample> value)
+```
+
+#### Parameters
+
+`value` NativeList<SequencedSample\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetCastingRequestSamples_System_Int32_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> SetCastingRequestSamples\(int, in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.CastingRequestSamples")]
+public void SetCastingRequestSamples(int index, in SequencedSample value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetEquipUnequipTags_Yooni_Native_Container_NativeList_Yooni_Native_Container_NativeString256___"></a> SetEquipUnequipTags\(in NativeList<NativeString256\>\)
+
+```csharp
+[Changes("AnimationState.Field.EquipUnequipTags")]
+public void SetEquipUnequipTags(in NativeList<NativeString256> value)
+```
+
+#### Parameters
+
+`value` NativeList<NativeString256\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetEquipUnequipTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> SetEquipUnequipTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.EquipUnequipTags")]
+public void SetEquipUnequipTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetGameplayTags_Yooni_Native_Container_NativeList_Yooni_Native_Container_NativeString256___"></a> SetGameplayTags\(in NativeList<NativeString256\>\)
+
+```csharp
+[Changes("AnimationState.Field.GameplayTags")]
+public void SetGameplayTags(in NativeList<NativeString256> value)
+```
+
+#### Parameters
+
+`value` NativeList<NativeString256\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetGameplayTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> SetGameplayTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.GameplayTags")]
+public void SetGameplayTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetItems_Yooni_Native_Container_NativeList_ReadyM_Relay_Common_Oblivion_ECS_Values_InventoryEntry___"></a> SetItems\(in NativeList<InventoryEntry\>\)
+
+```csharp
+[Changes("Equipment.Field.Items")]
+public void SetItems(in NativeList<InventoryEntry> value)
+```
+
+#### Parameters
+
+`value` NativeList<InventoryEntry\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetItems_System_Int32_ReadyM_Relay_Common_Oblivion_ECS_Values_InventoryEntry__"></a> SetItems\(int, in InventoryEntry\)
+
+```csharp
+[Changes("Equipment.Field.Items")]
+public void SetItems(int index, in InventoryEntry value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` InventoryEntry
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetLastAnimTags_Yooni_Native_Container_NativeList_Yooni_Native_Container_NativeString256___"></a> SetLastAnimTags\(in NativeList<NativeString256\>\)
+
+```csharp
+[Changes("AnimationState.Field.LastAnimTags")]
+public void SetLastAnimTags(in NativeList<NativeString256> value)
+```
+
+#### Parameters
+
+`value` NativeList<NativeString256\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetLastAnimTags_System_Int32_Yooni_Native_Container_NativeString256__"></a> SetLastAnimTags\(int, in NativeString256\)
+
+```csharp
+[Changes("AnimationState.Field.LastAnimTags")]
+public void SetLastAnimTags(int index, in NativeString256 value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` NativeString256
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetMeleeMontageSamples_Yooni_Native_Container_NativeList_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample___"></a> SetMeleeMontageSamples\(in NativeList<SequencedSample\>\)
+
+```csharp
+[Changes("AnimationState.Field.MeleeMontageSamples")]
+public void SetMeleeMontageSamples(in NativeList<SequencedSample> value)
+```
+
+#### Parameters
+
+`value` NativeList<SequencedSample\>
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_SetMeleeMontageSamples_System_Int32_ReadyM_Relay_Common_Oblivion_ECS_Values_SequencedSample__"></a> SetMeleeMontageSamples\(int, in SequencedSample\)
+
+```csharp
+[Changes("AnimationState.Field.MeleeMontageSamples")]
+public void SetMeleeMontageSamples(int index, in SequencedSample value)
+```
+
+#### Parameters
+
+`index` [int](https://learn.microsoft.com/dotnet/api/system.int32)
+
+`value` SequencedSample
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_TryAs__1___0__"></a> TryAs<T\>\(out T\)
+
+```csharp
+public bool TryAs<T>(out T archetype) where T : struct, IArchetypeQueryable
+```
+
+#### Parameters
+
+`archetype` T
+
+#### Returns
+
+ [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+#### Type Parameters
+
+`T` 
+
+## Operators
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_op_Explicit_OblivionMp_Sdk_Common_Archetypes_Npc__OblivionMp_Sdk_Common_Archetypes_ServerSummon"></a> explicit operator ServerSummon\(Npc\)
+
+```csharp
+public static explicit operator ServerSummon(Npc value)
+```
+
+#### Parameters
+
+`value` [Npc](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.Npc.md)
+
+#### Returns
+
+ [ServerSummon](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.ServerSummon.md)
+
+### <a id="OblivionMp_Sdk_Common_Archetypes_ServerSummon_op_Implicit_OblivionMp_Sdk_Common_Archetypes_ServerSummon__OblivionMp_Sdk_Common_Archetypes_Npc"></a> implicit operator Npc\(ServerSummon\)
+
+```csharp
+public static implicit operator Npc(ServerSummon value)
+```
+
+#### Parameters
+
+`value` [ServerSummon](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.ServerSummon.md)
+
+#### Returns
+
+ [Npc](../OblivionMp.Sdk.Common.Archetypes/OblivionMp.Sdk.Common.Archetypes.Npc.md)
+
+

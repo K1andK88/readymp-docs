@@ -3,6 +3,8 @@
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
 
+A quest in a player's journal.
+
 ```csharp
 public struct QuestEntry : INetSerializable
 ```
@@ -24,6 +26,8 @@ INetSerializable
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestEntry_Audience"></a> Audience
 
+Whether the quest is one player's own or shared by everyone.
+
 ```csharp
 public AudienceKind Audience
 ```
@@ -33,6 +37,8 @@ public AudienceKind Audience
  [AudienceKind](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.AudienceKind.md)
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestEntry_CurrentStage"></a> CurrentStage
+
+The stage the quest is at.
 
 ```csharp
 public byte CurrentStage
@@ -44,15 +50,19 @@ public byte CurrentStage
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestEntry_Name"></a> Name
 
+The quest's name in the journal.
+
 ```csharp
 public NativeString64 Name
 ```
 
 #### Field Value
 
- [NativeString64](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/Container/NativeString64.cs)
+ NativeString64
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestEntry_Phase"></a> Phase
+
+Whether the quest is active, completed or failed.
 
 ```csharp
 public QuestPhase Phase
@@ -64,6 +74,8 @@ public QuestPhase Phase
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestEntry_QuestId"></a> QuestId
 
+Your mod's id for the quest. One quest per id.
+
 ```csharp
 public uint QuestId
 ```
@@ -74,34 +86,14 @@ public uint QuestId
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestEntry_StageText"></a> StageText
 
+The journal text for the current stage.
+
 ```csharp
 public NativeString256 StageText
 ```
 
 #### Field Value
 
- [NativeString256](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/Container/NativeString256.cs)
-
-## Methods
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestEntry_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_QuestEntry_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
+ NativeString256
 
 

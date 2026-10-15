@@ -14,14 +14,9 @@ public abstract class RpcBase : IHostedService, IDisposable
 [object](https://learn.microsoft.com/dotnet/api/system.object) ← 
 [RpcBase](../ReadyM.Api.Multiplayer.RPC/ReadyM.Api.Multiplayer.RPC.RpcBase.md)
 
-#### Derived
-
-[ClientRpcHandler](../ReadyM.Api.Multiplayer.RPC/ReadyM.Api.Multiplayer.RPC.ClientRpcHandler.md), 
-[ServerRpcClient](../ReadyM.Api.Multiplayer.RPC/ReadyM.Api.Multiplayer.RPC.ServerRpcClient.md)
-
 #### Implements
 
-[IHostedService](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/ReadyM.Api/DI/IHostedService.cs), 
+IHostedService, 
 [IDisposable](https://learn.microsoft.com/dotnet/api/system.idisposable)
 
 #### Inherited Members

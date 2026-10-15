@@ -3,6 +3,8 @@
 Namespace: [ReadyM.Relay.Common.Oblivion.ECS.Values](../ReadyM.Relay.Common.Oblivion.ECS.Values/ReadyM.Relay.Common.Oblivion.ECS.Values.md)  
 Assembly: ReadyM.Relay.Common.Oblivion.dll  
 
+A named world flag and its value.
+
 ```csharp
 public struct WorldFlagEntry : INetSerializable
 ```
@@ -24,15 +26,19 @@ INetSerializable
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_WorldFlagEntry_Name"></a> Name
 
+The flag's name.
+
 ```csharp
 public NativeString64 Name
 ```
 
 #### Field Value
 
- [NativeString64](https://github.com/readycodeio/readym\-core\-sdk/blob/3d50c891f9ae9373345cf44a0434fa50171dcc66/src/YooniCSharp/Native/Container/NativeString64.cs)
+ NativeString64
 
 ### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_WorldFlagEntry_Value"></a> Value
+
+The flag's value.
 
 ```csharp
 public float Value
@@ -41,27 +47,5 @@ public float Value
 #### Field Value
 
  [float](https://learn.microsoft.com/dotnet/api/system.single)
-
-## Methods
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_WorldFlagEntry_Deserialize_LiteNetLib_Utils_NetDataReader_"></a> Deserialize\(NetDataReader\)
-
-```csharp
-public void Deserialize(NetDataReader reader)
-```
-
-#### Parameters
-
-`reader` NetDataReader
-
-### <a id="ReadyM_Relay_Common_Oblivion_ECS_Values_WorldFlagEntry_Serialize_LiteNetLib_Utils_NetDataWriter_"></a> Serialize\(NetDataWriter\)
-
-```csharp
-public void Serialize(NetDataWriter writer)
-```
-
-#### Parameters
-
-`writer` NetDataWriter
 
 

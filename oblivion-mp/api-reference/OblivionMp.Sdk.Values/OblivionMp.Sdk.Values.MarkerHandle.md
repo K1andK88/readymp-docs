@@ -40,6 +40,8 @@ public MarkerHandle(ulong value)
 
 ### <a id="OblivionMp_Sdk_Values_MarkerHandle_IsNone"></a> IsNone
 
+Whether this is **None**.
+
 ```csharp
 public bool IsNone { get; }
 ```
@@ -62,6 +64,8 @@ public static MarkerHandle None { get; }
 
 ### <a id="OblivionMp_Sdk_Values_MarkerHandle_Value"></a> Value
 
+The raw handle, 0 for no marker.
+
 ```csharp
 public ulong Value { get; }
 ```
@@ -73,6 +77,8 @@ public ulong Value { get; }
 ## Methods
 
 ### <a id="OblivionMp_Sdk_Values_MarkerHandle_Equals_OblivionMp_Sdk_Values_MarkerHandle_"></a> Equals\(MarkerHandle\)
+
+Whether both handles name the same marker.
 
 ```csharp
 public bool Equals(MarkerHandle other)
@@ -114,6 +120,8 @@ public override int GetHashCode()
 
 ### <a id="OblivionMp_Sdk_Values_MarkerHandle_op_Equality_OblivionMp_Sdk_Values_MarkerHandle_OblivionMp_Sdk_Values_MarkerHandle_"></a> operator ==\(MarkerHandle, MarkerHandle\)
 
+Whether both handles name the same marker.
+
 ```csharp
 public static bool operator ==(MarkerHandle left, MarkerHandle right)
 ```
@@ -129,6 +137,8 @@ public static bool operator ==(MarkerHandle left, MarkerHandle right)
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
 
 ### <a id="OblivionMp_Sdk_Values_MarkerHandle_op_Inequality_OblivionMp_Sdk_Values_MarkerHandle_OblivionMp_Sdk_Values_MarkerHandle_"></a> operator \!=\(MarkerHandle, MarkerHandle\)
+
+Whether the handles name different markers.
 
 ```csharp
 public static bool operator !=(MarkerHandle left, MarkerHandle right)
