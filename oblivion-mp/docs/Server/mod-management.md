@@ -35,12 +35,6 @@ Anything a player should not see belongs in `server/`. The server never sends th
 
 :::
 
-:::note[Changed in 0.2.0]
-
-Mods used to be ZIP archives in `mods/`, with server-side assemblies dropped loose into a separate `server_mods/` directory. Both are gone. A mod is now one folder with a manifest, and the `server_mods/` directory is no longer read.
-
-:::
-
 ## The manifest
 
 Every mod needs a `manifest.json` at the root of its folder. It is what makes the folder a mod rather than a folder with DLLs in it, and it carries the identity and dependencies the loader needs.
@@ -56,7 +50,7 @@ Every mod needs a `manifest.json` at the root of its folder. It is what makes th
   "dependencies": [
     {
       "uniqueId": "OblivionMP.SDK",
-      "minimumVersion": "0.2.0"
+      "minimumVersion": "1.0.0"
     }
   ]
 }
@@ -86,7 +80,7 @@ To add a mod to your server, drop its folder into `mods/`. Clients fill in whate
 
 ## Server-side mods {#server-side-mods}
 
-A server-side mod is a normal mod with a `server/` folder. It can register networked ECS components, run gameplay systems on the server tick, react to server events, and handle server RPCs sent by clients. See the [server-side development](../Server-development/getting-started) docs to learn how to build one.
+A server-side mod is a normal mod with a `server/` folder. It can keep its own data on entities, run services on the server tick, react to server events and answer messages from players. See [Your first mod](../Modding/Getting-started/your-first-mod.md) to build one.
 
 ```text title="A mod with both halves"
 mods/
@@ -116,7 +110,7 @@ The client side is handled for you: before the manifest is sent to a player, the
 
 Mods can ship JSON config files on either side, and you can edit them in place on the server. Files in `server/` are read by the server and never sent out; files in `client/` are handed to every player along with the rest of that folder.
 
-Edit a config file and restart the server. For how to write a mod that reads its own config, see [Mod config files](../Client/mod-config).
+Edit a config file and restart the server. For how to write a mod that reads its own config, see [Mod entry and config](../Modding/Getting-started/mod-entry-and-config.md#config-files).
 
 ## Security
 
