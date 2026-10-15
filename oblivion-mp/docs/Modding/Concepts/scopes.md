@@ -60,11 +60,11 @@ them, look them up and read their values the same way:
 | `World` | The whole session. | One, from server start to shutdown. | Every player. | None of its own. |
 | `Area` | A world space: the outer container players move around in. Two players in one area can be far apart. | One per area a player has entered. Created when the first player enters, and kept after the last one leaves. | The players in that area. | `AreaId`, `MasterClient` |
 | `Cell` | The loaded piece of a world space a player is standing in, one level finer than an area. | One per cell a player has loaded. Created when the first player loads it, and kept after the last one unloads it. | The players who have that cell loaded. | `FullCellId`, `MasterClient` |
-| `Player` | A connected player, wherever they are. | One per player, from connecting until disconnecting. | That player and everyone in the same area. | `PlayerId` |
+| `Player` | A connected player, wherever they are. | One per player, from connecting until disconnecting. | Every player. | `PlayerId` |
 
-The last column is about the entities a scope holds, not the scope entity itself. `Player` entities are global:
-every connected player sees every `Player`, wherever they are. What a player's scope holds goes only to the players in
-that player's current area.
+A player's scope is global, like the `Player` entity itself: what it holds reaches every connected player, wherever
+they and that player are, and is deleted when that player disconnects. Use it for anything that belongs to one player
+and should follow them between areas.
 
 `MasterClient` is the player whose game simulates what the area or cell holds, such as its NPCs. The SDK sets
 `AreaId`, `FullCellId`, `MasterClient` and `PlayerId`: read them, never write them.
@@ -166,7 +166,7 @@ OblivionMP adds its own values to the built-in scopes the same way:
 | | Client | Server |
 | --- | --- | --- |
 | Scopes you see | The `World`, the area this player is in, the cells they have loaded, and every `Player`. | All of them. |
-| Entities you see | Those held by that area and those cells, those held by this player or a player in the same area, and those in no scope. | Every entity. |
+| Entities you see | Those held by that area and those cells, those held by any player, and those in no scope. | Every entity. |
 | Creating in a scope | `Create<T>(scope)`, owned by this player. | `Create<T>(scope)`, owned by the server, or `Create<T>(scope, owner)`. |
 
 When a player leaves an area, their client stops seeing what it held, and those entities' delete handlers run on that
