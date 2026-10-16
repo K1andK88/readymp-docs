@@ -10,7 +10,7 @@ Assembly: ReadyM.SDK.dll
 A scope for one area of the world, holding what is in it while players are there.
 
 ```csharp
-[Archetype(true)]
+[Archetype(Replication = Replication.OwnershipBased)]
 public readonly struct Area : IScope, IArchetype, IArchetypeQueryable, IEntityShape, IIndexed<AreaId>
 ```
 

@@ -10,7 +10,7 @@ Assembly: ReadyM.SDK.dll
 The one entity that stands for the whole session and carries session-wide values.
 
 ```csharp
-[Archetype(true)]
+[Archetype]
 public readonly struct World : IArchetype, IArchetypeQueryable, IEntityShape
 ```
 

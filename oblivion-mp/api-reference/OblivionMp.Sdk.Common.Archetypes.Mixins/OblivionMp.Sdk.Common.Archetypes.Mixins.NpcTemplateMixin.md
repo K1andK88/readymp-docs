@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 An NPC's record from the game files.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct NpcTemplateMixin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

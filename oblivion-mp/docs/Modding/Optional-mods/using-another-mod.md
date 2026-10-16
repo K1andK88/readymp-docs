@@ -46,13 +46,13 @@ only its client project gets the chat client package:
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="ReadyM.SDK.Oblivion.Client" Version="1.0.0" />
+        <PackageReference Include="ReadyM.SDK.Oblivion.Client" Version="1.0.0-rc.2" />
     </ItemGroup>
 
     <!-- The chat mod's client API. Chat is a dependency in manifest.json, so it is loaded first
          and provides IChat; its assemblies stay out of this mod's folder. -->
     <ItemGroup>
-        <PackageReference Include="ReadyM.Oblivion.Chat.Client" Version="1.0.0" />
+        <PackageReference Include="ReadyM.Oblivion.Chat.Client" Version="1.0.0-rc.3" />
     </ItemGroup>
 
     <ItemGroup>

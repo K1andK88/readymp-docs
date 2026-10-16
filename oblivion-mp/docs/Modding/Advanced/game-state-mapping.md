@@ -25,10 +25,8 @@ using ReadyM.SDK.Attributes;
 
 namespace MyMod.Common;
 
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 [Extends(typeof(MainCharacter))]
-[Replicated]
-[Propagates(Propagation.OwnershipBased)]
 public readonly partial struct Lantern
 {
     public partial bool IsLit { get; set; }
@@ -178,10 +176,10 @@ A collection or whole-shape token needs the shape it belongs to, so convert firs
 
 ### Which direction is allowed
 
-The shape's [`[Propagates]`](../Concepts/replication.md) decides, per entity, which way values may travel on this
+The shape's [`Replication`](../Concepts/replication.md) decides, per entity, which way values may travel on this
 client:
 
-| Propagation | `Pull` (game to shape) | `Push` (shape to game) |
+| Replication | `Pull` (game to shape) | `Push` (shape to game) |
 | --- | --- | --- |
 | `OwnershipBased` | On the client that owns the entity. | On every other client. |
 | `ServerAuthoritative` | Never. | Always. |
@@ -209,7 +207,6 @@ shapes and both halves see the same `Field` classes.
 | --- | --- | --- |
 | READYM017 | A client project assigns a replicated value directly. On a client, a replicated value changes through a mapping or an override, never a setter. | Map it and call `Pull`, or use `Override`. Inside a mapping's own handlers, writing the value is allowed. |
 | READYM019 | A client project changes a replicated collection directly (`AddItems`, `ClearItems` and the like). | Map the collection and change it in the pull handler, or override it. |
-| READYM014 | A replicated shape has no `[Propagates]`, so nothing says which way its values may travel. | Add `[Propagates(Propagation.X)]` to the shape. |
 
 ## Reference
 

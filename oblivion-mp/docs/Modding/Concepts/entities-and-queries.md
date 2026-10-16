@@ -194,7 +194,7 @@ using ReadyM.SDK.Attributes;
 namespace MyMod.Server;
 
 // Server-only bookkeeping: no client ever sees a bounty.
-[Archetype(replicated: false)]
+[Archetype(Networked = false)]
 public readonly partial struct Bounty
 {
     public partial int Gold { get; set; }

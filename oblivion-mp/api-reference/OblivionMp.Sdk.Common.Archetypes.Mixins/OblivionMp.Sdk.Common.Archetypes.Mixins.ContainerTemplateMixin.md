@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A container's record from the game files, which its contents are rolled from.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct ContainerTemplateMixin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

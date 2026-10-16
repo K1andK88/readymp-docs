@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The next server-assigned ref id, kept on the World so it is saved in Global.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(World), "")]
 public readonly struct ServerRefIdMark : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

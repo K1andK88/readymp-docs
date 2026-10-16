@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 Who summoned a creature, who it fights for, and when it runs out.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct SummonedBy : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

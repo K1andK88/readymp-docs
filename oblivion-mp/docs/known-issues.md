@@ -6,39 +6,29 @@ sidebar_position: 2
 
 We are aware of the following issues in the current release candidate, and we're working on fixing them.
 
-## Server
-
-* The version number displayed in the Launcher is still `0.2.0` instead of `1.0.0`.
-
 ## Gameplay
 
-* Hovering over another player shows "Player #0" instead of their name. Overhead name is correct.
 * After spawning, the player character's body may not match their head.
+* Dead NPCs' positions may reset to default after server restart.
 * The player character's voice may not match their race or sex.
-* Weather is not decided by the server, so it can change abruptly, for example when you move between a city and the open world.
+* Weather is decided by a random player, so it can change abruptly, for example when they move between a city and the open world.
 * Items with custom enchantments cannot be dropped yet.
 * Physics and ragdolls of items and of NPC and player bodies make their positions go out of sync.
 * Not everything about a player is saved yet: name, race, class, birthsign and faction membership are lost.
-* The sitting animation is shown in the wrong state.
-* Using the `Rebirth` console command after dying lowers your Speed attribute by 20.
+* The sitting animation is currently broken, the player stands in a chair.
 * NPCs cannot be pickpocketed.
-* Loot on killed NPCs is rolled again after a server restart, instead of staying the same.
-* Fire-shooting turrets in the Oblivion realm crash the game.
+* Fire-shooting turrets in the Planes of Oblivion crash the game.
+* Using the `Rebirth` console command after dying lowers your Speed attribute by 20.
 * After using the `Rebirth` command a player may become invisible to others.
 
 ## SDK
 
 * Position of dropped items is not synchronized. Dragging them around will not be seen by other players, but they will disappear for everyone when picked up.
 * Small changes to replicated decimal values are dropped. A write that changes a `float` or `double` by 0.1 or less, or moves a vector by 0.1 or less, is not stored or sent. The same threshold applies to values marked `[Quantize]` or `[HalfPrecision]`. More robust controls over this are coming.
-* Three attribute mistakes are not reported clearly yet. Clear diagnostics for them are coming:
-  * A second `[Index]` on one shape compiles when both values have the same type, but only the first one is the index. With different types, the build fails with an error inside generated code.
-  * `[Tag]` on a mixin fails the build with an error inside generated code. Put tags on archetypes only.
-  * `[Extends]` on an archetype is not an error, but it only partly works: the target gets the archetype's components and none of its values. Use `[Extends]` on mixins only.
 
 ## Missing features
 
 These are planned for a patch soon after release:
 
-* **No way to remove a key binding.** Once registered, a binding stays. See [Input and key bindings](Modding/Game/input.md).
 * **No broadcast send.** A server message goes to one player at a time; to reach everyone, loop over the players. See [RPC](Modding/Concepts/rpc.md).
 * **No way to react to entities arriving on the client.** Create handlers on the client do not run for entities the server sends. See [Entities and queries](Modding/Concepts/entities-and-queries.md).

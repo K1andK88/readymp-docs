@@ -50,15 +50,6 @@ Declares a class the SDK fills from a JSON file in the mod's own folder and regi
 Indicates the entry point of a mod.
 The annotated class may declare a <code>private void Init()</code> method, which will be called when the mod is loaded.
 
- [PropagatesAttribute](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.PropagatesAttribute.md)
-
-How this shape's values travel between the game and the ECS, and who may write them.
-
- [ReplicatedAttribute](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.ReplicatedAttribute.md)
-
-Makes this mixin able to be replicated over the network, if included in a replicated archetype.
-Mixins without this attribute will not be replicated, even if the archetype is.
-
  [RpcContractsAttribute](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.RpcContractsAttribute.md)
 
 Marks the class as containing RPC contracts.
@@ -90,8 +81,9 @@ Specifies when a service's update runs relative to the others.
 
 How a replicated shape's changes reach the other side.
 
- [Propagation](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Propagation.md)
+ [Replication](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Replication.md)
 
-Which way a shape's values may travel between the game and the ECS, and who may write them.
+Whether a shape's values are sent to the other players, and if so, which way they travel between the game and the
+ECS and who may write them.
 
 

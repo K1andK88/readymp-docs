@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A plant or other harvestable object placed in the world.
 
 ```csharp
-[Archetype(true)]
+[Archetype]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(RefIdMixin), "")]

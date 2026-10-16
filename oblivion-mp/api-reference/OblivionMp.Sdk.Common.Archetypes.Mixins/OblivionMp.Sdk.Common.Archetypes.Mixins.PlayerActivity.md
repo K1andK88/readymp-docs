@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 What a player's character is doing.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct PlayerActivity : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

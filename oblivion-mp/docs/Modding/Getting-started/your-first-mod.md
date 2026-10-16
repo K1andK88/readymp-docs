@@ -84,10 +84,8 @@ using ReadyM.SDK.Attributes;
 
 namespace MyMod.Common;
 
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(Player))]
-[Replicated]
-[Propagates(Propagation.ServerAuthoritative)]
 public readonly partial struct Wallet
 {
     public partial int Balance { get; set; }

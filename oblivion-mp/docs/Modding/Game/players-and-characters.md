@@ -62,7 +62,7 @@ when you use it.
 | Mixin | Members on `MainCharacter` |
 | --- | --- |
 | `Transform` | `Position` (a `Vector3`, in centimeters) and `Rotation` (yaw, in degrees) |
-| `Vitals` | `Hp`, `Magicka`, `Fatigue`, their maximums `HpBase`, `MagickaBase`, `FatigueBase`, and `IsDead` |
+| `Vitals` | `Hp`, `Magicka`, `Fatigue`, their maximums `HpBase`, `MagickaBase`, `FatigueBase`, and `IsDead`, which is worked out from `Hp` |
 | `LevelMixin` | `Level` |
 | `PlayerActivity` | `InCombat`, `InDialogue`, and `DetectedByOtherPlayer`: the player is sneaking and another player's character can see them |
 | `Appearance` | `Sex` (a `CharacterSex`), the race, hair, eye and face asset paths, and the face morph and skin collections |

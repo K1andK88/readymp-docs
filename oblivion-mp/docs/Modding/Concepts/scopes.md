@@ -136,10 +136,8 @@ using ReadyM.SDK.Attributes;
 namespace MyMod.Common;
 
 // Every area gets a danger level. The server sets it; clients read it.
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(Area), "Danger")]
-[Replicated]
-[Propagates(Propagation.ServerAuthoritative)]
 public readonly partial struct Danger
 {
     public partial int Level { get; set; }
@@ -171,13 +169,6 @@ OblivionMP adds its own values to the built-in scopes the same way:
 
 When a player leaves an area, their client stops seeing what it held, and those entities' delete handlers run on that
 client. See [Entities and queries](entities-and-queries.md).
-
-## Related diagnostics
-
-| Id | What it means | How to fix it |
-| --- | --- | --- |
-| `READYM014` | A `[Replicated]` mixin that extends a scope does not say who may write it. | Add `[Propagates(...)]`. See [Replication](replication.md). |
-| `READYM016` | `[Propagates]` is on a mixin that does not replicate. | Drop `[Propagates]`, or add `[Replicated]`. |
 
 ## Reference
 

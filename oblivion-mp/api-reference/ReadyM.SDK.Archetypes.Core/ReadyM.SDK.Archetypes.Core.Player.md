@@ -10,7 +10,7 @@ Assembly: ReadyM.SDK.dll
 A scope for one connected player, from connecting until disconnecting.
 
 ```csharp
-[Archetype(true)]
+[Archetype(Replication = Replication.OwnershipBased)]
 public readonly struct Player : IScope, IArchetype, IArchetypeQueryable, IEntityShape, IIndexed<PlayerId>
 ```
 

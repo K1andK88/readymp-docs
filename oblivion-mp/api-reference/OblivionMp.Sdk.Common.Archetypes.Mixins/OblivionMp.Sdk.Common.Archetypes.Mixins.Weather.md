@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The weather of an area.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 [Extends(typeof(Area), "")]
 public readonly struct Weather : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

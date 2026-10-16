@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 An item lying on the ground.
 
 ```csharp
-[Archetype(true)]
+[Archetype(Replication = Replication.OwnershipBased)]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(Transform), "")]

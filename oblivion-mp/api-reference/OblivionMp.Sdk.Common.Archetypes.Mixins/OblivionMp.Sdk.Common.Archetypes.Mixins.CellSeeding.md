@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 Whether the server has seeded a cell from the game files, and when the cell last respawned.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 [Extends(typeof(Cell), "")]
 public readonly struct CellSeeding : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

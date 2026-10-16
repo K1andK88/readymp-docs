@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The arrows a character has equipped.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct Quiver : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

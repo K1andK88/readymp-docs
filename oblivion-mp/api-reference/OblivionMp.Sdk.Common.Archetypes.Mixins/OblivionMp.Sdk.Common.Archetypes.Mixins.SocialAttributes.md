@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A character's social values, such as bounty and fame, keyed by **CharacterSocialAttribute** cast to <code>byte</code>.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct SocialAttributes : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

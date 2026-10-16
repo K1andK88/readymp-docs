@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The base value of every item in the game files, by form id.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct ItemValuesMixin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

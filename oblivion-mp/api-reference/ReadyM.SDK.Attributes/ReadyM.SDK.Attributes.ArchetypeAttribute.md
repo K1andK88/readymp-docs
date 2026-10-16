@@ -69,25 +69,17 @@ public class ArchetypeAttribute : Attribute
 
 ## Constructors
 
-### <a id="ReadyM_SDK_Attributes_ArchetypeAttribute__ctor_System_Boolean_"></a> ArchetypeAttribute\(bool\)
-
-Declares a struct as an archetype.
+### <a id="ReadyM_SDK_Attributes_ArchetypeAttribute__ctor"></a> ArchetypeAttribute\(\)
 
 ```csharp
-public ArchetypeAttribute(bool replicated)
+public ArchetypeAttribute()
 ```
-
-#### Parameters
-
-`replicated` [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
-
-A replicated entity is given a network identity and an owner, and is replicated to other players.
 
 ## Properties
 
 ### <a id="ReadyM_SDK_Attributes_ArchetypeAttribute_Delivery"></a> Delivery
 
-How the archetype's own values travel, when it replicates and holds any.
+How the archetype's own values travel, when it replicates them.
 
 ```csharp
 public Delivery Delivery { get; set; }
@@ -97,14 +89,30 @@ public Delivery Delivery { get; set; }
 
  [Delivery](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Delivery.md)
 
-### <a id="ReadyM_SDK_Attributes_ArchetypeAttribute_Replicated"></a> Replicated
+### <a id="ReadyM_SDK_Attributes_ArchetypeAttribute_Networked"></a> Networked
+
+Whether its entities are given a network identity and an owner, and are sent to the other players. Which of
+their values travel with them is up to the mixins, and to **Replication** for the archetype's own.
 
 ```csharp
-public bool Replicated { get; }
+public bool Networked { get; set; }
 ```
 
 #### Property Value
 
  [bool](https://learn.microsoft.com/dotnet/api/system.boolean)
+
+### <a id="ReadyM_SDK_Attributes_ArchetypeAttribute_Replication"></a> Replication
+
+Whether the archetype's own values are sent, and who may write them. Required on a networked archetype that
+declares values of its own, and only there.
+
+```csharp
+public Replication Replication { get; set; }
+```
+
+#### Property Value
+
+ [Replication](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Replication.md)
 
 

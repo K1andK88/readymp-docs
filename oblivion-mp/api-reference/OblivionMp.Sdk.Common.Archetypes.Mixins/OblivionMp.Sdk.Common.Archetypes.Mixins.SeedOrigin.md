@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 How a dropped item was seeded from the game files.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct SeedOrigin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

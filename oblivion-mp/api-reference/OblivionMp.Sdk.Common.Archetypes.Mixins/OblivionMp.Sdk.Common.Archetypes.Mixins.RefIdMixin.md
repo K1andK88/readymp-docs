@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The reference id the game knows an entity by.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct RefIdMixin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

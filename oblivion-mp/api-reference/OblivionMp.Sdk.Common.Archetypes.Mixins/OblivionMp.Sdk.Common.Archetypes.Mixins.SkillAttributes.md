@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A character's attributes and skills, keyed by **CharacterAttribute** cast to <code>byte</code>.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct SkillAttributes : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

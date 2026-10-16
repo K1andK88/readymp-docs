@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A leveled list from the game files.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct LeveledListTemplateMixin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

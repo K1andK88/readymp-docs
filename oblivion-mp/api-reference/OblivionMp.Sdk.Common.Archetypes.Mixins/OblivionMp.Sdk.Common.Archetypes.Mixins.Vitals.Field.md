@@ -90,18 +90,6 @@ public static Value<Vitals, float> HpBase { get; }
 
  Value<[Vitals](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.Vitals.md), [float](https://learn.microsoft.com/dotnet/api/system.single)\>
 
-### <a id="OblivionMp_Sdk_Common_Archetypes_Mixins_Vitals_Field_IsDead"></a> IsDead
-
-Names Vitals.IsDead.
-
-```csharp
-public static Value<Vitals, bool> IsDead { get; }
-```
-
-#### Property Value
-
- Value<[Vitals](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.Vitals.md), [bool](https://learn.microsoft.com/dotnet/api/system.boolean)\>
-
 ### <a id="OblivionMp_Sdk_Common_Archetypes_Mixins_Vitals_Field_Magicka"></a> Magicka
 
 Names Vitals.Magicka.

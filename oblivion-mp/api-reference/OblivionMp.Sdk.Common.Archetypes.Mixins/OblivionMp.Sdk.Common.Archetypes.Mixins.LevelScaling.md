@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The level the session's leveled lists roll at.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(World), "")]
 public readonly struct LevelScaling : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

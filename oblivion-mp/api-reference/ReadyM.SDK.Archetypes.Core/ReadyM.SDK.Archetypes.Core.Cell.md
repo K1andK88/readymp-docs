@@ -10,7 +10,7 @@ Assembly: ReadyM.SDK.dll
 A scope for one loaded cell of an area, holding what is in it.
 
 ```csharp
-[Archetype(true)]
+[Archetype(Replication = Replication.OwnershipBased)]
 public readonly struct Cell : IScope, IArchetype, IArchetypeQueryable, IEntityShape, IIndexed<FullCellId>
 ```
 

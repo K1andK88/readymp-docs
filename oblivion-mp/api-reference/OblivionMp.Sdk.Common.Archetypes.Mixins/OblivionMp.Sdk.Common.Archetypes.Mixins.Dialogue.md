@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The dialogue topics and responses the server offers a player.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(Player), "Dialogue")]
 public readonly struct Dialogue : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
