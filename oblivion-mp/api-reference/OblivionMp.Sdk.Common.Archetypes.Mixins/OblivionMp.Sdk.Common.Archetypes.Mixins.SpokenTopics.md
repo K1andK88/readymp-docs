@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The mod-added dialogue topics a player has spoken.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 [Extends(typeof(Player), "Spoken")]
 public readonly struct SpokenTopics : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

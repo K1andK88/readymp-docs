@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.dll
 The game actor that shows a character in this player's game.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.None)]
 [Extends(typeof(MainCharacter), "")]
 public readonly struct MappedActor : IArchetypeMixin, IArchetypeQueryable, IEntityShape, IIndexed<nint>
 ```

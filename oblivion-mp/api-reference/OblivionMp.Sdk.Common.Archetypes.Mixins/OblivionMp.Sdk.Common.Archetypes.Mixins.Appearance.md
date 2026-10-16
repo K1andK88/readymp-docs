@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 How a player's character looks: sex, race, face and hair.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct Appearance : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

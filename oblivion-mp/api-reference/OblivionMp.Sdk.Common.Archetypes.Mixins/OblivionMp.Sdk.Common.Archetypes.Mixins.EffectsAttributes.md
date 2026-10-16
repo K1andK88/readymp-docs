@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A character's active effect values, keyed by **CharacterEffect** cast to <code>byte</code>.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct EffectsAttributes : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

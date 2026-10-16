@@ -16,10 +16,8 @@ using ReadyM.SDK.Attributes;
 namespace MyMod.Common;
 
 // A mixin: a set of fields. [Extends] gives every player one.
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(Player))]
-[Replicated]
-[Propagates(Propagation.ServerAuthoritative)]
 public readonly partial struct Wallet
 {
     public partial int Balance { get; set; }
@@ -34,8 +32,8 @@ foreach (var player in entities.Query<Player>())
     player.SetBalance(player.Balance + 10);
 ```
 
-`[Replicated]` and `[Propagates]` decide who sees the balance and who may change it. They have a page of their own:
-[Replication and authority](replication.md).
+`Replication.ServerAuthoritative` decides who sees the balance and who may change it. Replication has a page of its
+own: [Replication and authority](replication.md).
 
 ## How it works
 
@@ -45,8 +43,8 @@ A shape is a `public readonly partial struct` with one of two attributes:
 
 | Attribute | Declares | Example |
 | --- | --- | --- |
-| `[Archetype(replicated: ...)]` | A kind of entity. `replicated: true` gives each entity a network identity and an owner, and sends it to the players; `false` keeps it on the half that created it. | `MainCharacter`, `Npc`, `Player` |
-| `[ArchetypeMixin]` | A set of fields that archetypes include, or that `[Extends]` adds to one. | `Transform`, `Vitals`, `Wallet` |
+| `[Archetype]` | A kind of entity. Each entity gets a network identity and an owner, and is sent to the players; `[Archetype(Networked = false)]` keeps it on the half that created it. An archetype with fields of its own also says whether they replicate: `Replication = Replication.X`. | `MainCharacter`, `Npc`, `Player` |
+| `[ArchetypeMixin(Replication.X)]` | A set of fields that archetypes include, or that `[Extends]` adds to one. `Replication` says whether they are sent and who may write them; `Replication.None` keeps them local. | `Transform`, `Vitals`, `Wallet` |
 
 Declare each field as a `public partial` property with `get` and `set`. The SDK writes the other half of each
 property: the value lives on the entity, not in the struct. A shape is a handle to one entity, so copying it is cheap,
@@ -69,14 +67,14 @@ using ReadyM.SDK.Attributes;
 
 namespace MyMod.Common;
 
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.None)]
 public readonly partial struct Health
 {
     public partial float Current { get; set; }
     public partial float Max { get; set; }
 }
 
-[Archetype(replicated: false)]
+[Archetype(Networked = false)]
 [Include(typeof(Health))]
 public readonly partial struct Target
 {
@@ -96,7 +94,7 @@ archetype declares itself, the build stops with `READYM041`. Give one of the inc
 argument, and every member it brings gets that word in front:
 
 ```csharp
-[Archetype(replicated: false)]
+[Archetype(Networked = false)]
 [Include(typeof(Health))]
 [Include(typeof(Shield), "Shield")]   // Shield also has Current and Max
 public readonly partial struct Target;
@@ -120,7 +118,7 @@ that archetype includes. This is inheritance, so an archetype has at most one; c
 The SDK's `ServerSummon` is built this way:
 
 ```csharp
-[Archetype(replicated: true)]
+[Archetype]
 [IncludeArchetype(typeof(Npc))]
 [Include(typeof(SummonedBy))]
 public readonly partial struct ServerSummon;
@@ -138,7 +136,8 @@ When you are not sure, use `TryAs` (see [What every shape can do](#what-every-sh
 
 ### Adding fields to a shape you do not own
 
-`[Extends(typeof(X))]` on a mixin adds it to every entity created as the archetype `X`. This is how a mod puts its own
+`[Extends(typeof(X))]` on a mixin adds it to every entity created as the archetype `X`. It goes on mixins only; on an
+archetype the build stops with `READYM049`. This is how a mod puts its own
 data on the SDK's shapes: the core scopes (`Player`, `Area`, `Cell`, `World`, see [Scopes](scopes.md)) and the
 Oblivion shapes (`MainCharacter`, `Npc`, `DroppedItem` and the rest, see
 [Players and characters](../Game/players-and-characters.md)). `Wallet` above extends `Player`. A mixin that only one
@@ -151,7 +150,7 @@ using ReadyM.SDK.Attributes;
 
 namespace MyMod.Client;
 
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.None)]
 [Extends(typeof(MainCharacter))]
 public readonly partial struct Marker
 {
@@ -170,12 +169,42 @@ assigning it, so the SDK also generates a `SetX` method: `player.SetBalance(...)
 mixin extends `Player` with the prefix `Dialogue` for this reason. A mixin can extend more than one archetype; repeat
 the attribute.
 
+### Computed properties
+
+A property written with a body, instead of declared `partial`, is worked out from the shape's fields rather than
+stored. Make it `public`, and every shape that includes the mixin, builds on it, or that it extends gets it too:
+
+```csharp
+[ArchetypeMixin(Replication.None)]
+public readonly partial struct Health
+{
+    public partial float Current { get; set; }
+    public partial float Max { get; set; }
+
+    public bool IsLow => Current < Max / 4;
+
+    public float Missing
+    {
+        get => Max - Current;
+        set => Current = Max - value;
+    }
+}
+```
+
+The `Target` above now has `target.IsLow` and `target.Missing`, a query loop over `Target` reads them too, and a
+prefix renames them like the fields: `target.ShieldIsLow`. On a shape the mixin extends, a computed property with a
+setter is assigned through `SetX`, like an extended field. The SDK's `Vitals` works out `IsDead` this way, which is
+how `MainCharacter` and `Npc` have it.
+
+Only public instance properties with a public getter go to other shapes. Methods stay on the mixin; reach them with
+`As<T>()`, as in `target.As<Health>().Heal()`.
+
 ### Tags
 
 `[Tag(typeof(T))]` on an archetype puts a tag on every entity created as it. A tag carries no values; it changes how
 the runtime treats the entity. `T` has to be a struct implementing Friflo's `ITag` interface (from the
 `Friflo.Engine.ECS` package the SDK builds on), which is why it is named with `typeof`. Repeat the attribute to add
-more than one.
+more than one. Tags go on archetypes only; on a mixin the build stops with `READYM048`.
 
 These are the tags that change how the server treats your entities. All of them are about
 [who owns an entity](replication.md#who-owns-an-entity), so they matter only for a replicated archetype in an area or
@@ -196,7 +225,7 @@ area or cell, are not affected.
 A campfire the server places, run by whichever player is nearby, and still there when they leave:
 
 ```csharp
-[Archetype(replicated: true)]
+[Archetype]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(Transform))]
@@ -213,10 +242,10 @@ runtime reads.
 ### Finding an entity by a value
 
 `[Index]` on one property lets you find the entity holding a given value, and keeps that lookup current when the value
-is written. One property per shape may carry it.
+is written. One property per shape may carry it (`READYM047`).
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.None)]
 public readonly partial struct Ticket
 {
     [Index]
@@ -241,7 +270,7 @@ removed with it, and a query can be narrowed to it. Such a shape converts to a s
 itself wherever a scope is asked for, as in `entities.Create<Tent>(camp)`. [Scopes](scopes.md) covers them.
 
 ```csharp
-[Archetype(replicated: true)]
+[Archetype(Replication = Replication.ServerAuthoritative)]
 public readonly partial struct Camp : IScope
 {
     public partial int Size { get; set; }
@@ -291,6 +320,9 @@ foreach (var npc in entities.Query<Npc>())
 | `READYM041` | The shape would expose one name twice: two includes, or an include and the shape itself, have a member of the same name. | Give one `[Include]` a prefix, as in `[Include(typeof(Shield), "Shield")]`, or rename one of the members. |
 | `READYM042` | `[Include]` names an archetype. `[Include]` is for mixins. | Build on it with `[IncludeArchetype(typeof(X))]`. |
 | `READYM043` | `[IncludeArchetype]` names a mixin. | Include it with `[Include(typeof(X))]`. |
+| `READYM047` | More than one property on the shape has `[Index]`. A shape is found by one value. | Keep `[Index]` on one of them. |
+| `READYM048` | `[Tag]` is on a mixin. Tags go on the archetype entities are created as. | Move the `[Tag]` to an archetype. |
+| `READYM049` | `[Extends]` is on an archetype. `[Extends]` adds a mixin to an archetype. | Move the fields to a mixin and put `[Extends]` on that. |
 | `CS0579` | Two `[IncludeArchetype]` on one archetype. An archetype builds on one other at most. | Keep one, and include the other's data as mixins. |
 | `CS9248` | A shape's partial property has no implementation. The SDK did not generate the shape: it is nested inside a class, or it has neither `[Archetype]` nor `[ArchetypeMixin]`. | Move the struct directly into a namespace and give it one of the two attributes. |
 

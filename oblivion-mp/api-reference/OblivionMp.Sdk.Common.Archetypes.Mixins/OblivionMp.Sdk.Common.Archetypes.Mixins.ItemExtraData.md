@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The condition and enchantment charge of a dropped item.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct ItemExtraData : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

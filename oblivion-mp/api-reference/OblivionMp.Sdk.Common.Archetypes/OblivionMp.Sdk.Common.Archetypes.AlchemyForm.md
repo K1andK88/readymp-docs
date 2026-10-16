@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A potion a player brewed, shared with every client and the server.
 
 ```csharp
-[Archetype(true)]
+[Archetype(Replication = Replication.OwnershipBased)]
 public readonly struct AlchemyForm : IArchetype, IArchetypeQueryable, IEntityShape
 ```
 

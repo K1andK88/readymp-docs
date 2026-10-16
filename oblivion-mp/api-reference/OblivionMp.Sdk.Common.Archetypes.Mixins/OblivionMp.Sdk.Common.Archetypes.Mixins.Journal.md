@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The quests and compass targets in a player's journal.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(Player), "")]
 public readonly struct Journal : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A person or creature from the game.
 
 ```csharp
-[Archetype(true)]
+[Archetype]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(Transform), "")]
@@ -435,7 +435,7 @@ public bool InCombatStance { get; set; }
 Whether the character is dead.
 
 ```csharp
-public bool IsDead { get; set; }
+public bool IsDead { get; }
 ```
 
 #### Property Value

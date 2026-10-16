@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The game form an entity is an instance of.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct BaseIdMixin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

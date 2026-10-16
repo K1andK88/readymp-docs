@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A player's character in the world.
 
 ```csharp
-[Archetype(true)]
+[Archetype(Replication = Replication.OwnershipBased)]
 [Include(typeof(Transform), "")]
 [Include(typeof(AnimationMovement), "")]
 [Include(typeof(AnimationState), "")]
@@ -665,7 +665,7 @@ public bool InDialogue { get; set; }
 Whether the character is dead.
 
 ```csharp
-public bool IsDead { get; set; }
+public bool IsDead { get; }
 ```
 
 #### Property Value

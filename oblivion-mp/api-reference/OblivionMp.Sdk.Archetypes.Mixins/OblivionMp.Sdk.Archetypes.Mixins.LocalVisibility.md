@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.dll
 How visible a character is in this player's game.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.None)]
 [Extends(typeof(MainCharacter), "")]
 public readonly struct LocalVisibility : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

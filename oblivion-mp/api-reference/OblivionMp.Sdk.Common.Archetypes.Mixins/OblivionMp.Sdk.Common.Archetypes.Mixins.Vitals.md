@@ -1,16 +1,16 @@
 ---
 title: 'Struct Vitals'
-description: 'Health, magicka, fatigue, and whether the character is dead.'
+description: 'Health, magicka and fatigue, current and maximum, and whether the character is dead.'
 ---
 # Struct Vitals
 
 Namespace: [OblivionMp.Sdk.Common.Archetypes.Mixins](../OblivionMp.Sdk.Common.Archetypes.Mixins/OblivionMp.Sdk.Common.Archetypes.Mixins.md)  
 Assembly: OblivionMp.Sdk.Common.dll  
 
-Health, magicka, fatigue, and whether the character is dead.
+Health, magicka and fatigue, current and maximum, and whether the character is dead.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct Vitals : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 
@@ -84,7 +84,7 @@ public float HpBase { get; set; }
 Whether the character is dead.
 
 ```csharp
-public bool IsDead { get; set; }
+public bool IsDead { get; }
 ```
 
 #### Property Value

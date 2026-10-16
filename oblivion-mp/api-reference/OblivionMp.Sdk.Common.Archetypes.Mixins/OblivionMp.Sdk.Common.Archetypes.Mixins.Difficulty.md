@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The difficulty every player's game runs at.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(World), "")]
 public readonly struct Difficulty : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

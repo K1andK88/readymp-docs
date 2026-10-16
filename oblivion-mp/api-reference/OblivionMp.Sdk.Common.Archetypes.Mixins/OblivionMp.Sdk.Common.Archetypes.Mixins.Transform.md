@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 Where an entity is and which way it faces.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct Transform : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 Whether a plant has been picked, and by whom.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct FloraState : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

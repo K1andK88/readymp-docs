@@ -25,7 +25,7 @@ public interface IShapeMappingScope<TShape, out TContext> where TShape : struct,
 
 Declare a mapping between a single shape field and a single context object. Leaving out the
 push says the game owns the value and will not be told: a shape declaring
-<code>Propagation.ToEcsOnly</code> has nothing to push.
+<code>Replication.ToEcsOnly</code> has nothing to push.
 
 ```csharp
 IShapeMappingScope<TShape, out TContext> Map<TValue>(Value<TShape, TValue> value, Pull<TValue, out TContext> pull, Action<TValue, out TContext>? push = null)

@@ -14,17 +14,15 @@ using ReadyM.SDK.Attributes;
 
 namespace MyMod.Common;
 
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(Player))]
-[Replicated]
-[Propagates(Propagation.ServerAuthoritative)]
 public readonly partial struct Wallet
 {
     public partial int Balance { get; set; }
 }
 ```
 
-`[Replicated]` sends `Balance` to the players. `ServerAuthoritative` means only the server writes it:
+`Replication.ServerAuthoritative` sends `Balance` to the players, and only the server writes it:
 
 ```csharp
 // On the server, in an RPC handler: credit the player who asked.
@@ -42,17 +40,19 @@ if (players.LocalPlayer is { } me)
 
 ### What replicates
 
-| Shape | How it asks to replicate | What travels |
+| Shape | How it says so | What travels |
 | --- | --- | --- |
-| Archetype | `[Archetype(replicated: true)]` | The entity itself (other players learn it exists, and who owns it) and the archetype's own fields. |
-| Mixin | `[Replicated]` | The mixin's fields, on every replicated entity that includes it or that it extends. |
+| Archetype | `[Archetype]`, networked unless it says `Networked = false` | The entity itself: other players learn it exists, and who owns it. |
+| Archetype with fields of its own | `[Archetype(Replication = Replication.X)]` | Those fields too, unless `X` is `None`. |
+| Mixin | `[ArchetypeMixin(Replication.X)]`, always stated | The mixin's fields, on every networked entity that includes it or that it extends, unless `X` is `None`. |
 
-A mixin without `[Replicated]` stays local even on a replicated entity: each half keeps its own copy, and nothing is
-sent. A `[Replicated]` mixin on an archetype declared `replicated: false` is not sent either, because the entity
-itself is local.
+`Replication.None` keeps a mixin local even on a networked entity: each half keeps its own copy, and nothing is sent.
+A replicating mixin on an archetype declared `Networked = false` is not sent either, because the entity itself is
+local.
 
-An archetype says whether it replicates in `[Archetype]`; putting `[Replicated]` on it is an error (`READYM036`). A
-replicated archetype with no fields of its own is fine: its entities still travel, carrying their mixins.
+A networked archetype with no fields of its own says nothing more: its entities still travel, carrying their mixins.
+One with fields of its own has to say whether they replicate (`READYM014`), and an archetype that is not networked
+must not (`READYM016`).
 
 A replicated entity reaches the players who can see where it is. [Scopes](scopes.md) explains who that is.
 
@@ -65,20 +65,20 @@ How a shape's changes travel:
 | `Reliable` (default) | Guaranteed to arrive, in the order it was sent. | Almost everything: balances, flags, states. |
 | `Unreliable` | Sent once and never resent. | A value written so often that the next write corrects a lost one, such as a position. |
 
-Set it on a mixin with `[Replicated(Delivery.Unreliable)]`, and for an archetype's own fields with
-`[Archetype(replicated: true, Delivery = Delivery.Unreliable)]`.
+Set it next to the replication: `[ArchetypeMixin(Replication.OwnershipBased, Delivery = Delivery.Unreliable)]`, and
+for an archetype's own fields `[Archetype(Replication = Replication.OwnershipBased, Delivery = Delivery.Unreliable)]`.
+Only a shape that sends fields of its own has a delivery to choose (`READYM050`).
 
-### Who may write: `[Propagates]`
+### Who may write: `Replication`
 
-Every replicated shape with fields of its own says who may write them, with `[Propagates(Propagation.X)]`. Without
-it the build stops (`READYM014`). A shape that does not replicate must not say it (`READYM016`).
-
-Propagation talks about two copies of a value: **the game's** (the actual health of the actor in Oblivion) and **the
+Every shape that replicates says who may write its fields, with the `Replication` value above. It talks about two
+copies of a value: **the game's** (the actual health of the actor in Oblivion) and **the
 SDK's** (the value on the entity that your mod reads and that replicates). It decides which way values may travel
 between the two, and who may change the SDK's copy. In the value names, "ECS" means the SDK's copy.
 
-| `Propagation` | Who may write | Which way values travel | Example |
+| `Replication` | Who may write | Which way values travel | Example |
 | --- | --- | --- | --- |
+| `None` | Each half writes its own copy. | Nowhere: the value is not sent. | A map marker each client keeps for itself. |
 | `ToEcsOnly` | The game. A client cannot override it; the server can still write it. | Read from the game into the SDK and replicated; never written back to the game. | A flag read from the game, such as whether an enemy is a boss. |
 | `ToGameOnly` | Your mod, on the server or with `Override` on a client. | From the SDK to the game; the game is never read for it. | A value your mod decides and the game only shows. |
 | `Both` | Anyone. | Both ways. | Data you want anyone to be able to set. |
@@ -103,7 +103,7 @@ Ownership is what `OwnershipBased` checks, and it also limits every client write
 
 :::important
 A client sends its changes only for entities it owns, and the server drops a change to a `ServerAuthoritative` value
-from any client. So whatever the propagation says, a client's change to an entity it does not own stays on that
+from any client. So whatever the replication says, a client's change to an entity it does not own stays on that
 client. When a client needs to change something it does not own, it asks the server with an [RPC](rpc.md), as the
 template's wallet does.
 :::
@@ -121,10 +121,8 @@ using Yooni.Native.Container;
 
 namespace MyMod.Common;
 
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 [Extends(typeof(Player))]
-[Replicated]
-[Propagates(Propagation.ServerAuthoritative)]
 public readonly partial struct Achievements
 {
     private partial NativeList<int> Unlocked { get; set; }
@@ -141,7 +139,7 @@ A shape that does not replicate has nothing to send, so a native collection on i
 plain `List<T>` or `Dictionary<TKey, TValue>` there instead, as a normal property:
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.None)]
 [Extends(typeof(Player))]
 public readonly partial struct RecentTargets
 {
@@ -183,9 +181,7 @@ using ReadyM.SDK.Attributes;
 
 namespace MyMod.Common;
 
-[ArchetypeMixin]
-[Replicated(Delivery.Unreliable)]
-[Propagates(Propagation.OwnershipBased)]
+[ArchetypeMixin(Replication.OwnershipBased, Delivery = Delivery.Unreliable)]
 public readonly partial struct Pose
 {
     [Quantize(-1048576f, 1048576f, 24)] public partial Vector3 Position { get; set; }
@@ -218,10 +214,8 @@ using ReadyM.SDK.Attributes;
 namespace MyMod.Common;
 
 // Each player sets their own emote, and everyone sees it as character.EmoteId.
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 [Extends(typeof(MainCharacter), "Emote")]
-[Replicated]
-[Propagates(Propagation.OwnershipBased)]
 public readonly partial struct Emote
 {
     public partial int Id { get; set; }
@@ -273,25 +267,24 @@ reach every client that can see the entity. `Override` does not exist on the ser
 
 | Id | What it means | How to fix it |
 | --- | --- | --- |
-| `READYM009` | A `[Replicated]` mixin has no fields, so there is nothing to send. | Remove `[Replicated]`: the entity's existence already travels. Or give the mixin fields. |
+| `READYM009` | A shape with no fields of its own states a `Replication` that sends something. | Use `Replication.None` on a mixin, and leave `Replication` off an archetype: the entity's existence already travels. Or give the shape fields. |
 | `READYM011` | A list or dictionary on a replicated shape is public. | Declare it `private` and use the generated `AddX`, `GetX` and the rest. |
-| `READYM014` | A replicated shape with fields of its own does not say who may write them. | Add `[Propagates(Propagation.X)]`. |
-| `READYM016` | `[Propagates]` is on a shape that sends nothing. | Remove it, or replicate the shape. |
+| `READYM014` | A networked archetype with fields of its own does not say whether they replicate. | Add `Replication = Replication.X` to `[Archetype]`, `Replication.None` to keep them local. |
+| `READYM016` | `Replication` is on an archetype declared `Networked = false`. | Remove it, or make the archetype networked. |
 | `READYM017` | Client code assigns a replicated value through its setter. | Use `shape.Override(Mixin.Field.X, value)`, write it on the server, or map it from the game (see [Game state mapping](../Advanced/game-state-mapping.md)). |
 | `READYM018` | A `NativeList` or `NativeDictionary` is on a shape that does not replicate. | Replicate the shape, or use a plain `List<T>` or `Dictionary<TKey, TValue>`. |
 | `READYM019` | Client code changes a replicated list or dictionary. | Change it on the server, or inside a game-state mapping. |
-| `READYM036` | `[Replicated]` is on an archetype. | Remove it and use `[Archetype(replicated: true)]`. Set delivery with `[Archetype(replicated: true, Delivery = ...)]`. |
 | `READYM038` | `[Interned]` is on a shape that does not replicate. | Remove it, or replicate the shape. |
 | `READYM040` | `[Quantize]`, `[QuantizeAngle]` or `[HalfPrecision]` is on a shape that does not replicate. | Remove it, or replicate the shape. |
 | `READYM046` | A replicated shape holds a value the SDK cannot send, such as a `List<T>`, a `Dictionary<TKey, TValue>` or an `Entity`. | Use a type it can send (a number, `bool`, enum, vector, `NativeString`, `NativeList`, `NativeDictionary`, or a type with `Serialize` and `Deserialize`), or keep the value on a shape that does not replicate. |
+| `READYM050` | `Delivery` is on a shape that sends no fields of its own. | Remove it. |
 
 ## Reference
 
 * [ArchetypeAttribute](../../../api-reference/ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.ArchetypeAttribute.md)
-* [ReplicatedAttribute](../../../api-reference/ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.ReplicatedAttribute.md)
+* [ArchetypeMixinAttribute](../../../api-reference/ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.ArchetypeMixinAttribute.md)
+* [Replication](../../../api-reference/ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Replication.md)
 * [Delivery](../../../api-reference/ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Delivery.md)
-* [PropagatesAttribute](../../../api-reference/ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.PropagatesAttribute.md)
-* [Propagation](../../../api-reference/ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Propagation.md)
 * [WriteExtensions](../../../api-reference/ReadyM.SDK.Client/ReadyM.SDK.Client.WriteExtensions.md)
 * [Value&lt;TShape, TValue&gt;](../../../api-reference/ReadyM.SDK.Archetypes.Access/ReadyM.SDK.Archetypes.Access.Value-2.md),
   [Collection&lt;TShape, TAccess&gt;](../../../api-reference/ReadyM.SDK.Archetypes.Access/ReadyM.SDK.Archetypes.Access.Collection-2.md)

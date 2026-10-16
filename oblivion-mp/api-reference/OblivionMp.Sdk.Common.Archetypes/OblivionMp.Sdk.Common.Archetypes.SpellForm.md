@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A spell a player made, shared with every client and the server.
 
 ```csharp
-[Archetype(true)]
+[Archetype(Replication = Replication.OwnershipBased)]
 public readonly struct SpellForm : IArchetype, IArchetypeQueryable, IEntityShape
 ```
 

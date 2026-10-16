@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A character's or NPC's level.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct LevelMixin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

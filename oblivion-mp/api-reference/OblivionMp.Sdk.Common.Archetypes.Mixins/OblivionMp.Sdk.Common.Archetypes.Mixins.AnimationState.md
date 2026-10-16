@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The animation state of a character, as its game reports it.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct AnimationState : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

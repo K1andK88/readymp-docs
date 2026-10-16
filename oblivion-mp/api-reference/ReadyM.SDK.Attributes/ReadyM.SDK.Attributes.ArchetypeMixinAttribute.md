@@ -69,10 +69,43 @@ public class ArchetypeMixinAttribute : Attribute
 
 ## Constructors
 
-### <a id="ReadyM_SDK_Attributes_ArchetypeMixinAttribute__ctor"></a> ArchetypeMixinAttribute\(\)
+### <a id="ReadyM_SDK_Attributes_ArchetypeMixinAttribute__ctor_ReadyM_SDK_Attributes_Replication_"></a> ArchetypeMixinAttribute\(Replication\)
+
+Declares a struct as an archetype mixin.
 
 ```csharp
-public ArchetypeMixinAttribute()
+public ArchetypeMixinAttribute(Replication replication)
 ```
+
+#### Parameters
+
+`replication` [Replication](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Replication.md)
+
+Whether its values are sent to the other players when it is on a networked archetype, and who may write them.
+**None** keeps them on the half that wrote them.
+
+## Properties
+
+### <a id="ReadyM_SDK_Attributes_ArchetypeMixinAttribute_Delivery"></a> Delivery
+
+How its changes travel, when it replicates.
+
+```csharp
+public Delivery Delivery { get; set; }
+```
+
+#### Property Value
+
+ [Delivery](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Delivery.md)
+
+### <a id="ReadyM_SDK_Attributes_ArchetypeMixinAttribute_Replication"></a> Replication
+
+```csharp
+public Replication Replication { get; }
+```
+
+#### Property Value
+
+ [Replication](../ReadyM.SDK.Attributes/ReadyM.SDK.Attributes.Replication.md)
 
 

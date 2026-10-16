@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The contents of a container.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct ContainerItems : IInventory, IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

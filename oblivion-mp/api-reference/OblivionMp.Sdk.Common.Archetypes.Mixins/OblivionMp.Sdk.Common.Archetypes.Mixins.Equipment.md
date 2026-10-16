@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The inventory of a character or NPC.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct Equipment : IInventory, IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

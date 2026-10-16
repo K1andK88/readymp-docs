@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The cell an entity is in.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct ParentCell : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

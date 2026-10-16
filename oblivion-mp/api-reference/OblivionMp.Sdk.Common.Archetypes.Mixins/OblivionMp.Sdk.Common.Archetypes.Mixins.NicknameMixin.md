@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A player's display name.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 [Extends(typeof(Player), "")]
 public readonly struct NicknameMixin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```

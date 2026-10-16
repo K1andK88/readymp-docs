@@ -37,8 +37,8 @@ public sealed partial class WalletKeys(IInput input, RpcHandlers rpc)
 `RegisterKeyBind` takes the key, what to run, and optionally the modifier keys and where the press comes from:
 
 ```csharp
-void RegisterKeyBind(Key key, Action action, KeySource source = KeySource.Polled);
-void RegisterKeyBind(ModifierKeys modifiers, Key key, Action action, KeySource source = KeySource.Polled);
+IDisposable RegisterKeyBind(Key key, Action action, KeySource source = KeySource.Polled);
+IDisposable RegisterKeyBind(ModifierKeys modifiers, Key key, Action action, KeySource source = KeySource.Polled);
 ```
 
 - [`Key`](../../../api-reference/ReadyM.Sdk.Common.Input/ReadyM.Sdk.Common.Input.Key.md) names keys in capitals:
@@ -48,8 +48,8 @@ void RegisterKeyBind(ModifierKeys modifiers, Key key, Action action, KeySource s
   `Alt`, `Control` or `Shift`. Combine them with `|`: `ModifierKeys.Control | ModifierKeys.Shift`.
 - Your action runs at the same point in the frame as a service's `Update`, so it can read and change entities
   directly.
-- A binding lasts as long as your mod is loaded. There is no call to remove one, so check inside the action
-  whether it should do anything right now.
+- A binding lasts until you dispose what `RegisterKeyBind` returns, or until your mod unloads. A binding meant for
+  the whole session can ignore it, as the template does. See [Removing a binding](#removing-a-binding).
 
 You can also register keys from your mod entry's `Init`, as the Arena mod does for its debug keys:
 
@@ -103,6 +103,43 @@ input.RegisterKeyBind(Key.NUM_FIVE, () =>
         ShowScores();
 });
 ```
+
+### Removing a binding
+
+Keep what `RegisterKeyBind` returns and dispose it when the key should stop doing anything. This service binds Alt+T
+only while the player is picking a target, and other code calls it to start and stop:
+
+```csharp title="MyMod.Client/TargetKeys.cs"
+using OblivionMp.Sdk;
+using ReadyM.SDK.Attributes;
+using ReadyM.Sdk.Common.Input;
+
+namespace MyMod.Client;
+
+[Service]
+public sealed partial class TargetKeys(IInput input)
+{
+    private IDisposable? _next;
+
+    public void StartTargeting()
+        => _next ??= input.RegisterKeyBind(ModifierKeys.Alt, Key.T, NextTarget, KeySource.UnhandledByUi);
+
+    public void StopTargeting()
+    {
+        _next?.Dispose();
+        _next = null;
+    }
+
+    private void NextTarget()
+    {
+        // Move to the next target
+    }
+}
+```
+
+Disposing removes that one binding. Every other binding on the same keys stays, whether it is yours or another
+mod's, and disposing twice does nothing. A press that came in just before the binding was removed does not run your
+action. Once no binding is left on an `UnhandledByUi` combination, its presses reach the game again.
 
 ### Picking a key
 

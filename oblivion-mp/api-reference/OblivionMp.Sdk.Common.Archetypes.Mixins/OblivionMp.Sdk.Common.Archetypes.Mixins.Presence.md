@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 Whether a world object is in the world.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct Presence : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

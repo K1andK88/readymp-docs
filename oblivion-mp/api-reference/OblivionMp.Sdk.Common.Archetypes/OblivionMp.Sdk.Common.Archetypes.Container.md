@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A container placed in the world, such as a chest, barrel or sack.
 
 ```csharp
-[Archetype(true)]
+[Archetype]
 [Tag(typeof(AllowOwnershipTransferOnScopeEnterTag))]
 [Tag(typeof(AllowOwnershipTransferOnScopeLeaveTag))]
 [Include(typeof(RefIdMixin), "")]

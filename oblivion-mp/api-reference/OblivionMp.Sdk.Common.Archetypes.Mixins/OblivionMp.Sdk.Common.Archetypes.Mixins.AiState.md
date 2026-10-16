@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 What an NPC's AI is doing, as reported by the game that simulates it.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.OwnershipBased)]
 public readonly struct AiState : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 

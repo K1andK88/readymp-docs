@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 A creature a player summoned with a spell, created and deleted by the server.
 
 ```csharp
-[Archetype(true)]
+[Archetype]
 [Tag(typeof(KeepOwnerOnScopeLeaveTag))]
 [IncludeArchetype(typeof(Npc))]
 [Include(typeof(SummonedBy), "")]
@@ -445,7 +445,7 @@ public bool InCombatStance { get; set; }
 Whether the character is dead.
 
 ```csharp
-public bool IsDead { get; set; }
+public bool IsDead { get; }
 ```
 
 #### Property Value

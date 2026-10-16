@@ -10,7 +10,7 @@ Assembly: OblivionMp.Sdk.Common.dll
 The spawner an NPC came from.
 
 ```csharp
-[ArchetypeMixin]
+[ArchetypeMixin(Replication.ServerAuthoritative)]
 public readonly struct SpawnOrigin : IArchetypeMixin, IArchetypeQueryable, IEntityShape
 ```
 
