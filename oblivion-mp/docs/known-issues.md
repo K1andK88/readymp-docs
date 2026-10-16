@@ -9,15 +9,16 @@ We are aware of the following issues in the current release candidate, and we're
 ## Gameplay
 
 * After spawning, the player character's body may not match their head.
+* Dead NPCs' positions may reset to default after server restart.
 * The player character's voice may not match their race or sex.
-* Weather is not decided by the server, so it can change abruptly, for example when you move between a city and the open world.
+* Weather is decided by a random player, so it can change abruptly, for example when they move between a city and the open world.
 * Items with custom enchantments cannot be dropped yet.
 * Physics and ragdolls of items and of NPC and player bodies make their positions go out of sync.
 * Not everything about a player is saved yet: name, race, class, birthsign and faction membership are lost.
-* The sitting animation is shown in the wrong state.
-* Using the `Rebirth` console command after dying lowers your Speed attribute by 20.
+* The sitting animation is currently broken, the player stands in a chair.
 * NPCs cannot be pickpocketed.
-* Fire-shooting turrets in the Oblivion realm crash the game.
+* Fire-shooting turrets in the Planes of Oblivion crash the game.
+* Using the `Rebirth` console command after dying lowers your Speed attribute by 20.
 * After using the `Rebirth` command a player may become invisible to others.
 
 ## SDK
