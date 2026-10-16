@@ -6,6 +6,10 @@ sidebar_position: 2
 
 We are aware of the following issues in the current release candidate, and we're working on fixing them.
 
+## Server
+
+* The version number displayed in the Launcher is still `0.2.0` instead of `1.0.0`.
+
 ## Gameplay
 
 * Hovering over another player shows "Player #0" instead of their name. Overhead name is correct.
@@ -26,7 +30,10 @@ We are aware of the following issues in the current release candidate, and we're
 
 * Position of dropped items is not synchronized. Dragging them around will not be seen by other players, but they will disappear for everyone when picked up.
 * Small changes to replicated decimal values are dropped. A write that changes a `float` or `double` by 0.1 or less, or moves a vector by 0.1 or less, is not stored or sent. The same threshold applies to values marked `[Quantize]` or `[HalfPrecision]`. More robust controls over this are coming.
-* Some attributes are ignored without an error: a second `[Index]` on one shape, `[Tag]` on a mixin, and `[Extends]` on an archetype. Diagnostics for these are coming.
+* Three attribute mistakes are not reported clearly yet. Clear diagnostics for them are coming:
+  * A second `[Index]` on one shape compiles when both values have the same type, but only the first one is the index. With different types, the build fails with an error inside generated code.
+  * `[Tag]` on a mixin fails the build with an error inside generated code. Put tags on archetypes only.
+  * `[Extends]` on an archetype is not an error, but it only partly works: the target gets the archetype's components and none of its values. Use `[Extends]` on mixins only.
 
 ## Missing features
 
